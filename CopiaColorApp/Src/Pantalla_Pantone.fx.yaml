@@ -246,7 +246,7 @@ Pantalla_Pantone As screen:
             Text: ="Materia prima principal"
             VerticalAlign: =VerticalAlign.Top
             Width: =250
-            X: =532
+            X: =480
             Y: =32
             ZIndex: =2
 
@@ -532,25 +532,28 @@ Pantalla_Pantone As screen:
         Gallery2 As gallery.galleryVertical:
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =545
+            Height: =560
             Items: =gall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =271
-            Width: =1197
+            TemplateSize: =279
+            Width: =1533
             WrapCount: =2
-            X: =25
-            Y: =16
+            X: =20
+            Y: =24
             ZIndex: =1
 
             ContainerTarjetas As groupContainer.manualLayoutContainer:
+                BorderColor: =RGBA(0, 0, 0, 0.38)
+                BorderThickness: =2
                 DropShadow: =DropShadow.Light
-                Height: =270
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =275
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =590
+                Width: =749
                 ZIndex: =21
 
                 "'110005185' As label":
@@ -571,8 +574,8 @@ Pantalla_Pantone As screen:
                     Text: =Text(ThisItem.Value.coMaterial)
                     VerticalAlign: =VerticalAlign.Top
                     Width: =104
-                    X: =422
-                    Y: =168
+                    X: =430
+                    Y: =160
                     ZIndex: =1
 
                 Datosdelcolor9 As label:
@@ -593,7 +596,7 @@ Pantalla_Pantone As screen:
                     Text: ="Datos del color"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =117
-                    X: =185
+                    X: =193
                     Y: =119
                     ZIndex: =2
 
@@ -603,12 +606,11 @@ Pantalla_Pantone As screen:
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(0, 0, 0, 1)
                     FocusedBorderThickness: =4
-                    Height: =45
+                    Height: =47
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =589
+                    Width: =748
                     X: =1
-                    Y: =2
                     ZIndex: =3
 
                 Rectangle161 As rectangle:
@@ -620,7 +622,7 @@ Pantalla_Pantone As screen:
                     Height: =66
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =589
+                    Width: =748
                     X: =1
                     Y: =47
                     ZIndex: =4
@@ -634,9 +636,9 @@ Pantalla_Pantone As screen:
                     Height: =174
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =151
+                    Width: =149
                     X: =24
-                    Y: =67
+                    Y: =77
                     ZIndex: =5
 
                 CdigoCrystal9 As label:
@@ -737,8 +739,8 @@ Pantalla_Pantone As screen:
                     Text: ="Código SAP"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =92
-                    X: =422
-                    Y: =148
+                    X: =430
+                    Y: =132
                     ZIndex: =10
 
                 Babyblue As label:
@@ -749,7 +751,7 @@ Pantalla_Pantone As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
                     FontWeight: =FontWeight.Lighter
-                    Height: =34
+                    Height: =22
                     LineHeight: =1.210227
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -759,8 +761,8 @@ Pantalla_Pantone As screen:
                     Text: =Text(ThisItem.Value.colorName)
                     VerticalAlign: =VerticalAlign.Top
                     Width: =149
-                    X: =422
-                    Y: =219
+                    X: =430
+                    Y: =227
                     ZIndex: =11
 
                 Nombredecolor As label:
@@ -781,7 +783,7 @@ Pantalla_Pantone As screen:
                     Text: ="Nombre del Color"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =134
-                    X: =422
+                    X: =430
                     Y: =203
                     ZIndex: =12
 
@@ -803,8 +805,8 @@ Pantalla_Pantone As screen:
                     Text: ="Descripción"
                     VerticalAlign: =VerticalAlign.Top
                     Width: =103
-                    X: =185
-                    Y: =148
+                    X: =201
+                    Y: =156
                     ZIndex: =13
 
                 "'231453' As label":
@@ -846,9 +848,9 @@ Pantalla_Pantone As screen:
                     Size: =11.25
                     Text: =Text(ThisItem.Value.pantone)
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =189
-                    X: =16
-                    Y: =230
+                    Width: =119
+                    X: =27
+                    Y: =228
                     ZIndex: =15
 
                 Checkbox4 As checkbox:
@@ -879,8 +881,8 @@ Pantalla_Pantone As screen:
                     Size: =13
                     Text: =
                     Width: =45
-                    X: =538
-                    Y: =5
+                    X: =680
+                    Y: =7
                     ZIndex: =16
 
                 "'93ALG54VIS13POL201MOCKTWIST' As label":
@@ -891,7 +893,7 @@ Pantalla_Pantone As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
                     FontWeight: =FontWeight.Lighter
-                    Height: =73
+                    Height: =35
                     LineHeight: =1.210227
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -901,8 +903,8 @@ Pantalla_Pantone As screen:
                     Text: =Text(ThisItem.Value.descMaterial)
                     VerticalAlign: =VerticalAlign.Top
                     Width: =178
-                    X: =154
-                    Y: =168
+                    X: =186
+                    Y: =184
                     ZIndex: =17
 
     Container_Botton As groupContainer.manualLayoutContainer:
