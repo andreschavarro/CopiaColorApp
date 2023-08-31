@@ -1,0 +1,141 @@
+{
+  "1978edba-129a-4788-ac84-95c33de78f45": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://grupocrystal.sharepoint.com/sites/Desarrollocalcetera": {
+        "dataSources": {
+          "colorCalceteria2": {
+            "tableName": "beac12ca-9ca7-4bfc-9ee4-f50a625a235f"
+          },
+          "coloresUnicos": {
+            "tableName": "20070285-e053-453c-8293-c365d1d2196e"
+          },
+          "DatosUsoColorApp": {
+            "tableName": "5ebc205c-daab-47fa-9f0a-3e4bad587167"
+          },
+          "gestion_vanisados": {
+            "tableName": "0b176edb-2d48-4849-a621-4cc91f66725b"
+          },
+          "pantoneRgbFull_1": {
+            "tableName": "e311ef49-059a-4201-a1ec-2241341ee5a4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "DatosUsoColorApp",
+      "pantoneRgbFull_1",
+      "gestion_vanisados",
+      "coloresUnicos",
+      "colorCalceteria2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1978edba-129a-4788-ac84-95c33de78f45"
+  },
+  "2621fdbb-0dec-4ed5-af1c-0d14b3aac690": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "1082aa3d-f7a5-4485-a93e-dd1d7426df9c"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "1082aa3d-f7a5-4485-a93e-dd1d7426df9c"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afExcelEneas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2621fdbb-0dec-4ed5-af1c-0d14b3aac690"
+  },
+  "673f4e32-a73b-45d4-8329-c4ea87f2ab10": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afColorCalceteria"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "673f4e32-a73b-45d4-8329-c4ea87f2ab10"
+  },
+  "b6965406-cef4-4463-b637-dee95013238d": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "b6965406-cef4-4463-b637-dee95013238d"
+  },
+  "c878fd87-2256-4fa1-9272-eab8156d01d0": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afVanizadosUnico"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c878fd87-2256-4fa1-9272-eab8156d01d0"
+  }
+}

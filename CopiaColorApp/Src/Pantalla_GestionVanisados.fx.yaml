@@ -1,0 +1,642 @@
+Pantalla_GestionVanisados As screen:
+    Height: =900
+    ImagePosition: =ImagePosition.Center
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: |-
+        =Collect(
+            DatosUsoColorApp,
+            {User:Text(User().FullName),
+            TipoRegistro:"Open_PantallaVanisados",
+            FechaHora:Now()}
+        )
+    Width: =1600
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =63
+        HoverFill: =
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =1600
+        ZIndex: =3
+
+    Button1_8 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =
+        OnSelect: |
+            =Navigate(Pantalla_Pantone)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Text: ="PANTONE"
+        Width: =108
+        X: =285
+        Y: =11
+        ZIndex: =119
+
+    Button1_9 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =
+        OnSelect: |
+            =Navigate(Colores_Crystal)
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Text: ="COLORES CRYSTAL"
+        Width: =158
+        X: =415
+        Y: =11
+        ZIndex: =121
+
+    Button6_4 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Text: ="VANISADOS"
+        Width: =111
+        X: =590
+        Y: =11
+        ZIndex: =122
+
+    Label6_3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =63
+        Size: =18
+        Text: =User().FullName
+        Width: =452
+        X: =1148
+        ZIndex: =132
+
+    COLORAPP1_5 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        LineHeight: =1.210227
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =24
+        Text: ="COLOR APP"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =246
+        X: =77
+        Y: =11
+        ZIndex: =133
+
+    Image2_6 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =43
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: ='MicrosoftTeams-image (2)'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =41
+        X: =15
+        Y: =11
+        ZIndex: =134
+
+    Button11_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(202, 202, 202, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =
+        OnSelect: |
+            = Launch("https://apps.powerapps.com/play/e/default-6a4eb463-82bd-4a0b-ad11-ffebd2fb7285/a/dbcef574-afaf-4cdd-9fa8-e9108327fe97?tenantId=6a4eb463-82bd-4a0b-ad11-ffebd2fb7285&source=AppSharedV3&hint=88890c88-8b47-4226-b8b7-3a00fb1da03b");
+            Collect(
+                DatosUsoColorApp,
+                {User:Text(User().FullName),
+                TipoRegistro:"Open_GestionVanizados",
+                FechaHora:Now()}
+            )
+        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Text: ="GESTIÓN VANISADOS"
+        Visible: |-
+            =If(
+                User().FullName = "Miguel Angel Lopez Cardenas" Or User().FullName = "Mario Andres Arango Vasco" Or User().FullName = "Juan Esteban Escobar Gomez" Or User().FullName = "Jaime Alonso Ceballos Morales",
+                true,
+                false
+            )
+        Width: =190
+        X: =725
+        Y: =10
+        ZIndex: =136
+
+    Button1_10 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        OnSelect: |-
+            =If(
+                guidBool,
+                Patch(
+                    gestion_vanisados,
+                    LookUp(
+                        gestion_vanisados,
+                        ID = tempGuid
+                    ),
+                    {
+                        V782: TextInput1_1.Text,
+                        V442: TextInput1_2.Text,
+                        elastico: TextInput1_3.Text,
+                        lycra: TextInput1_4.Text
+                    }
+                ),
+                Collect(
+                    gestion_vanisados,
+                    {
+                        materiaPrima: ComboBox1_1.Selected.Value,
+                        coColor: ComboBox2_1.Selected.coColor,
+                        V782: TextInput1_1.Text,
+                        V442: TextInput1_2.Text,
+                        elastico: TextInput1_3.Text,
+                        lycra: TextInput1_4.Text
+                    }
+                )
+            );
+            Set(
+                tempGuid,
+                First(
+                    Filter(
+                        gestion_vanisados,
+                        materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
+                    )
+                ).ID
+            );
+            Set(
+                guidBool,
+                Not(
+                    IsBlank(
+                        LookUp(
+                            gestion_vanisados,
+                            ID = tempGuid
+                        )
+                    )
+                )
+            );
+            Notify(
+                "La informacion ha sido agregada correctamente",
+                NotificationType.Success,
+                2000
+            )
+        Size: =17
+        Text: ="Enviar registro"
+        Width: =170
+        X: =789
+        Y: =778
+        ZIndex: =137
+
+    Label1_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Color Crystal"
+        Width: =160
+        X: =88
+        Y: =407
+        ZIndex: =138
+
+    Label1_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Vanisado 78/2"
+        Width: =180
+        X: =708
+        Y: =407
+        ZIndex: =139
+
+    Label1_5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Vanisado 44/2"
+        Width: =180
+        X: =903
+        Y: =407
+        ZIndex: =140
+
+    Label1_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Elástico expuesto"
+        Width: =210
+        X: =1099
+        Y: =407
+        ZIndex: =141
+
+    TextInput1 As text:
+        Align: =Align.Center
+        BorderThickness: =1.5
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =First(
+                Filter(
+                    gestion_vanisados,
+                    coColor = Text(ComboBox2_1.Selected.coColor) &&
+                    materiaPrima = Text(ComboBox1_1.Selected.Value)
+                )
+            ).V782
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =RGBA(0, 18, 107, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Size: =13
+        Width: =130
+        X: =733
+        Y: =469
+        ZIndex: =142
+
+    TextInput1_2 As text:
+        Align: =Align.Center
+        BorderThickness: =1.5
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =First(
+                Filter(
+                    gestion_vanisados,
+                    coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                )
+            ).V442
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =RGBA(0, 18, 107, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Size: =13
+        Width: =130
+        X: =928
+        Y: =469
+        ZIndex: =143
+
+    TextInput1_3 As text:
+        Align: =Align.Center
+        BorderThickness: =1.5
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =First(
+                Filter(
+                    gestion_vanisados,
+                    coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                )
+            ).elastico
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =RGBA(0, 18, 107, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Size: =13
+        Width: =130
+        X: =1139
+        Y: =469
+        ZIndex: =144
+
+    Rectangle211_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: |-
+            =If(
+                IsBlank(rgb_var),
+                RGBA(
+                    111,
+                    111,
+                    111,
+                    1
+                ),
+                RGBA(
+                    Index(
+                        Split(
+                            rgb_var,
+                            ","
+                        ),
+                        1
+                    ).Value,
+                    Index(
+                        Split(
+                            rgb_var,
+                            ","
+                        ),
+                        2
+                    ).Value,
+                    Index(
+                        Split(
+                            rgb_var,
+                            ","
+                        ),
+                        3
+                    ).Value,
+                    1
+                )
+            )
+        FocusedBorderThickness: =4
+        HoverFill: =
+        PressedFill: =RGBA(0, 120, 212, 1)
+        Width: =100
+        X: =306
+        Y: =420
+        ZIndex: =145
+
+    Label1_7 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Materia prima"
+        Width: =180
+        X: =480
+        Y: =407
+        ZIndex: =146
+
+    ComboBox1_1 As combobox:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Value"]
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Items: =Distinct(gestion_vanisados , materiaPrima)
+        OnChange: |-
+            =Set(
+                tempGuid,
+                First(
+                    Filter(
+                        gestion_vanisados,
+                        materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
+                    )
+                ).ID
+            );
+            Set(
+                guidBool,
+                Not(
+                    IsBlank(
+                        LookUp(
+                            gestion_vanisados,
+                            ID = tempGuid
+                        )
+                    )
+                )
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 18, 107, 1)
+        SearchFields: =["Value"]
+        SearchItems: =Search(Distinct(gestion_vanisados , materiaPrima),ComboBox1_1.SearchText,"Value")
+        SelectionFill: =RGBA(56, 96, 178, 1)
+        SelectMultiple: =false
+        Size: =13
+        Width: =210
+        X: =465
+        Y: =469
+        ZIndex: =147
+
+    ComboBox2_1 As combobox:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["field_0"]
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Items: |-
+            =Filter(
+                coloresUnicos,
+                StartsWith(
+                    coColor,
+                    Text(ComboBox2_1.SearchText)
+                )
+            )
+        OnChange: |-
+            =Set(
+                tempGuid,
+                First(
+                    Filter(
+                        gestion_vanisados,
+                        materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
+                    )
+                ).ID
+            );
+            Set(
+                guidBool,
+                Not(
+                    IsBlank(
+                        LookUp(
+                            gestion_vanisados,
+                            ID = tempGuid
+                        )
+                    )
+                )
+            );
+            Set(
+                rgb_var,
+                First(
+                    Filter(
+                        coloresUnicos,
+                        coColor = Self.Selected.Nombre
+                    )
+                ).rgb
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 18, 107, 1)
+        SearchFields: =["field_0"]
+        SearchItems: |-
+            =Search(Filter(
+                coloresUnicos,
+                StartsWith(
+                    coColor,
+                    Text(ComboBox2_1.SearchText)
+                )
+            ),ComboBox2_1.SearchText,"field_0")
+        SelectionFill: =RGBA(56, 96, 178, 1)
+        SelectMultiple: =false
+        Size: =13
+        Width: =170
+        X: =83
+        Y: =469
+        ZIndex: =148
+
+    TextInput1_4 As text:
+        Align: =Align.Center
+        BorderThickness: =1.5
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =First(
+                Filter(
+                    gestion_vanisados,
+                    coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                )
+            ).lycra
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverBorderColor: =RGBA(0, 18, 107, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Size: =13
+        Width: =130
+        X: =1354
+        Y: =469
+        ZIndex: =149
+
+    Label1_8 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =19
+        Text: ="Lycra rec interna"
+        Width: =210
+        X: =1314
+        Y: =407
+        ZIndex: =150
+
+    Button2_1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =45
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+        OnSelect: |-
+            =Reset(ComboBox1_1);
+            Reset(ComboBox2_1);
+            Reset(TextInput1);
+            Reset(TextInput1_2);
+            Reset(TextInput1_3);
+            Reset(TextInput1_4)
+        Size: =15
+        Text: ="Limpiar"
+        Width: =100
+        X: =620
+        Y: =778
+        ZIndex: =151
+
