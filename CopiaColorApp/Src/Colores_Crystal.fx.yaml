@@ -124,7 +124,7 @@ Colores_Crystal As screen:
             Height: =59
             Size: =18
             Text: =User().FullName
-            Width: =452
+            Width: =314
             X: =1148
             ZIndex: =5
 
@@ -171,6 +171,28 @@ Colores_Crystal As screen:
             X: =15
             Y: =11
             ZIndex: =7
+
+        Image1_3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =40
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =User().Image
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Width: =40
+            X: =1548
+            Y: =9
+            ZIndex: =8
 
     Container_FiltrosColorcrystal As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -510,10 +532,10 @@ Colores_Crystal As screen:
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
-                Height: =39
+                Height: =43
                 HoverFill: =
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =311
+                Width: =298
                 X: =2
                 ZIndex: =1
 
@@ -546,9 +568,8 @@ Colores_Crystal As screen:
                 HoverFill: =
                 OnSelect: =
                 PressedFill: =RGBA(230, 230, 230, 0.21)
-                Width: =311
-                X: =2
-                Y: =39
+                Width: =300
+                Y: =43
                 ZIndex: =3
 
             Rectangle15_2 As rectangle:
