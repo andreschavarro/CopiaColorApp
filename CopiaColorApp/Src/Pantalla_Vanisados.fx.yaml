@@ -11,174 +11,6 @@ Pantalla_Vanisados As screen:
         )
     Width: =1600
 
-    Button11 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =
-        OnSelect: |
-            = Launch("https://apps.powerapps.com/play/e/default-6a4eb463-82bd-4a0b-ad11-ffebd2fb7285/a/dbcef574-afaf-4cdd-9fa8-e9108327fe97?tenantId=6a4eb463-82bd-4a0b-ad11-ffebd2fb7285&source=AppSharedV3&hint=88890c88-8b47-4226-b8b7-3a00fb1da03b");
-            Collect(
-                DatosUsoColorApp,
-                {User:Text(User().FullName),
-                TipoRegistro:"Open_GestionVanizados",
-                FechaHora:Now()}
-            )
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Text: ="GESTIÓN VANISADOS"
-        Visible: |-
-            =If(
-                User().FullName = "Miguel Angel Lopez Cardenas" Or User().FullName = "Mario Andres Arango Vasco" Or User().FullName = "Juan Esteban Escobar Gomez" Or User().FullName = "Jaime Alonso Ceballos Morales",
-                true,
-                false
-            )
-        Width: =190
-        X: =725
-        Y: =10
-        ZIndex: =136
-
-    Rectangle40 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        FocusedBorderThickness: =4
-        Height: =43
-        HoverFill: =
-        PressedFill: =RGBA(0, 120, 212, 1)
-        Width: =1496
-        X: =52
-        Y: =269
-        ZIndex: =139
-
-    Elasticoexpuesto_7 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =28
-        LineHeight: =1.210227
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Materia prima"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =180
-        X: =52
-        Y: =277
-        ZIndex: =140
-
-    Elasticoexpuesto_2 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =25
-        LineHeight: =1.210227
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Vanisado 78/2"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =200
-        X: =298
-        Y: =277
-        ZIndex: =141
-
-    Elasticoexpuesto_1 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =25
-        LineHeight: =1.210227
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Vanisado 44/2"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =200
-        X: =638
-        Y: =277
-        ZIndex: =142
-
-    Elasticoexpuesto As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =25
-        LineHeight: =1.210227
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Elastico expuesto"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =250
-        X: =947
-        Y: =277
-        ZIndex: =143
-
-    Elasticoexpuesto_6 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =25
-        LineHeight: =1.210227
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Size: =15
-        Text: ="Lycra rec interna"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =300
-        X: =1245
-        Y: =277
-        ZIndex: =144
-
     Gallery5 As gallery.galleryVertical:
         BorderColor: =RGBA(166, 166, 166, 1)
         DelayItemLoading: =true
@@ -2190,21 +2022,6 @@ Pantalla_Vanisados As screen:
             Y: =198
             ZIndex: =22
 
-    Rectangle7 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(127, 178, 57, 1)
-        FocusedBorderThickness: =4
-        Height: =5
-        HoverFill: =RGBA(0, 120, 212, 1)
-        PressedFill: =RGBA(0, 120, 212, 1)
-        Width: =5
-        X: =1520
-        Y: =290
-        ZIndex: =147
-
     Container_BarraNavegacion_2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =59
@@ -2290,6 +2107,7 @@ Pantalla_Vanisados As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =
             HoverFill: =
+            OnSelect: =Navigate(Pantalla_Pantone)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -2363,6 +2181,46 @@ Pantalla_Vanisados As screen:
             X: =15
             Y: =11
             ZIndex: =7
+
+        Button11 As button:
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: |
+                = Launch("https://apps.powerapps.com/play/e/default-6a4eb463-82bd-4a0b-ad11-ffebd2fb7285/a/dbcef574-afaf-4cdd-9fa8-e9108327fe97?tenantId=6a4eb463-82bd-4a0b-ad11-ffebd2fb7285&source=AppSharedV3&hint=88890c88-8b47-4226-b8b7-3a00fb1da03b");
+                Collect(
+                    DatosUsoColorApp,
+                    {User:Text(User().FullName),
+                    TipoRegistro:"Open_GestionVanizados",
+                    FechaHora:Now()}
+                )
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Text: ="GESTIÓN VANISADOS"
+            Visible: |-
+                =If(
+                    User().FullName = "Miguel Angel Lopez Cardenas" Or User().FullName = "Mario Andres Arango Vasco" Or User().FullName = "Juan Esteban Escobar Gomez" Or User().FullName = "Jaime Alonso Ceballos Morales",
+                    true,
+                    false
+                )
+            Width: =190
+            X: =720
+            Y: =9
+            ZIndex: =8
 
     Container_FiltrosVanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -2535,4 +2393,158 @@ Pantalla_Vanisados As screen:
             X: =458
             Y: =14
             ZIndex: =4
+
+    ContainerbarratablaGallery5 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =42
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1496
+        X: =52
+        Y: =255
+        ZIndex: =150
+
+        Rectangle40 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            FocusedBorderThickness: =4
+            Height: =42
+            HoverFill: =
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =1496
+            ZIndex: =1
+
+        Elasticoexpuesto_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =28
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Materia prima"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =180
+            X: =52
+            Y: =8
+            ZIndex: =2
+
+        Elasticoexpuesto_2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =25
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Vanisado 78/2"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =200
+            X: =246
+            Y: =8
+            ZIndex: =3
+
+        Elasticoexpuesto_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =25
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Vanisado 44/2"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =200
+            X: =586
+            Y: =8
+            ZIndex: =4
+
+        Elasticoexpuesto As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =25
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Elastico expuesto"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =250
+            X: =895
+            Y: =8
+            ZIndex: =5
+
+        Elasticoexpuesto_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =25
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Lycra rec interna"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =300
+            X: =1193
+            Y: =8
+            ZIndex: =6
+
+        Rectangle7 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            FocusedBorderThickness: =4
+            Height: =5
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =5
+            X: =1468
+            Y: =21
+            ZIndex: =7
 

@@ -537,7 +537,7 @@ Pantalla_Pantone As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =294
-            Width: =1546
+            Width: =1561
             WrapCount: =2
             X: =22
             Y: =26
@@ -552,8 +552,8 @@ Pantalla_Pantone As screen:
                 Height: =276
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =586
-                X: =61
+                Width: =607
+                X: =40
                 Y: =13
                 ZIndex: =1
 
@@ -886,7 +886,7 @@ Pantalla_Pantone As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =85
+                Height: =89
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
@@ -902,8 +902,8 @@ Pantalla_Pantone As screen:
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Size: =13
                 Text: =
-                Width: =110
+                Width: =125
                 X: =578
-                Y: =17
+                Y: =13
                 ZIndex: =19
 
