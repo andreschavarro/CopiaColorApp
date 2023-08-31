@@ -3198,6 +3198,18 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 9
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -7564,49 +7576,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Icon2_1"
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1"
               }
             }
           ],
@@ -7624,19 +7606,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1.AccessibleLabel"
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1.AccessibleLabel",
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1"
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle7_1"
               }
             }
           ],
@@ -7654,19 +7636,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1.TabIndex"
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1.TabIndex",
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle7_1"
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1"
               }
             }
           ],
@@ -7684,19 +7666,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1.AccessibleLabel"
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1.AccessibleLabel",
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1"
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Icon2_1"
               }
             }
           ],
@@ -7714,19 +7696,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1.TabIndex"
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1.TabIndex",
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1.Rectangle8_1"
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1"
               }
             }
           ],
@@ -7738,6 +7720,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.Gallery3_1.Container5.Rectangle8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
         },
         {
           "locations": [
