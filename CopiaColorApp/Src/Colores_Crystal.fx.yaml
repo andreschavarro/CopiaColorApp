@@ -421,24 +421,32 @@ Colores_Crystal As screen:
             Y: =76
             ZIndex: =9
 
-    ContainerGallerycolorcrystal As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.Light
-        Height: =706
-        RadiusBottomLeft: =4
-        RadiusBottomRight: =4
-        RadiusTopLeft: =4
-        RadiusTopRight: =4
-        Width: =1600
-        Y: =194
-        ZIndex: =24
-
-        Gallery1 As gallery.galleryVertical:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            DelayItemLoading: =true
-            Height: =688
-            Items: |-
-                =If (
-                    var_mat = "Algodon",
+    Gallery1 As gallery.galleryVertical:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DelayItemLoading: =true
+        Height: =681
+        Items: |-
+            =If (
+                var_mat = "Algodon",
+                Filter(
+                    colorCalceteria2,
+                    StartsWith(
+                        coColor,
+                        colorInput.Text
+                    ) && StartsWith(
+                        coMaterial,
+                        codigoInput.Text
+                    ) && StartsWith(
+                        principalColor,
+                        If(
+                            Text(DropdownColores.Selected.Value) = "Todos",
+                            "",
+                            Text(DropdownColores.Selected.Value)
+                        )
+                    ) && algodon = "Si"
+                ),
+                If (
+                    var_mat = "Nylon",
                     Filter(
                         colorCalceteria2,
                         StartsWith(
@@ -454,67 +462,59 @@ Colores_Crystal As screen:
                                 "",
                                 Text(DropdownColores.Selected.Value)
                             )
-                        ) && algodon = "Si"
+                        ) && nylon = "Si"
                     ),
-                    If (
-                        var_mat = "Nylon",
-                        Filter(
-                            colorCalceteria2,
-                            StartsWith(
-                                coColor,
-                                colorInput.Text
-                            ) && StartsWith(
-                                coMaterial,
-                                codigoInput.Text
-                            ) && StartsWith(
-                                principalColor,
-                                If(
-                                    Text(DropdownColores.Selected.Value) = "Todos",
-                                    "",
-                                    Text(DropdownColores.Selected.Value)
-                                )
-                            ) && nylon = "Si"
-                        ),
-                        Filter(
-                            colorCalceteria2,
-                            StartsWith(
-                                coColor,
-                                colorInput.Text
-                            ) && StartsWith(
-                                coMaterial,
-                                codigoInput.Text
-                            ) && StartsWith(
-                                principalColor,
-                                If(
-                                    Text(DropdownColores.Selected.Value) = "Todos",
-                                    "",
-                                    Text(DropdownColores.Selected.Value)
-                                )
+                    Filter(
+                        colorCalceteria2,
+                        StartsWith(
+                            coColor,
+                            colorInput.Text
+                        ) && StartsWith(
+                            coMaterial,
+                            codigoInput.Text
+                        ) && StartsWith(
+                            principalColor,
+                            If(
+                                Text(DropdownColores.Selected.Value) = "Todos",
+                                "",
+                                Text(DropdownColores.Selected.Value)
                             )
                         )
                     )
                 )
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
-            Width: =1556
-            WrapCount: =5
-            X: =20
-            Y: =18
-            ZIndex: =1
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
+        Width: =1572
+        WrapCount: =5
+        X: =10
+        Y: =210
+        ZIndex: =24
+
+        Container2 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(179, 179, 179, 1)
+            BorderThickness: =2
+            DropShadow: =DropShadow.Light
+            Height: =276
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =300
+            ZIndex: =10
 
             Rectangle15_1 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
-                Height: =33
+                Height: =39
                 HoverFill: =
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =225
-                X: =21
-                Y: =43
+                Width: =311
+                X: =2
                 ZIndex: =1
 
             Label1 As label:
@@ -522,19 +522,18 @@ Colores_Crystal As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =39
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =13
                 Text: =ThisItem.coColor
                 Width: =60
-                X: =155
-                Y: =39
+                X: =135
                 ZIndex: =2
 
             Rectangle4 As rectangle:
@@ -545,25 +544,25 @@ Colores_Crystal As screen:
                 FocusedBorderThickness: =4
                 Height: =90
                 HoverFill: =
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 PressedFill: =RGBA(230, 230, 230, 0.21)
-                Width: =225
-                X: =21
-                Y: =75
+                Width: =311
+                X: =2
+                Y: =39
                 ZIndex: =3
 
             Rectangle15_2 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 DisabledFill: =RGBA(0, 0, 0, 0.55)
-                Fill: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
-                Height: =115
+                Height: =147
                 HoverFill: =
                 PressedFill: =RGBA(0, 0, 0, 0.55)
-                Width: =225
-                X: =21
-                Y: =165
+                Width: =311
+                X: =2
+                Y: =129
                 ZIndex: =4
 
             Label1_1 As label:
@@ -571,19 +570,19 @@ Colores_Crystal As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =36
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =13
                 Text: =ThisItem.coMaterial
                 Width: =106
-                X: =130
-                Y: =165
+                X: =125
+                Y: =137
                 ZIndex: =5
 
             Label1_2 As label:
@@ -591,75 +590,74 @@ Colores_Crystal As screen:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =53
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =12
                 Text: =ThisItem.descMaterial
-                Width: =224
-                X: =22
-                Y: =227
+                Width: =266
+                X: =20
+                Y: =207
                 ZIndex: =6
 
             Label7 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =39
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =13
                 Text: |-
                     ="Código color:  "
                 Width: =115
-                X: =43
-                Y: =39
+                X: =20
                 ZIndex: =7
 
             Label7_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =36
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =13
                 Text: |-
                     ="Código SAP:  "
-                Width: =115
-                X: =28
-                Y: =165
+                Width: =105
+                X: =20
+                Y: =137
                 ZIndex: =8
 
             Label7_2 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 Height: =30
-                OnSelect: =Select(Parent)
+                OnSelect: =
                 Size: =13
                 Text: |-
                     ="Descripción:  "
                 Width: =105
-                X: =81
-                Y: =200
+                X: =100
+                Y: =173
                 ZIndex: =9
 
