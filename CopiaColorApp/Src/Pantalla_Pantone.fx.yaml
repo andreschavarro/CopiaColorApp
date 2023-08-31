@@ -536,7 +536,7 @@ Pantalla_Pantone As screen:
             Items: =gall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplateSize: =279
+            TemplateSize: =289
             Width: =1573
             WrapCount: =2
             X: =20
@@ -548,7 +548,7 @@ Pantalla_Pantone As screen:
                 BorderThickness: =2
                 DropShadow: =DropShadow.Light
                 Fill: =RGBA(255, 255, 255, 1)
-                Height: =275
+                Height: =266
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
