@@ -537,7 +537,7 @@ Pantalla_Pantone As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =279
-            Width: =1533
+            Width: =1573
             WrapCount: =2
             X: =20
             Y: =24
