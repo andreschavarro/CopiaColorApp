@@ -28,387 +28,9 @@ Pantalla_Pantone As screen:
         Text: ="Descargar PDF"
         VerticalAlign: =VerticalAlign.Top
         Width: =182
-        X: =715
-        Y: =848
+        X: =709
+        Y: =873
         ZIndex: =9
-
-    Gallery2 As gallery.galleryVertical:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DelayItemLoading: =true
-        Height: =543
-        Items: =gall
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =294
-        Width: =1449
-        WrapCount: =2
-        X: =56
-        Y: =227
-        ZIndex: =12
-
-        Rectangle141 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(252, 252, 254, 1)
-            FocusedBorderThickness: =4
-            Height: =276
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =586
-            X: =61
-            Y: =13
-            ZIndex: =1
-
-        "'93ALG54VIS13POL201MOCKTWIST' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =73
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: =Text(ThisItem.Value.descMaterial)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =177
-            X: =244
-            Y: =203
-            ZIndex: =2
-
-        "'110005185' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =21
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: =Text(ThisItem.Value.coMaterial)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =104
-            X: =459
-            Y: =203
-            ZIndex: =3
-
-        Datosdelcolor9 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =29
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Datos del color"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =117
-            X: =222
-            Y: =154
-            ZIndex: =4
-
-        Rectangle151 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            FocusedBorderThickness: =4
-            Height: =44
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =586
-            X: =40
-            Y: =40
-            ZIndex: =5
-
-        Rectangle161 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =If(IsBlank(inv_selected_rgb.Text),RGBA(111,111,111,1),RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1))
-            FocusedBorderThickness: =4
-            Height: =66
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =586
-            X: =40
-            Y: =82
-            ZIndex: =6
-
-        Rectangle171 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(252, 252, 254, 1)
-            FocusedBorderThickness: =4
-            Height: =174
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            X: =61
-            Y: =102
-            ZIndex: =7
-
-        CdigoCrystal9 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Color Crystal"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =120
-            X: =72
-            Y: =200
-            ZIndex: =8
-
-        Pantone As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Pantone"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =68
-            X: =72
-            Y: =238
-            ZIndex: =9
-
-        Rectangle18 As rectangle:
-            BorderColor: =
-            BorderStyle: =
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =If(IsBlank(Text(ThisItem.Value.rgb)),RGBA(111,111,111,1),RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1))
-            FocusedBorderThickness: =4
-            Height: =95
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            X: =61
-            Y: =100
-            ZIndex: =10
-
-        Mssimilar4 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(252, 252, 254, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Semibold
-            Height: =21
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =15
-            Text: =Text(ThisItem.Value.index)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =306
-            X: =61
-            Y: =52
-            ZIndex: =11
-
-        CdigoMaterial As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =30
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Código SAP"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =130
-            X: =459
-            Y: =183
-            ZIndex: =12
-
-        Babyblue As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =34
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: =Text(ThisItem.Value.colorName)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =149
-            X: =459
-            Y: =255
-            ZIndex: =13
-
-        Nombredecolor As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Nombre del Color"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =167
-            X: =459
-            Y: =238
-            ZIndex: =14
-
-        Descripcin As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Bold
-            Height: =30
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: ="Descripción"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =103
-            X: =242
-            Y: =183
-            ZIndex: =15
-
-        "'231453' As label":
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =18
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: =Text(ThisItem.Value.coColor)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =48
-            X: =72
-            Y: =220
-            ZIndex: =17
-
-        TCX23453 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            FontWeight: =FontWeight.Lighter
-            Height: =21
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11.25
-            Text: =Text(ThisItem.Value.pantone)
-            VerticalAlign: =VerticalAlign.Top
-            Width: =188
-            X: =72
-            Y: =255
-            ZIndex: =18
-
-        Checkbox4 As checkbox:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            CheckboxBorderColor: =RGBA(102, 102, 102, 1)
-            CheckmarkFill: =RGBA(0, 120, 212, 1)
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =85
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnCheck: |-
-                =Collect(Colorrgb,{Descripcion:ThisItem.Value.descMaterial,rgb:ThisItem.Value.rgb,color:RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1)
-                ,colorlargo:RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1),codigomaterial:ThisItem.Value.coMaterial,nombrecolor:ThisItem.Value.colorName,pantone:ThisItem.Value.pantone,colorcrystal:ThisItem.Value.coColor,alternativa:ThisItem.Value.index})
-            OnSelect: =Select(Parent)
-            OnUncheck: |-
-                =Remove(Colorrgb,{Descripcion:ThisItem.Value.descMaterial,rgb:ThisItem.Value.rgb,color:RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1)
-                ,colorlargo:RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1),codigomaterial:ThisItem.Value.coMaterial,nombrecolor:ThisItem.Value.colorName,pantone:ThisItem.Value.pantone,colorcrystal:ThisItem.Value.coColor,alternativa:ThisItem.Value.index})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Size: =13
-            Text: =
-            Width: =110
-            X: =578
-            Y: =17
-            ZIndex: =19
 
     Button7 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -439,7 +61,7 @@ Pantalla_Pantone As screen:
         Y: =813
         ZIndex: =22
 
-    Container2 As groupContainer.manualLayoutContainer:
+    Container_BarraNavegacion As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =59
         RadiusBottomLeft: =4
@@ -624,7 +246,7 @@ Pantalla_Pantone As screen:
             Y: =11
             ZIndex: =8
 
-    Container3 As groupContainer.manualLayoutContainer:
+    Container_Filtros As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =142
         RadiusBottomLeft: =4
@@ -895,4 +517,393 @@ Pantalla_Pantone As screen:
             X: =493
             Y: =68
             ZIndex: =9
+
+    Container_Gallery2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =591
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1600
+        Y: =201
+        ZIndex: =29
+
+        Gallery2 As gallery.galleryVertical:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DelayItemLoading: =true
+            Height: =542
+            Items: =gall
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplateSize: =294
+            Width: =1546
+            WrapCount: =2
+            X: =22
+            Y: =26
+            ZIndex: =1
+
+            Rectangle141 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(252, 252, 254, 1)
+                FocusedBorderThickness: =4
+                Height: =276
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =586
+                X: =61
+                Y: =13
+                ZIndex: =1
+
+            "'93ALG54VIS13POL201MOCKTWIST' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =73
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: =Text(ThisItem.Value.descMaterial)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =177
+                X: =244
+                Y: =203
+                ZIndex: =2
+
+            "'110005185' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =21
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: =Text(ThisItem.Value.coMaterial)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =104
+                X: =459
+                Y: =203
+                ZIndex: =3
+
+            Datosdelcolor9 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =29
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Datos del color"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =117
+                X: =222
+                Y: =154
+                ZIndex: =4
+
+            Rectangle151 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =44
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =586
+                X: =40
+                Y: =40
+                ZIndex: =5
+
+            Rectangle161 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(inv_selected_rgb.Text),RGBA(111,111,111,1),RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =66
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =586
+                X: =40
+                Y: =82
+                ZIndex: =6
+
+            Rectangle171 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(252, 252, 254, 1)
+                FocusedBorderThickness: =4
+                Height: =174
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =61
+                Y: =102
+                ZIndex: =7
+
+            CdigoCrystal9 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Color Crystal"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =120
+                X: =72
+                Y: =200
+                ZIndex: =8
+
+            Pantone As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Bold
+                Height: =27
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Pantone"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =68
+                X: =72
+                Y: =238
+                ZIndex: =9
+
+            Rectangle18 As rectangle:
+                BorderColor: =
+                BorderStyle: =
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(Text(ThisItem.Value.rgb)),RGBA(111,111,111,1),RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =95
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                X: =61
+                Y: =100
+                ZIndex: =10
+
+            Mssimilar4 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(252, 252, 254, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Semibold
+                Height: =21
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =15
+                Text: =Text(ThisItem.Value.index)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =306
+                X: =61
+                Y: =52
+                ZIndex: =11
+
+            CdigoMaterial As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Código SAP"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =130
+                X: =459
+                Y: =183
+                ZIndex: =12
+
+            Babyblue As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =34
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: =Text(ThisItem.Value.colorName)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =149
+                X: =459
+                Y: =255
+                ZIndex: =13
+
+            Nombredecolor As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Bold
+                Height: =27
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Nombre del Color"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =167
+                X: =459
+                Y: =238
+                ZIndex: =14
+
+            Descripcin As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Bold
+                Height: =30
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: ="Descripción"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =103
+                X: =242
+                Y: =183
+                ZIndex: =15
+
+            "'231453' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =18
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: =Text(ThisItem.Value.coColor)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =48
+                X: =72
+                Y: =220
+                ZIndex: =17
+
+            TCX23453 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                FontWeight: =FontWeight.Lighter
+                Height: =21
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =11.25
+                Text: =Text(ThisItem.Value.pantone)
+                VerticalAlign: =VerticalAlign.Top
+                Width: =188
+                X: =72
+                Y: =255
+                ZIndex: =18
+
+            Checkbox4 As checkbox:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+                CheckmarkFill: =RGBA(0, 120, 212, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =85
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnCheck: |-
+                    =Collect(Colorrgb,{Descripcion:ThisItem.Value.descMaterial,rgb:ThisItem.Value.rgb,color:RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1)
+                    ,colorlargo:RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1),codigomaterial:ThisItem.Value.coMaterial,nombrecolor:ThisItem.Value.colorName,pantone:ThisItem.Value.pantone,colorcrystal:ThisItem.Value.coColor,alternativa:ThisItem.Value.index})
+                OnSelect: =Select(Parent)
+                OnUncheck: |-
+                    =Remove(Colorrgb,{Descripcion:ThisItem.Value.descMaterial,rgb:ThisItem.Value.rgb,color:RGBA(Index(Split(Text(ThisItem.Value.rgb),","),1).Value, Index(Split(Text(ThisItem.Value.rgb),","),2).Value,Index(Split(Text(ThisItem.Value.rgb),","),3).Value, 1)
+                    ,colorlargo:RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1),codigomaterial:ThisItem.Value.coMaterial,nombrecolor:ThisItem.Value.colorName,pantone:ThisItem.Value.pantone,colorcrystal:ThisItem.Value.coColor,alternativa:ThisItem.Value.index})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Size: =13
+                Text: =
+                Width: =110
+                X: =578
+                Y: =17
+                ZIndex: =19
 
