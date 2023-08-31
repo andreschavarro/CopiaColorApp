@@ -344,7 +344,7 @@ Pantalla_Pantone As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =130
-            X: =949
+            X: =1027
             Y: =9
             ZIndex: =3
 
@@ -448,7 +448,7 @@ Pantalla_Pantone As screen:
             RadiusTopRight: =0
             Text: ="BUSCAR"
             Width: =120
-            X: =1208
+            X: =1234
             Y: =68
             ZIndex: =6
 
