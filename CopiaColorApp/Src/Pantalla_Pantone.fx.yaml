@@ -941,7 +941,67 @@ Pantalla_Pantone As screen:
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Error
                     OnSelect: |-
-                        =UpdateContext({ShowToolTip:!ShowToolTip})
+                        =UpdateContext({ShowToolTip: !ShowToolTip});
+                        Collect(
+                            RgbReportados,
+                            {
+                                Descripcion: ThisItem.Value.descMaterial,
+                                rgb: ThisItem.Value.rgb,
+                                color: RGBA(
+                                    Index(
+                                        Split(
+                                            Text(ThisItem.Value.rgb),
+                                            ","
+                                        ),
+                                        1
+                                    ).Value,
+                                    Index(
+                                        Split(
+                                            Text(ThisItem.Value.rgb),
+                                            ","
+                                        ),
+                                        2
+                                    ).Value,
+                                    Index(
+                                        Split(
+                                            Text(ThisItem.Value.rgb),
+                                            ","
+                                        ),
+                                        3
+                                    ).Value,
+                                    1
+                                ),
+                                colorlargo: RGBA(
+                                    Index(
+                                        Split(
+                                            inv_selected_rgb.Text,
+                                            ","
+                                        ),
+                                        1
+                                    ).Value,
+                                    Index(
+                                        Split(
+                                            inv_selected_rgb.Text,
+                                            ","
+                                        ),
+                                        2
+                                    ).Value,
+                                    Index(
+                                        Split(
+                                            inv_selected_rgb.Text,
+                                            ","
+                                        ),
+                                        3
+                                    ).Value,
+                                    1
+                                ),
+                                codigomaterial: ThisItem.Value.coMaterial,
+                                nombrecolor: ThisItem.Value.colorName,
+                                pantone: ThisItem.Value.pantone,
+                                colorcrystal: ThisItem.Value.coColor,
+                                alternativa: ThisItem.Value.index
+                            }
+                        )
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
