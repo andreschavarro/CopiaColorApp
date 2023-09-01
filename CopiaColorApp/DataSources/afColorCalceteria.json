@@ -2,7 +2,7 @@
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
     "FlowNameId": "8fd14bc9-e408-469a-a135-83877499542c",
-    "Name": "afColorCalceteria_1",
+    "Name": "afColorCalceteria",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null
