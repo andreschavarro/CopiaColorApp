@@ -71,32 +71,31 @@
     "dependents": [],
     "id": "2621fdbb-0dec-4ed5-af1c-0d14b3aac690"
   },
-  "673f4e32-a73b-45d4-8329-c4ea87f2ab10": {
+  "44dfd75f-c34b-4f85-8f02-3cad58c4f24a": {
     "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Flujos lógicos",
+      "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
         }
       },
       "parameterHintsV2": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "afColorCalceteria"
+      "afColorCalceteriaDev"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "673f4e32-a73b-45d4-8329-c4ea87f2ab10"
+    "id": "44dfd75f-c34b-4f85-8f02-3cad58c4f24a"
   },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
@@ -141,5 +140,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "c878fd87-2256-4fa1-9272-eab8156d01d0"
+  },
+  "dac3f9b0-c0ea-49dc-a73c-706c5cc252ac": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afColorCalceteria"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "dac3f9b0-c0ea-49dc-a73c-706c5cc252ac"
   }
 }
