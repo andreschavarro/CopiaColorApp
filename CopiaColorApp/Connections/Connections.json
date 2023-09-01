@@ -44,6 +44,32 @@
     "dependents": [],
     "id": "1978edba-129a-4788-ac84-95c33de78f45"
   },
+  "1ea8c551-61f5-4a5c-b782-d175ee2f7592": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afColorCalceteriaDev"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1ea8c551-61f5-4a5c-b782-d175ee2f7592"
+  },
   "2621fdbb-0dec-4ed5-af1c-0d14b3aac690": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -71,7 +97,7 @@
     "dependents": [],
     "id": "2621fdbb-0dec-4ed5-af1c-0d14b3aac690"
   },
-  "a0719b12-1c2b-4b3b-b18b-678b161b946d": {
+  "71955e38-9fb7-472a-a1e9-616da6e31212": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -79,23 +105,23 @@
       "parameterHints": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
         }
       },
       "parameterHintsV2": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "afColorCalceteria"
+      "afColorCalceteria_1"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "a0719b12-1c2b-4b3b-b18b-678b161b946d"
+    "id": "71955e38-9fb7-472a-a1e9-616da6e31212"
   },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
@@ -140,31 +166,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "c878fd87-2256-4fa1-9272-eab8156d01d0"
-  },
-  "e26f0868-5069-46d8-ace3-cd186ca475d0": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "afColorCalceteriaDevv"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "e26f0868-5069-46d8-ace3-cd186ca475d0"
   }
 }
