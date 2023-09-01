@@ -798,8 +798,8 @@ Pantalla_GestionVanisados As screen:
                 PaddingTop: =16
                 Tooltip: ="Ver los detalles del elemento"
                 Width: =50
-                X: =637
-                Y: =47
+                X: =615
+                Y: =60
                 ZIndex: =4
 
             Rectangle1 As rectangle:
@@ -843,7 +843,7 @@ Pantalla_GestionVanisados As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =189
-                X: =113
-                Y: =97
+                X: =403
+                Y: =56
                 ZIndex: =7
 
