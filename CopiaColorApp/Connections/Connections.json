@@ -141,5 +141,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "c878fd87-2256-4fa1-9272-eab8156d01d0"
+  },
+  "e37bb443-c11a-4a15-a0e8-d7e3de466091": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afColorCalceteriaDev"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "e37bb443-c11a-4a15-a0e8-d7e3de466091"
   }
 }
