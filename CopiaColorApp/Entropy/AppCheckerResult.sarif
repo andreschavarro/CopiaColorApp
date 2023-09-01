@@ -8207,19 +8207,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5"
               }
             }
           ],
@@ -8237,19 +8237,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle15"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Datosdelcolor_6"
               }
             }
           ],
@@ -8267,19 +8267,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Label9_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Label9_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Label9_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.CdigoCrystal_11.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.CdigoCrystal_11.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.CdigoCrystal_11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle89_4"
               }
             }
           ],
@@ -8297,19 +8387,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle16"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4"
               }
             }
           ],
@@ -8327,19 +8417,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle87_4"
               }
             }
           ],
@@ -8357,19 +8447,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Rectangle73"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4"
               }
             }
           ],
@@ -8387,109 +8477,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.CdigoCrystal_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.CdigoCrystal_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.CdigoCrystal_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Label9.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Label9.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Label9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.78/2'.Datosdelcolor"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15"
               }
             }
           ],
@@ -8507,19 +8507,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Image3_5"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Datosdelcolor_2"
               }
             }
           ],
@@ -8537,19 +8537,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Label4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Label9_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Label4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Label9_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta78/2'.Label4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Label9_2"
               }
             }
           ],
@@ -8567,19 +8567,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle86_4"
               }
             }
           ],
@@ -8597,19 +8597,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle85"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6"
               }
             }
           ],
@@ -8627,19 +8627,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaLycra.Rectangle85_6"
               }
             }
           ],
@@ -8657,19 +8657,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle86"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Datosdelcolor_1"
               }
             }
           ],
@@ -8687,19 +8687,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Label9_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Label9_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Label9_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.CdigoCrystal_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.CdigoCrystal_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.CdigoCrystal_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Vector11"
               }
             }
           ],
@@ -8717,19 +8807,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Vector11"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87"
               }
             }
           ],
@@ -8747,19 +8837,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle87"
               }
             }
           ],
@@ -8777,19 +8867,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Rectangle87"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85"
               }
             }
           ],
@@ -8807,19 +8897,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.CdigoCrystal_5.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.CdigoCrystal_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.CdigoCrystal_5.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.CdigoCrystal_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.CdigoCrystal_5"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.CdigoCrystal_6"
               }
             }
           ],
@@ -8837,19 +8927,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Label9_1.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Label9_1.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Label9_1"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2"
               }
             }
           ],
@@ -8867,49 +8957,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'contenedortarjetaVani.44/2'.Datosdelcolor_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle89_2"
               }
             }
           ],
@@ -8927,19 +8987,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Label4_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Label4_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Image3_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Label4_4"
               }
             }
           ],
@@ -8957,19 +9017,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Label4_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Label4_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.'ConAlerta44/2'.Label4_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4"
               }
             }
           ],
@@ -8987,19 +9047,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaLycra.Image3_4"
               }
             }
           ],
@@ -9017,19 +9077,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Label4_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Label4_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle85_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Label4_3"
               }
             }
           ],
@@ -9047,19 +9107,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.ConAlertaElastico.Image3_3"
               }
             }
           ],
@@ -9077,19 +9167,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Label4_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Label4_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle86_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Label4_2"
               }
             }
           ],
@@ -9107,19 +9197,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta44/2'.Image3_2"
               }
             }
           ],
@@ -9137,19 +9257,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Label4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Label4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle87_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Label4"
               }
             }
           ],
@@ -9167,19 +9287,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'ConAlerta78/2'.Image3_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle87_2"
               }
             }
           ],
@@ -9197,19 +9377,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Rectangle89_2"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2"
               }
             }
           ],
@@ -9227,109 +9407,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.CdigoCrystal_6.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.CdigoCrystal_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.CdigoCrystal_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Label9_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Label9_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Label9_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaElastico.Datosdelcolor_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle85"
               }
             }
           ],
@@ -9347,19 +9437,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Image3_3"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86"
               }
             }
           ],
@@ -9377,49 +9467,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Label4_3.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Label4_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaElastico.Label4_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.44/2'.Rectangle86"
               }
             }
           ],
@@ -9437,19 +9497,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle86_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Datosdelcolor"
               }
             }
           ],
@@ -9467,19 +9527,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Label9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Label9.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Label9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.CdigoCrystal_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.CdigoCrystal_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.CdigoCrystal_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle73"
               }
             }
           ],
@@ -9497,19 +9647,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle85_6"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16"
               }
             }
           ],
@@ -9527,19 +9677,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle16"
               }
             }
           ],
@@ -9557,19 +9707,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle87_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.'contenedortarjetaVani.78/2'.Rectangle15"
               }
             }
           ],
@@ -9587,19 +9737,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle86_2"
               }
             }
           ],
@@ -9617,19 +9767,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Rectangle89_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2"
               }
             }
           ],
@@ -9647,109 +9797,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.CdigoCrystal_11.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.CdigoCrystal_11.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.CdigoCrystal_11"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Label9_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Label9_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Label9_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.contenedorTarjetaLycra.Datosdelcolor_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4"
+                "type": "Pantalla_Vanisados.Gallery5.Container6.contenedorTarjetaElastico.Rectangle85_2"
               }
             }
           ],
@@ -9761,66 +9821,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Image3_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Label4_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Label4_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5.ConAlertaLycra.Label4_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
         },
         {
           "locations": [

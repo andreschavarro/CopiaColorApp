@@ -9013,7 +9013,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ConAlerta44/2",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9169,7 +9169,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ConAlerta78/2",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9354,7 +9354,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ConAlertaElastico",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9522,7 +9522,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ConAlertaLycra",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10482,7 +10482,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contenedorTarjetaElastico",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10680,7 +10680,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contenedorTarjetaLycra",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10868,7 +10868,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contenedortarjetaVani.44/2",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11051,7 +11051,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "contenedortarjetaVani.78/2",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -21758,7 +21758,14 @@
         },
         "Height",
         "DisplayMode",
-        "OnSelect",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Select(Parent)",
+          "InvariantPropertyName": "OnSelect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         "LineHeight",
         "BorderThickness",
@@ -21782,7 +21789,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "materiaPrima",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25293,7 +25300,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle85_6",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -25873,7 +25880,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle86_4",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
