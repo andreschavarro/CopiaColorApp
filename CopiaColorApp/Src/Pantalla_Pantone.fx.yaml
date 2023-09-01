@@ -945,6 +945,7 @@ Pantalla_Pantone As screen:
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Reporta errores en RGB de colores aquí"
                     Width: =39
                     X: =712
                     Y: =227
