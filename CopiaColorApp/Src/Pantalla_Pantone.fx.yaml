@@ -475,7 +475,7 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Todos los materiales", "Algodon", "Nylon"]
+            Items: =["Todos los materiales", "Algodon", "Algodon 20/1","Algodon 30/1","Nylon","Nylon 44/12","Nylon 78/24"]
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
