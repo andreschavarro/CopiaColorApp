@@ -904,7 +904,7 @@ Pantalla_Pantone As screen:
                     Size: =13
                     Text: =
                     Width: =45
-                    X: =680
+                    X: =720
                     Y: =7
                     ZIndex: =16
 
@@ -929,6 +929,73 @@ Pantalla_Pantone As screen:
                     X: =186
                     Y: =184
                     ZIndex: =17
+
+                Button_Reporte As button:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(0, 0, 0, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(255, 255, 255, 1)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                    OnSelect: |-
+                        =UpdateContext({ ShowToolTip: !ShowToolTip })
+                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =15
+                    Text: ="Reporte"
+                    X: =592
+                    Y: =227
+                    ZIndex: =18
+
+        Container6 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            BorderThickness: =2
+            ContentLanguage: =ShowToolTip
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(0, 0, 0, 0.71)
+            Height: =452
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ShowToolTip
+            Width: =869
+            X: =333
+            Y: =61
+            ZIndex: =2
+
+            Icon9_1 As icon.CancelBadge:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(153, 153, 153, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(153, 153, 153, 1)
+                DisabledFill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =36
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.CancelBadge
+                OnSelect: |-
+                    =UpdateContext({ ShowToolTip: !ShowToolTip })
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =46
+                X: =808
+                Y: =10
+                ZIndex: =1
 
     Container_Botton As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
