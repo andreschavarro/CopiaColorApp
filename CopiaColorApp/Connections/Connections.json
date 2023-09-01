@@ -71,22 +71,21 @@
     "dependents": [],
     "id": "2621fdbb-0dec-4ed5-af1c-0d14b3aac690"
   },
-  "673f4e32-a73b-45d4-8329-c4ea87f2ab10": {
+  "a0719b12-1c2b-4b3b-b18b-678b161b946d": {
     "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Flujos lógicos",
+      "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
         }
       },
       "parameterHintsV2": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
         }
       }
     },
@@ -96,7 +95,7 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "673f4e32-a73b-45d4-8329-c4ea87f2ab10"
+    "id": "a0719b12-1c2b-4b3b-b18b-678b161b946d"
   },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
@@ -142,7 +141,7 @@
     "dependents": [],
     "id": "c878fd87-2256-4fa1-9272-eab8156d01d0"
   },
-  "e37bb443-c11a-4a15-a0e8-d7e3de466091": {
+  "e26f0868-5069-46d8-ace3-cd186ca475d0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -150,22 +149,22 @@
       "parameterHints": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
         }
       },
       "parameterHintsV2": {
         "workflowEntityId": {},
         "workflowName": {
-          "value": "c2c0d4cb-fbc7-4683-85b8-2c30f3fcdbb4"
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
         }
       }
     },
     "datasets": {},
     "dataSources": [
-      "afColorCalceteriaDev"
+      "afColorCalceteriaDevv"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "e37bb443-c11a-4a15-a0e8-d7e3de466091"
+    "id": "e26f0868-5069-46d8-ace3-cd186ca475d0"
   }
 }
