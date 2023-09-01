@@ -25,6 +25,9 @@
           },
           "pantoneRgbFull_1": {
             "tableName": "e311ef49-059a-4201-a1ec-2241341ee5a4"
+          },
+          "Roles": {
+            "tableName": "3cb0d187-7477-4db4-a39a-44985fc06456"
           }
         }
       }
@@ -34,7 +37,8 @@
       "pantoneRgbFull_1",
       "gestion_vanisados",
       "coloresUnicos",
-      "colorCalceteria2"
+      "colorCalceteria2",
+      "Roles"
     ],
     "dependencies": {},
     "dependents": [],
