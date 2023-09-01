@@ -532,11 +532,10 @@ Colores_Crystal As screen:
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
-                Height: =43
+                Height: =39
                 HoverFill: =
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =298
-                X: =2
+                Width: =300
                 ZIndex: =1
 
             Label1 As label:
@@ -564,12 +563,12 @@ Colores_Crystal As screen:
                 DisabledFill: =RGBA(230, 230, 230, 0.22)
                 Fill: =If(IsBlank(Text(ThisItem.rgb)),RGBA(111,111,111,1),RGBA(Index(Split(Text(ThisItem.rgb),","),1).Value, Index(Split(Text(ThisItem.rgb),","),2).Value,Index(Split(Text(ThisItem.rgb),","),3).Value, 1))
                 FocusedBorderThickness: =4
-                Height: =90
+                Height: =94
                 HoverFill: =
                 OnSelect: =
                 PressedFill: =RGBA(230, 230, 230, 0.21)
                 Width: =300
-                Y: =43
+                Y: =39
                 ZIndex: =3
 
             Rectangle15_2 As rectangle:
@@ -578,12 +577,11 @@ Colores_Crystal As screen:
                 DisabledFill: =RGBA(0, 0, 0, 0.55)
                 Fill: =RGBA(237, 237, 237, 1)
                 FocusedBorderThickness: =4
-                Height: =147
+                Height: =143
                 HoverFill: =
                 PressedFill: =RGBA(0, 0, 0, 0.55)
-                Width: =311
-                X: =2
-                Y: =129
+                Width: =300
+                Y: =133
                 ZIndex: =4
 
             Label1_1 As label:
@@ -681,4 +679,84 @@ Colores_Crystal As screen:
                 X: =100
                 Y: =173
                 ZIndex: =9
+
+            Icon7 As icon.Error:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =25
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Error
+                OnSelect: |-
+                    =UpdateContext({ShowToolTip:!ShowToolTip})
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Tooltip: ="Reporta errores en RGB de colores aquí"
+                Width: =29
+                X: =269
+                Y: =8
+                ZIndex: =10
+
+    Container7 As groupContainer.manualLayoutContainer:
+        BorderThickness: =2
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(0, 0, 0, 0.68)
+        Height: =534
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Visible: =ShowToolTip
+        Width: =947
+        X: =318
+        Y: =252
+        ZIndex: =25
+
+        Icon9_2 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(153, 153, 153, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(153, 153, 153, 1)
+            DisabledFill: =RGBA(0, 0, 0, 1)
+            FocusedBorderThickness: =4
+            Height: =36
+            HoverBorderColor: =RGBA(255, 255, 255, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =UpdateContext({ ShowToolTip: !ShowToolTip })
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =46
+            X: =896
+            Y: =6
+            ZIndex: =1
+
+        Label3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Size: =13
+            Text: ="Reporte del error del RGB del color"
+            Tooltip: =
+            Width: =430
+            X: =212
+            Y: =2
+            ZIndex: =2
 

@@ -554,22 +554,20 @@ Pantalla_Pantone As screen:
         Gallery2 As gallery.galleryVertical:
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =563
+            Height: =574
             Items: =gall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =289
             Width: =1589
             WrapCount: =2
-            X: =11
-            Y: =4
             ZIndex: =1
 
             ContainerTarjetas As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0.38)
                 BorderThickness: =2
                 DropShadow: =DropShadow.Light
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(237, 237, 237, 1)
                 Height: =278
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
@@ -654,7 +652,7 @@ Pantalla_Pantone As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(252, 252, 254, 1)
+                    Fill: =RGBA(237, 237, 237, 1)
                     FocusedBorderThickness: =4
                     Height: =174
                     HoverFill: =
@@ -930,30 +928,25 @@ Pantalla_Pantone As screen:
                     Y: =184
                     ZIndex: =17
 
-                Button_Reporte As button:
-                    BorderColor: =RGBA(0, 0, 0, 0)
+                Icon3 As icon.Error:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(128, 128, 128, 1)
                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(0, 0, 0, 1)
-                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Semibold
-                    HoverBorderColor: =RGBA(255, 255, 255, 1)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =38
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(0, 0, 0, 0.71)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Error
                     OnSelect: |-
-                        =UpdateContext({ ShowToolTip: !ShowToolTip })
-                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =15
-                    Text: ="Reporte"
-                    X: =592
+                        =UpdateContext({ShowToolTip:!ShowToolTip})
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Width: =39
+                    X: =712
                     Y: =227
                     ZIndex: =18
 
