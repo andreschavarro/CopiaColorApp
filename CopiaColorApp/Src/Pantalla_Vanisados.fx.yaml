@@ -12,29 +12,31 @@ Pantalla_Vanisados As screen:
     Width: =1600
 
     Gallery5 As gallery.galleryVertical:
-        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
         DelayItemLoading: =true
-        Height: =471
+        Height: =463
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(cuadroVisible,false)
-        TemplateSize: =251
-        Width: =1496
-        X: =52
+        TemplateSize: =256
+        Width: =1553
+        WrapCount: =4
+        X: =47
         Y: =297
         ZIndex: =145
 
-        Container6 As groupContainer.manualLayoutContainer:
+        Container_gallery As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(255, 255, 255, 1)
             DropShadow: =DropShadow.Light
-            Height: =234
+            Height: =257
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Width: =1538
-            Y: =6
+            Width: =1517
             ZIndex: =25
 
             contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
@@ -45,7 +47,7 @@ Pantalla_Vanisados As screen:
                 Visible: |
                     =If(IsBlank(ThisItem.elastico),false,true)
                 Width: =300
-                X: =903
+                X: =838
                 Y: =40
                 ZIndex: =1
 
@@ -351,7 +353,6 @@ Pantalla_Vanisados As screen:
                     Visible: |
                         =If(IsBlank(ThisItem.V782),true,false)
                     Width: =293
-                    X: =7
                     Y: =24
                     ZIndex: =12
 
@@ -362,7 +363,7 @@ Pantalla_Vanisados As screen:
                 Height: =190
                 Visible: =If(IsBlank(ThisItem.V782),false,true)
                 Width: =280
-                X: =248
+                X: =235
                 Y: =40
                 ZIndex: =2
 
@@ -622,7 +623,7 @@ Pantalla_Vanisados As screen:
                 Height: =190
                 Visible: =If(IsBlank(ThisItem.V442),false,true)
                 Width: =280
-                X: =575
+                X: =536
                 Y: =40
                 ZIndex: =3
 
@@ -904,8 +905,8 @@ Pantalla_Vanisados As screen:
                 DropShadow: =DropShadow.Light
                 Height: =190
                 Visible: =If(IsBlank(ThisItem.lycra),false,true)
-                Width: =280
-                X: =1231
+                Width: =261
+                X: =1166
                 Y: =40
                 ZIndex: =4
 
@@ -939,11 +940,11 @@ Pantalla_Vanisados As screen:
                     DisabledFill: =RGBA(166, 166, 166, 1)
                     Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
                     FocusedBorderThickness: =4
-                    Height: =69
+                    Height: =70
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =280
-                    Y: =32
+                    Width: =260
+                    Y: =31
                     ZIndex: =3
 
                 Rectangle89_4 As rectangle:
@@ -1308,7 +1309,7 @@ Pantalla_Vanisados As screen:
                 Height: =190
                 Visible: =If(IsBlank(ThisItem.V442),true,false)
                 Width: =280
-                X: =575
+                X: =536
                 Y: =40
                 ZIndex: =6
 
@@ -1456,7 +1457,7 @@ Pantalla_Vanisados As screen:
                 Visible: |
                     =If(IsBlank(ThisItem.elastico),true,false)
                 Width: =300
-                X: =903
+                X: =851
                 Y: =40
                 ZIndex: =7
 
@@ -1771,12 +1772,12 @@ Pantalla_Vanisados As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FocusedBorderThickness: =4
-            Height: =369
+            Height: =334
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =815
-            X: =357
-            Y: =192
+            X: =327
+            Y: =394
             ZIndex: =7
 
         Rectangle16_3 As rectangle:
@@ -1789,8 +1790,8 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =722
-            X: =392
-            Y: =282
+            X: =379
+            Y: =442
             ZIndex: =8
 
         Rectangle73_3 As rectangle:
@@ -1836,8 +1837,8 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =189
-            X: =434
-            Y: =327
+            X: =421
+            Y: =487
             ZIndex: =9
 
         CdigoCrystal_13 As label:
@@ -1859,8 +1860,8 @@ Pantalla_Vanisados As screen:
                 ="Datos del color:"
             VerticalAlign: =VerticalAlign.Top
             Width: =155
-            X: =641
-            Y: =412
+            X: =628
+            Y: =572
             ZIndex: =10
 
         Rectangle15_5 As rectangle:
@@ -1873,8 +1874,8 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =815
-            X: =357
-            Y: =192
+            X: =327
+            Y: =326
             ZIndex: =11
 
         Mssimilar1_7 As label:
@@ -1895,8 +1896,8 @@ Pantalla_Vanisados As screen:
             Text: =mater
             VerticalAlign: =VerticalAlign.Top
             Width: =300
-            X: =785
-            Y: =210
+            X: =744
+            Y: =343
             ZIndex: =12
 
         Mssimilar1_8 As label:
@@ -1917,8 +1918,8 @@ Pantalla_Vanisados As screen:
             Text: =tipoVanisado
             VerticalAlign: =VerticalAlign.Top
             Width: =300
-            X: =361
-            Y: =210
+            X: =346
+            Y: =344
             ZIndex: =14
 
         Label3_2 As label:
@@ -1931,8 +1932,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.colorName
-            X: =935
-            Y: =458
+            X: =922
+            Y: =618
             ZIndex: =16
 
         Label3_3 As label:
@@ -1945,8 +1946,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.coColor
-            X: =434
-            Y: =507
+            X: =421
+            Y: =667
             ZIndex: =17
 
         Label9_7 As label:
@@ -1964,8 +1965,8 @@ Pantalla_Vanisados As screen:
             Size: =15
             Text: ="Color Crystal"
             Width: =139
-            X: =434
-            Y: =481
+            X: =421
+            Y: =641
             ZIndex: =18
 
         Image2_4 As image:
@@ -1983,8 +1984,8 @@ Pantalla_Vanisados As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             Visible: =gitcarga
             Width: =90
-            X: =796
-            Y: =452
+            X: =783
+            Y: =612
             ZIndex: =20
 
         CdigoCrystal_17 As label:
@@ -2006,8 +2007,8 @@ Pantalla_Vanisados As screen:
             Text: ="Nombre del color"
             VerticalAlign: =VerticalAlign.Top
             Width: =170
-            X: =925
-            Y: =429
+            X: =912
+            Y: =589
             ZIndex: =21
 
         Icon1 As icon.Cancel:
@@ -2029,8 +2030,8 @@ Pantalla_Vanisados As screen:
             PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =55
-            X: =1100
-            Y: =198
+            X: =1082
+            Y: =333
             ZIndex: =22
 
     Container_BarraNavegacion_2 As groupContainer.manualLayoutContainer:
@@ -2434,7 +2435,7 @@ Pantalla_Vanisados As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =1496
+        Width: =1516
         X: =52
         Y: =255
         ZIndex: =150
@@ -2448,7 +2449,7 @@ Pantalla_Vanisados As screen:
             Height: =42
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =1496
+            Width: =1516
             ZIndex: =1
 
         Elasticoexpuesto_7 As label:
@@ -2580,19 +2581,4 @@ Pantalla_Vanisados As screen:
             X: =1468
             Y: =21
             ZIndex: =7
-
-    Label3 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Size: =13
-        Text: ="Texto"
-        X: =40
-        Y: =40
-        ZIndex: =151
 
