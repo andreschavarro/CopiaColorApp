@@ -703,7 +703,7 @@ Colores_Crystal As screen:
                 Y: =8
                 ZIndex: =10
 
-    Container7 As groupContainer.manualLayoutContainer:
+    Container_Popup As groupContainer.manualLayoutContainer:
         BorderThickness: =2
         DropShadow: =DropShadow.Light
         Fill: =RGBA(0, 0, 0, 0.68)
@@ -752,7 +752,6 @@ Colores_Crystal As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Size: =13
             Text: ="Reporte del error del RGB del color"
             Tooltip: =
             Width: =430
