@@ -9813,7 +9813,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container_FiltrosVanisados",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10133,7 +10133,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContainerbarratablaGallery5",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10304,7 +10304,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContenedorPopPapSugerencia",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14546,14 +14546,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "WrapCount",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "WrapCount",
         "TemplateSize",
         "TemplatePadding",
         "Layout",
@@ -14562,25 +14555,11 @@
         "LoadingSpinner",
         "LoadingSpinnerColor",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderColor",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderColor",
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderStyle",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "BorderStyle",
         "FocusedBorderColor",
         "Fill",
         "DisabledFill",
@@ -14611,15 +14590,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BorderThickness",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        }
+        "ZIndex"
       ],
       "GalleryTemplateChildName": "galleryTemplate5",
       "HasDynamicProperties": false,
@@ -14632,7 +14603,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery5",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14758,11 +14729,6 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "BorderThickness",
           "RuleProviderType": "Unknown"
         }
       ],
