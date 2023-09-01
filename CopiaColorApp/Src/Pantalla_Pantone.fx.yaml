@@ -402,7 +402,7 @@ Pantalla_Pantone As screen:
                         gall,
                         Table(
                             ParseJSON(
-                                afColorCalceteria.Run(
+                                afColorCalceteriaDev.Run(
                                     inv_selected_pantone.Text,
                                     inv_selected_material.Text
                                 ).response
@@ -475,7 +475,7 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Todos los materiales", "Algodon", "Nylon"]
+            Items: =["Todos los materiales", "Algodon", "Algodon 20/1","Algodon 30/1","Nylon","Nylon 44/12","Nylon 78/24"]
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
@@ -504,7 +504,7 @@ Pantalla_Pantone As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =15
-            Text: ="Tpos de materia prima "
+            Text: ="Tipos de materia prima "
             VerticalAlign: =VerticalAlign.Top
             Width: =250
             X: =856
@@ -554,22 +554,20 @@ Pantalla_Pantone As screen:
         Gallery2 As gallery.galleryVertical:
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =563
+            Height: =574
             Items: =gall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =289
             Width: =1589
             WrapCount: =2
-            X: =11
-            Y: =4
             ZIndex: =1
 
             ContainerTarjetas As groupContainer.manualLayoutContainer:
                 BorderColor: =RGBA(0, 0, 0, 0.38)
                 BorderThickness: =2
                 DropShadow: =DropShadow.Light
-                Fill: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(237, 237, 237, 1)
                 Height: =278
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
@@ -654,7 +652,7 @@ Pantalla_Pantone As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(252, 252, 254, 1)
+                    Fill: =RGBA(237, 237, 237, 1)
                     FocusedBorderThickness: =4
                     Height: =174
                     HoverFill: =
@@ -904,7 +902,7 @@ Pantalla_Pantone As screen:
                     Size: =13
                     Text: =
                     Width: =45
-                    X: =680
+                    X: =720
                     Y: =7
                     ZIndex: =16
 
@@ -929,6 +927,69 @@ Pantalla_Pantone As screen:
                     X: =186
                     Y: =184
                     ZIndex: =17
+
+                Icon3 As icon.Error:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    Color: =RGBA(128, 128, 128, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(220, 220, 220, 1)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =38
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(0, 0, 0, 0.71)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Icon: =Icon.Error
+                    OnSelect: |-
+                        =UpdateContext({ShowToolTip:!ShowToolTip})
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Tooltip: ="Reporta errores en RGB de colores aquí"
+                    Width: =39
+                    X: =712
+                    Y: =227
+                    ZIndex: =18
+
+        Container6 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            BorderThickness: =2
+            ContentLanguage: =ShowToolTip
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(0, 0, 0, 0.71)
+            Height: =452
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Visible: =ShowToolTip
+            Width: =869
+            X: =333
+            Y: =61
+            ZIndex: =2
+
+            Icon9_1 As icon.CancelBadge:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(153, 153, 153, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(153, 153, 153, 1)
+                DisabledFill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =36
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.CancelBadge
+                OnSelect: |-
+                    =UpdateContext({ ShowToolTip: !ShowToolTip })
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =46
+                X: =808
+                Y: =10
+                ZIndex: =1
 
     Container_Botton As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
