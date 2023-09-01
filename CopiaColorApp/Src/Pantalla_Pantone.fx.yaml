@@ -95,9 +95,9 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =
             HoverFill: =
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedBorderColor: =
             PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
