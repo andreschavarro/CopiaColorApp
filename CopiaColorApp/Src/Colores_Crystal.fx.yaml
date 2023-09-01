@@ -714,7 +714,249 @@ Colores_Crystal As screen:
         RadiusTopRight: =4
         Visible: =ShowToolTip
         Width: =947
-        X: =318
+        X: =327
         Y: =252
         ZIndex: =25
+
+        Label8_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            Size: =13
+            Text: ="Color Crystal"
+            X: =65
+            Y: =176
+            ZIndex: =2
+
+        TextoEtiquetaReporte_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =43
+            Size: =13
+            Text: ="Descripcion del reporte"
+            Width: =314
+            X: =302
+            Y: =284
+            ZIndex: =3
+
+        Label8_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            Size: =13
+            Text: ="Pantone"
+            X: =65
+            Y: =117
+            ZIndex: =4
+
+        Label8_6 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            Size: =13
+            Text: ="Codigo SAP"
+            X: =476
+            Y: =176
+            ZIndex: =5
+
+        Label8_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            Size: =13
+            Text: ="Nombre del Color"
+            X: =476
+            Y: =117
+            ZIndex: =6
+
+        TextInputReporteRGB_1 As text:
+            Align: =Align.Center
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(230, 230, 230, 0.9)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =118
+            HintText: ="Reportar el error del RGB"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =13
+            Width: =702
+            X: =139
+            Y: =327
+            ZIndex: =7
+
+        ButtonGuardar_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(153, 153, 153, 1)
+            PressedBorderColor: =RGBA(204, 204, 204, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(179, 179, 179, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: |-
+                ="Guardar
+                "
+            X: =410
+            Y: =463
+            ZIndex: =8
+
+        TextoEtiquetaPantone_1 As label:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            ContentLanguage: |
+                =
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            Live: |
+                =Live.Off
+            OnSelect: =
+            Size: =13
+            Text: |
+                =
+            X: =224
+            Y: =117
+            ZIndex: =9
+
+        IconCerrarPopup_1 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 1)
+            FocusedBorderThickness: =4
+            Height: =36
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =UpdateContext({ ShowToolTip: !ShowToolTip })
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =46
+            X: =888
+            Y: =8
+            ZIndex: =10
+
+        TextoEtiquetacolorCrystal_1 As label:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            OnSelect: =
+            Size: =13
+            Text: |
+                =
+            X: =224
+            Y: =179
+            ZIndex: =11
+
+        TextoEtiquetaNomColor_1 As label:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            OnSelect: =
+            Size: =13
+            Text: |
+                =
+            X: =653
+            Y: =117
+            ZIndex: =12
+
+        TextoEtiquetaCodigoSAP_1 As label:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =45
+            OnSelect: =
+            Size: =13
+            Text: |
+                =
+            X: =653
+            Y: =177
+            ZIndex: =13
 
