@@ -30,6 +30,22 @@
             "tableName": "3cb0d187-7477-4db4-a39a-44985fc06456"
           }
         }
+      },
+      "https://grupocrystal.sharepoint.com/sites/DesarrolloCalceteria-Dev": {
+        "dataSources": {
+          "colorCalceteriaDev": {
+            "tableName": "1bf3c69f-9aa0-42e8-840f-f6999c122209"
+          },
+          "coloresUnicosDev": {
+            "tableName": "2f830880-40a1-4f52-a6e6-31d86c3e6ffa"
+          },
+          "gestion_vanisadosDev": {
+            "tableName": "58faf64f-39aa-48ae-9a00-777d041c0295"
+          },
+          "pantoneRgbFull_1Dev": {
+            "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
+          }
+        }
       }
     },
     "dataSources": [
@@ -38,7 +54,11 @@
       "gestion_vanisados",
       "coloresUnicos",
       "colorCalceteria2",
-      "Roles"
+      "Roles",
+      "colorCalceteriaDev",
+      "coloresUnicosDev",
+      "gestion_vanisadosDev",
+      "pantoneRgbFull_1Dev"
     ],
     "dependencies": {},
     "dependents": [],

@@ -627,7 +627,7 @@ Pantalla_GestionVanisados As screen:
                         }
                     ),
                     Collect(
-                        gestion_vanisados,
+                        gestion_vanisadosDev,
                         {
                             materiaPrima: ComboBox1_1.Selected.Value,
                             coColor: ComboBox2_1.Selected.coColor,
@@ -642,7 +642,7 @@ Pantalla_GestionVanisados As screen:
                     tempGuid,
                     First(
                         Filter(
-                            gestion_vanisados,
+                            gestion_vanisadosDev,
                             materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
                         )
                     ).ID
@@ -652,7 +652,7 @@ Pantalla_GestionVanisados As screen:
                     Not(
                         IsBlank(
                             LookUp(
-                                gestion_vanisados,
+                                gestion_vanisadosDev,
                                 ID = tempGuid
                             )
                         )
