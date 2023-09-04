@@ -891,7 +891,7 @@ Pantalla_GestionVanisados As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
             Height: =497
-            Items: =RgbReportados
+            Items: =ReporteDeErrores_1
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -913,7 +913,7 @@ Pantalla_GestionVanisados As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: =ThisItem.Descripcion
+                Text: =ThisItem.Título
                 VerticalAlign: =VerticalAlign.Top
                 Width: =436
                 X: =291
@@ -932,7 +932,7 @@ Pantalla_GestionVanisados As screen:
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =18
-                Text: =ThisItem.alternativa
+                Text: =ThisItem.pantone
                 VerticalAlign: =VerticalAlign.Top
                 Width: =197
                 X: =51
@@ -994,7 +994,7 @@ Pantalla_GestionVanisados As screen:
                 Font: =Font.'Segoe UI'
                 OnSelect: =Select(Parent)
                 Size: =16
-                Text: =ThisItem.codigomaterial
+                Text: =ThisItem.Nombre_Color
                 X: =291
                 Y: =77
                 ZIndex: =9
