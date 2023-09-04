@@ -547,8 +547,9 @@ Pantalla_Pantone As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =1600
-        Y: =233
+        Width: =1586
+        X: =14
+        Y: =251
         ZIndex: =29
 
         Gallery2 As gallery.galleryVertical:
@@ -559,8 +560,9 @@ Pantalla_Pantone As screen:
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplateSize: =289
-            Width: =1589
+            Width: =1579
             WrapCount: =2
+            X: =3
             ZIndex: =1
 
             ContainerTarjetas As groupContainer.manualLayoutContainer:
@@ -573,8 +575,8 @@ Pantalla_Pantone As screen:
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =765
-                X: =3
+                Width: =745
+                X: =16
                 ZIndex: =21
 
                 "'110005185' As label":
@@ -630,7 +632,7 @@ Pantalla_Pantone As screen:
                     Height: =47
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =764
+                    Width: =745
                     X: =1
                     ZIndex: =3
 
@@ -643,7 +645,7 @@ Pantalla_Pantone As screen:
                     Height: =72
                     HoverFill: =
                     PressedFill: =RGBA(0, 120, 212, 1)
-                    Width: =764
+                    Width: =745
                     X: =1
                     Y: =47
                     ZIndex: =4
@@ -1051,7 +1053,7 @@ Pantalla_Pantone As screen:
                     Size: =13
                     Text: =
                     Width: =45
-                    X: =720
+                    X: =700
                     Y: =7
                     ZIndex: =16
 
@@ -1156,7 +1158,7 @@ Pantalla_Pantone As screen:
                     PressedFill: =RGBA(0, 0, 0, 0)
                     Tooltip: ="Reporta errores en RGB de colores aquí"
                     Width: =39
-                    X: =712
+                    X: =700
                     Y: =227
                     ZIndex: =18
 
