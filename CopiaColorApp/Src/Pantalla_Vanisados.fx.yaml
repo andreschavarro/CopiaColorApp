@@ -11,311 +11,6 @@ Pantalla_Vanisados As screen:
         )
     Width: =1600
 
-    Gallery5 As gallery.galleryVertical:
-        BorderColor: =RGBA(230, 230, 230, 1)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DelayItemLoading: =true
-        Height: =463
-        Items: =CollectionShow
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        OnSelect: =Set(cuadroVisible,false)
-        TemplateSize: =256
-        Width: =1553
-        WrapCount: =4
-        X: =47
-        Y: =297
-        ZIndex: =145
-
-        Container_gallery As groupContainer.manualLayoutContainer:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            DropShadow: =DropShadow.Light
-            Height: =257
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            Width: =1517
-            ZIndex: =25
-
-    ContenedorPopPapSugerencia As groupContainer.manualLayoutContainer:
-        Fill: =RGBA(0, 0, 0, 0.2)
-        Height: =837
-        Visible: =If(cuadroVisible,true,false)
-        Width: =1600
-        Y: =63
-        ZIndex: =146
-
-        Rectangle2 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            FocusedBorderThickness: =4
-            Height: =334
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =815
-            X: =327
-            Y: =394
-            ZIndex: =7
-
-        Rectangle16_3 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
-            FocusedBorderThickness: =4
-            Height: =119
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =722
-            X: =379
-            Y: =442
-            ZIndex: =8
-
-        Rectangle73_3 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: |-
-                =If(
-                    IsBlank(Text(First(gallVanisadoUnico).Value.rgb)),
-                    RGBA(
-                        111,
-                        111,
-                        111,
-                        1
-                    ),
-                    RGBA(
-                        Index(
-                            Split(
-                                Text(First(gallVanisadoUnico).Value.rgb),
-                                ","
-                            ),
-                            1
-                        ).Value,
-                        Index(
-                            Split(
-                                Text(First(gallVanisadoUnico).Value.rgb),
-                                ","
-                            ),
-                            2
-                        ).Value,
-                        Index(
-                            Split(
-                                Text(First(gallVanisadoUnico).Value.rgb),
-                                ","
-                            ),
-                            3
-                        ).Value,
-                        1
-                    )
-                )
-            FocusedBorderThickness: =4
-            Height: =154
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =189
-            X: =421
-            Y: =487
-            ZIndex: =9
-
-        CdigoCrystal_13 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =29
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =15
-            Text: |-
-                ="Datos del color:"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =155
-            X: =628
-            Y: =572
-            ZIndex: =10
-
-        Rectangle15_5 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            FocusedBorderThickness: =4
-            Height: =70
-            HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =815
-            X: =327
-            Y: =326
-            ZIndex: =11
-
-        Mssimilar1_7 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Height: =35
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =mater
-            VerticalAlign: =VerticalAlign.Top
-            Width: =300
-            X: =744
-            Y: =343
-            ZIndex: =12
-
-        Mssimilar1_8 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Height: =34
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =18
-            Text: =tipoVanisado
-            VerticalAlign: =VerticalAlign.Top
-            Width: =300
-            X: =346
-            Y: =344
-            ZIndex: =14
-
-        Label3_2 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Text: =First(gallVanisadoUnico).Value.colorName
-            X: =922
-            Y: =618
-            ZIndex: =16
-
-        Label3_3 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Text: =First(gallVanisadoUnico).Value.coColor
-            X: =421
-            Y: =667
-            ZIndex: =17
-
-        Label9_7 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =41
-            OnSelect: =
-            Size: =15
-            Text: ="Color Crystal"
-            Width: =139
-            X: =421
-            Y: =641
-            ZIndex: =18
-
-        Image2_4 As image:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =77
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =VAyR
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Visible: =gitcarga
-            Width: =90
-            X: =783
-            Y: =612
-            ZIndex: =20
-
-        CdigoCrystal_17 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            Height: =29
-            LineHeight: =1.210227
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =15
-            Text: ="Nombre del color"
-            VerticalAlign: =VerticalAlign.Top
-            Width: =170
-            X: =912
-            Y: =589
-            ZIndex: =21
-
-        Icon1 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =55
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(255, 255, 255,1),100%)
-            HoverFill: =RGBA(0, 0, 0, 1)
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =Set(cuadroVisible,false);
-                Clear(gallVanisadoUnico)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =55
-            X: =1082
-            Y: =333
-            ZIndex: =22
-
     Container_BarraNavegacion_2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =59
@@ -324,7 +19,7 @@ Pantalla_Vanisados As screen:
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =1600
-        ZIndex: =148
+        ZIndex: =1
 
         Rectangle11_4 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -397,8 +92,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =
+            HoverBorderColor: =RGBA(0, 0, 0, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: =Navigate(Pantalla_Pantone)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
@@ -547,7 +242,7 @@ Pantalla_Vanisados As screen:
         RadiusTopRight: =4
         Width: =1600
         Y: =59
-        ZIndex: =149
+        ZIndex: =2
 
         ColorCrystal As label:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -720,7 +415,7 @@ Pantalla_Vanisados As screen:
         Width: =1516
         X: =52
         Y: =255
-        ZIndex: =150
+        ZIndex: =3
 
         Rectangle40 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -753,7 +448,7 @@ Pantalla_Vanisados As screen:
             Text: ="Materia prima"
             VerticalAlign: =VerticalAlign.Top
             Width: =180
-            X: =52
+            X: =26
             Y: =8
             ZIndex: =2
 
@@ -776,7 +471,7 @@ Pantalla_Vanisados As screen:
             Text: ="Vanisado 78/2"
             VerticalAlign: =VerticalAlign.Top
             Width: =200
-            X: =246
+            X: =259
             Y: =8
             ZIndex: =3
 
@@ -799,7 +494,7 @@ Pantalla_Vanisados As screen:
             Text: ="Vanisado 44/2"
             VerticalAlign: =VerticalAlign.Top
             Width: =200
-            X: =586
+            X: =560
             Y: =8
             ZIndex: =4
 
@@ -822,7 +517,7 @@ Pantalla_Vanisados As screen:
             Text: ="Elastico expuesto"
             VerticalAlign: =VerticalAlign.Top
             Width: =250
-            X: =895
+            X: =856
             Y: =8
             ZIndex: =5
 
@@ -845,7 +540,7 @@ Pantalla_Vanisados As screen:
             Text: ="Lycra rec interna"
             VerticalAlign: =VerticalAlign.Top
             Width: =300
-            X: =1193
+            X: =1154
             Y: =8
             ZIndex: =6
 
@@ -865,24 +560,29 @@ Pantalla_Vanisados As screen:
             ZIndex: =7
 
     Gallery5_1 As gallery.galleryVertical:
-        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderColor: =RGBA(204, 204, 204, 1)
+        BorderThickness: =1
         DelayItemLoading: =true
-        Height: =285
+        Height: =247
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(cuadroVisible,false)
         TemplateSize: =206
-        Width: =1600
-        Y: =339
-        ZIndex: =151
+        Width: =1516
+        X: =52
+        Y: =297
+        ZIndex: =4
 
         contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
             Height: =190
             Visible: |
                 =If(IsBlank(ThisItem.elastico),false,true)
             Width: =300
-            X: =863
+            X: =824
             Y: =6
             ZIndex: =1
 
@@ -1198,6 +898,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =12
 
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
             Height: =190
             Visible: =If(IsBlank(ThisItem.V782),false,true)
             Width: =280
@@ -1458,10 +1161,13 @@ Pantalla_Vanisados As screen:
                 ZIndex: =10
 
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
             Height: =190
             Visible: =If(IsBlank(ThisItem.V442),false,true)
             Width: =280
-            X: =535
+            X: =509
             Y: =6
             ZIndex: =5
 
@@ -1742,10 +1448,13 @@ Pantalla_Vanisados As screen:
                 ZIndex: =11
 
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
             Height: =190
             Visible: =If(IsBlank(ThisItem.lycra),false,true)
             Width: =280
-            X: =1191
+            X: =1152
             Y: =6
             ZIndex: =6
 
@@ -2593,7 +2302,285 @@ Pantalla_Vanisados As screen:
             OnSelect: =Select(Parent)
             Size: =13
             Text: =ThisItem.materiaPrima
-            Width: =170
-            Y: =81
+            Width: =173
+            X: =18
+            Y: =6
             ZIndex: =24
+
+    ContenedorPopPapSugerencia As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(0, 0, 0, 0.2)
+        Height: =837
+        Visible: =If(cuadroVisible,true,false)
+        Width: =1600
+        Y: =63
+        ZIndex: =5
+
+        Rectangle2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =4
+            Height: =334
+            HoverFill: =
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =815
+            X: =327
+            Y: =394
+            ZIndex: =7
+
+        Rectangle16_3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+            FocusedBorderThickness: =4
+            Height: =119
+            HoverFill: =
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =722
+            X: =379
+            Y: =442
+            ZIndex: =8
+
+        Rectangle73_3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: |-
+                =If(
+                    IsBlank(Text(First(gallVanisadoUnico).Value.rgb)),
+                    RGBA(
+                        111,
+                        111,
+                        111,
+                        1
+                    ),
+                    RGBA(
+                        Index(
+                            Split(
+                                Text(First(gallVanisadoUnico).Value.rgb),
+                                ","
+                            ),
+                            1
+                        ).Value,
+                        Index(
+                            Split(
+                                Text(First(gallVanisadoUnico).Value.rgb),
+                                ","
+                            ),
+                            2
+                        ).Value,
+                        Index(
+                            Split(
+                                Text(First(gallVanisadoUnico).Value.rgb),
+                                ","
+                            ),
+                            3
+                        ).Value,
+                        1
+                    )
+                )
+            FocusedBorderThickness: =4
+            Height: =154
+            HoverFill: =
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =189
+            X: =421
+            Y: =487
+            ZIndex: =9
+
+        CdigoCrystal_13 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =29
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: |-
+                ="Datos del color:"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =155
+            X: =628
+            Y: =572
+            ZIndex: =10
+
+        Rectangle15_5 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            FocusedBorderThickness: =4
+            Height: =70
+            HoverFill: =
+            PressedFill: =RGBA(0, 120, 212, 1)
+            Width: =815
+            X: =327
+            Y: =326
+            ZIndex: =11
+
+        Mssimilar1_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =35
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =mater
+            VerticalAlign: =VerticalAlign.Top
+            Width: =300
+            X: =744
+            Y: =343
+            ZIndex: =12
+
+        Mssimilar1_8 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =34
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =18
+            Text: =tipoVanisado
+            VerticalAlign: =VerticalAlign.Top
+            Width: =300
+            X: =346
+            Y: =344
+            ZIndex: =14
+
+        Label3_2 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Text: =First(gallVanisadoUnico).Value.colorName
+            X: =922
+            Y: =618
+            ZIndex: =16
+
+        Label3_3 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Text: =First(gallVanisadoUnico).Value.coColor
+            X: =421
+            Y: =667
+            ZIndex: =17
+
+        Label9_7 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =41
+            OnSelect: =
+            Size: =15
+            Text: ="Color Crystal"
+            Width: =139
+            X: =421
+            Y: =641
+            ZIndex: =18
+
+        Image2_4 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =77
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =VAyR
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =gitcarga
+            Width: =90
+            X: =783
+            Y: =612
+            ZIndex: =20
+
+        CdigoCrystal_17 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            LineHeight: =1.210227
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =15
+            Text: ="Nombre del color"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =170
+            X: =912
+            Y: =589
+            ZIndex: =21
+
+        Icon1 As icon.Cancel:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =55
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(255, 255, 255,1),100%)
+            HoverFill: =RGBA(0, 0, 0, 1)
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =Set(cuadroVisible,false);
+                Clear(gallVanisadoUnico)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =55
+            X: =1082
+            Y: =333
+            ZIndex: =22
 
