@@ -577,7 +577,7 @@ Pantalla_Pantone As screen:
                 X: =3
                 ZIndex: =21
 
-                "'110005185' As label":
+                LabelCodigoSap As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(0, 0, 0, 1)
@@ -797,7 +797,7 @@ Pantalla_Pantone As screen:
                     Y: =132
                     ZIndex: =10
 
-                Babyblue As label:
+                LabelNombre As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(0, 0, 0, 1)
@@ -863,7 +863,7 @@ Pantalla_Pantone As screen:
                     Y: =156
                     ZIndex: =13
 
-                "'231453' As label":
+                labelCoColor As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(0, 0, 0, 1)
@@ -1055,7 +1055,7 @@ Pantalla_Pantone As screen:
                     Y: =7
                     ZIndex: =16
 
-                "'93ALG54VIS13POL201MOCKTWIST' As label":
+                LabelDescripcion As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     Color: =RGBA(0, 0, 0, 1)
@@ -1089,68 +1089,8 @@ Pantalla_Pantone As screen:
                     HoverColor: =RGBA(0, 0, 0, 0.71)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Error
-                    OnSelect: |-
-                        =UpdateContext({ShowToolTip: !ShowToolTip});
-                        Collect(
-                            RgbReportados,
-                            {
-                                Descripcion: ThisItem.Value.descMaterial,
-                                rgb: ThisItem.Value.rgb,
-                                color: RGBA(
-                                    Index(
-                                        Split(
-                                            Text(ThisItem.Value.rgb),
-                                            ","
-                                        ),
-                                        1
-                                    ).Value,
-                                    Index(
-                                        Split(
-                                            Text(ThisItem.Value.rgb),
-                                            ","
-                                        ),
-                                        2
-                                    ).Value,
-                                    Index(
-                                        Split(
-                                            Text(ThisItem.Value.rgb),
-                                            ","
-                                        ),
-                                        3
-                                    ).Value,
-                                    1
-                                ),
-                                colorlargo: RGBA(
-                                    Index(
-                                        Split(
-                                            inv_selected_rgb.Text,
-                                            ","
-                                        ),
-                                        1
-                                    ).Value,
-                                    Index(
-                                        Split(
-                                            inv_selected_rgb.Text,
-                                            ","
-                                        ),
-                                        2
-                                    ).Value,
-                                    Index(
-                                        Split(
-                                            inv_selected_rgb.Text,
-                                            ","
-                                        ),
-                                        3
-                                    ).Value,
-                                    1
-                                ),
-                                codigomaterial: ThisItem.Value.coMaterial,
-                                nombrecolor: ThisItem.Value.colorName,
-                                pantone: ThisItem.Value.pantone,
-                                colorcrystal: ThisItem.Value.coColor,
-                                alternativa: ThisItem.Value.index
-                            }
-                        )
+                    OnSelect: |
+                        =UpdateContext({ShowToolTiperror: !ShowToolTiperror});
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -1160,10 +1100,35 @@ Pantalla_Pantone As screen:
                     Y: =227
                     ZIndex: =18
 
+                Button6 As button:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(0, 120, 212, 1)
+                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =15
+                    Text: ="Botón"
+                    X: =552
+                    Y: =139
+                    ZIndex: =19
+
         Container_pop_up As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =2
-            ContentLanguage: =ShowToolTip
+            ContentLanguage: =ShowToolTiperror
             DropShadow: =DropShadow.Light
             Fill: =RGBA(0, 0, 0, 0.71)
             Height: =452
@@ -1171,7 +1136,7 @@ Pantalla_Pantone As screen:
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Visible: =ShowToolTip
+            Visible: =ShowToolTiperror
             Width: =869
             X: =366
             Y: =61
@@ -1335,6 +1300,7 @@ Pantalla_Pantone As screen:
                 Text: |-
                     ="Guardar
                     "
+                Visible: =ShowToolTiperror
                 X: =369
                 Y: =395
                 ZIndex: =13
@@ -1355,8 +1321,7 @@ Pantalla_Pantone As screen:
                     =Live.Off
                 OnSelect: =
                 Size: =13
-                Text: |
-                    =
+                Text: =inv_selected_pantone
                 X: =220
                 Y: =81
                 ZIndex: =17
@@ -1374,7 +1339,7 @@ Pantalla_Pantone As screen:
                 HoverFill: =
                 Icon: =Icon.CancelBadge
                 OnSelect: |-
-                    =UpdateContext({ ShowToolTip: !ShowToolTip })
+                    =UpdateContext({ ShowToolTiperror: !ShowToolTiperror })
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1395,8 +1360,7 @@ Pantalla_Pantone As screen:
                 Height: =45
                 OnSelect: =
                 Size: =13
-                Text: |
-                    =
+                Text: =labelCoColor.Text
                 X: =220
                 Y: =135
                 ZIndex: =19
@@ -1414,7 +1378,7 @@ Pantalla_Pantone As screen:
                 OnSelect: =
                 Size: =13
                 Text: |
-                    =
+                    =LabelNombre.Text
                 X: =617
                 Y: =81
                 ZIndex: =20
@@ -1432,7 +1396,7 @@ Pantalla_Pantone As screen:
                 OnSelect: =
                 Size: =13
                 Text: |
-                    =
+                    =LabelCodigoSap
                 X: =617
                 Y: =135
                 ZIndex: =21
@@ -1497,4 +1461,20 @@ Pantalla_Pantone As screen:
             Text: ="Colores Seleccionados"
             Width: =230
             ZIndex: =2
+
+    Image4 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =image13189
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        X: =40
+        Y: =40
+        ZIndex: =31
 
