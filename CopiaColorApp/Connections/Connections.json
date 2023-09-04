@@ -44,6 +44,9 @@
           },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
+          },
+          "ReporteDeErrores": {
+            "tableName": "f6020d80-fcbb-49c9-8b32-b9de57ded0d1"
           }
         }
       }
@@ -58,7 +61,8 @@
       "colorCalceteriaDev",
       "coloresUnicosDev",
       "gestion_vanisadosDev",
-      "pantoneRgbFull_1Dev"
+      "pantoneRgbFull_1Dev",
+      "ReporteDeErrores"
     ],
     "dependencies": {},
     "dependents": [],
@@ -116,6 +120,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "44dfd75f-c34b-4f85-8f02-3cad58c4f24a"
+  },
+  "5397bef3-3a93-4303-b144-6bd2d3016aae": {
+    "connectionRef": {
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1649/1.0.1649.3368/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users"
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5397bef3-3a93-4303-b144-6bd2d3016aae"
   },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {

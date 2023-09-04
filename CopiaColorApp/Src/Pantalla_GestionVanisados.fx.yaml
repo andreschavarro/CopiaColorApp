@@ -558,7 +558,7 @@ Pantalla_GestionVanisados As screen:
                         }
                     ),
                     Collect(
-                        gestion_vanisadosDev,
+                        gestion_vanisados,
                         {
                             materiaPrima: ComboBox1_1.Selected.Value,
                             coColor: ComboBox2_1.Selected.coColor,
@@ -573,7 +573,7 @@ Pantalla_GestionVanisados As screen:
                     tempGuid,
                     First(
                         Filter(
-                            gestion_vanisadosDev,
+                            gestion_vanisados,
                             materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
                         )
                     ).ID
@@ -693,7 +693,6 @@ Pantalla_GestionVanisados As screen:
                 RadiusTopLeft: =8
                 RadiusTopRight: =8
                 Width: =72
-                X: =16
                 Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
                 ZIndex: =1
 
@@ -758,6 +757,39 @@ Pantalla_GestionVanisados As screen:
                 X: =403
                 Y: =56
                 ZIndex: =7
+
+            ComboBox3_1 As combobox:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Value"]
+                Font: =Font.'Segoe UI'
+                Height: =54
+                HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(212, 212, 212, 1)
+                IsSearchable: =false
+                OnSelect: =Select(Parent)
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                SearchFields: =["Value"]
+                SearchItems: =[]
+                SelectionFill: =RGBA(0, 120, 212, 1)
+                SelectMultiple: =false
+                Size: =13
+                Width: =189
+                X: =682
+                Y: =58
+                ZIndex: =8
 
     Button1_12 As button:
         BorderColor: =ColorFade(Self.Fill, -100)
