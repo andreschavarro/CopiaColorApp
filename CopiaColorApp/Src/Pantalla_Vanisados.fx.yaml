@@ -589,7 +589,7 @@ Pantalla_Vanisados As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =388
+        Height: =525
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -938,6 +938,7 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
+                Visible: =If(ThisItem.lycra = color_var,false,true)
                 Width: =30
                 X: =240
                 Y: =152
@@ -1751,7 +1752,6 @@ Pantalla_Vanisados As screen:
                     Set(cuadroVisible,true);
                     Set(mater,ThisItem.materiaPrima);
                     Set(tipoVanisado,"lycra");
-                    Set(colortest,Label3_3.Text);
                     Set(
                         vanisadoFlujo,
                         "elastico"
@@ -1822,6 +1822,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
+                Visible: |
+                    =If(ThisItem.lycra = color_var,false,true)
                 Width: =30
                 X: =240
                 Y: =152
@@ -2608,8 +2610,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.coColor
-            X: =421
-            Y: =667
+            X: =410
+            Y: =658
             ZIndex: =17
 
         Label9_7 As label:
@@ -2694,6 +2696,28 @@ Pantalla_Vanisados As screen:
             Y: =333
             ZIndex: =22
 
+        Icon10_4 As icon.QuestionMark:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =30
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(204, 204, 204, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.QuestionMark
+            OnSelect: |
+                =Set(contenedorVisible,true);
+                Set(botonvisible,true)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =30
+            X: =1112
+            Y: =689
+            ZIndex: =23
+
     Container7 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
@@ -2741,9 +2765,13 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.CancelBadge
-            OnSelect: |
+            OnSelect: |+
                 =Set(contenedorVisible,false);
+                Set(botonvisible,false);
                 Clear(gallVanisadoUnico)
+                
+                
+                
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -2795,7 +2823,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="columna"
+            Text: ="Tipo de vanisados"
             X: =39
             Y: =206
             ZIndex: =5
@@ -2811,7 +2839,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Nombre color"
+            Text: ="Vanisado actual"
             X: =39
             Y: =258
             ZIndex: =6
@@ -2857,7 +2885,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Materia prima"
+            Text: =tipoVanisado
             X: =210
             Y: =206
             ZIndex: =9
@@ -2872,24 +2900,42 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Materia prima"
+            Text: |
+                =Datosdelcolor_1
+            Visible: |
+                =true
             X: =210
             Y: =258
             ZIndex: =10
 
-        Label14 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
+        TextInput2_1 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =""
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =49
+            HintText: ="Ingresa tu recomendado"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =13
-            Text: =colortest
-            X: =454
-            Y: =258
+            Visible: |+
+                =true
+                
+            X: =181
+            Y: =320
             ZIndex: =11
 
         Label8_11 As label:
@@ -2902,24 +2948,40 @@ Pantalla_Vanisados As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =70
             Size: =13
-            Text: ="Nombre color"
-            X: =39
-            Y: =325
-            ZIndex: =11
+            Text: ="vanisado recomendado"
+            X: =31
+            Y: =310
+            ZIndex: =12
 
-        Label8_12 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(255, 255, 255, 1)
+        TextInput2 As text:
+            BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            Default: =Label3_3
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: =DisplayMode.Disabled
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            Height: =49
+            HintText: ="Ingresa tu recomendado"
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(255, 255, 255, 1)
+            PressedBorderColor: =RGBA(0, 120, 212, 1)
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(255, 255, 255, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
             Size: =13
-            Text: =
-            X: =210
-            Y: =325
-            ZIndex: =12
+            Visible: =If(botonvisible,true,false)
+            Width: =328
+            X: =181
+            Y: =320
+            ZIndex: =13
 

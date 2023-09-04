@@ -44,9 +44,6 @@
           },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
-          },
-          "ReporteDeErrores": {
-            "tableName": "f6020d80-fcbb-49c9-8b32-b9de57ded0d1"
           }
         }
       }
@@ -61,8 +58,7 @@
       "colorCalceteriaDev",
       "coloresUnicosDev",
       "gestion_vanisadosDev",
-      "pantoneRgbFull_1Dev",
-      "ReporteDeErrores"
+      "pantoneRgbFull_1Dev"
     ],
     "dependencies": {},
     "dependents": [],
