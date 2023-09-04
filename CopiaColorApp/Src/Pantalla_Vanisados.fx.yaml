@@ -1222,7 +1222,7 @@ Pantalla_Vanisados As screen:
                 Icon: =Icon.QuestionMark
                 OnSelect: |+
                     =Set(contenedorVisible,true);
-                    Clear(gallVanisadoUnico)
+                    
                     
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -2687,9 +2687,7 @@ Pantalla_Vanisados As screen:
             HoverColor: =ColorFade(RGBA(255, 255, 255,1),100%)
             HoverFill: =RGBA(0, 0, 0, 1)
             Icon: =Icon.Cancel
-            OnSelect: |-
-                =Set(cuadroVisible,false);
-                Clear(gallVanisadoUnico)
+            OnSelect: =Set(cuadroVisible,false);
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
             PressedFill: =RGBA(0, 0, 0, 0)

@@ -1102,31 +1102,6 @@ Pantalla_Pantone As screen:
                     Y: =227
                     ZIndex: =18
 
-                Button6 As button:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(0, 120, 212, 1)
-                    FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Semibold
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =15
-                    Text: ="Botón"
-                    X: =552
-                    Y: =139
-                    ZIndex: =19
-
                 LabelCapturaRGB_NO_BORRAR As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
@@ -1308,10 +1283,10 @@ Pantalla_Pantone As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(153, 153, 153, 1)
-                OnSelect: |+
+                OnSelect: |-
                     =Patch(
-                        ReporteDeErrores_1,
-                        Defaults(ReporteDeErrores_1),
+                        ReporteDeErrores,
+                        Defaults(ReporteDeErrores),
                         {
                             pantone: TextoEtiquetaPantone.Text,
                             Nombre_Color: TextoEtiquetaNomColor.Text,
@@ -1320,8 +1295,9 @@ Pantalla_Pantone As screen:
                             comentarios: TextInputReporteRGB1.Text,
                             rgb: Label13.Text
                         }
-                    )
-                    
+                    );
+                    Reset(TextInputReporteRGB1);
+                    Notify("Felicitaciones",NotificationType.Success)
                 PressedBorderColor: =RGBA(204, 204, 204, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(179, 179, 179, 1)
