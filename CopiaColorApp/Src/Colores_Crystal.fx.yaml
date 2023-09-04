@@ -730,7 +730,7 @@ Colores_Crystal As screen:
             Font: =Font.'Segoe UI'
             Height: =45
             Size: =13
-            Text: ="Color Crystal"
+            Text: ="Còdigo SAP"
             X: =65
             Y: =176
             ZIndex: =2
@@ -750,7 +750,7 @@ Colores_Crystal As screen:
             Size: =13
             Text: ="Descripcion del reporte"
             Width: =314
-            X: =302
+            X: =318
             Y: =284
             ZIndex: =3
 
@@ -766,27 +766,10 @@ Colores_Crystal As screen:
             Font: =Font.'Segoe UI'
             Height: =45
             Size: =13
-            Text: ="Pantone"
+            Text: ="Còdigo color"
             X: =65
             Y: =117
             ZIndex: =4
-
-        Label8_6 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(255, 255, 255, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =45
-            Size: =13
-            Text: ="Codigo SAP"
-            X: =476
-            Y: =176
-            ZIndex: =5
 
         Label8_7 As label:
             Align: =Align.Center
@@ -800,7 +783,7 @@ Colores_Crystal As screen:
             Font: =Font.'Segoe UI'
             Height: =45
             Size: =13
-            Text: ="Nombre del Color"
+            Text: ="Descripciòn"
             X: =476
             Y: =117
             ZIndex: =6
@@ -942,21 +925,21 @@ Colores_Crystal As screen:
             Y: =117
             ZIndex: =12
 
-        TextoEtiquetaCodigoSAP_1 As label:
-            BorderColor: =RGBA(255, 255, 255, 1)
+        Label3_5 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
             BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =45
-            OnSelect: =
-            Size: =13
-            Text: |
-                =
-            X: =653
-            Y: =177
+            FontWeight: =FontWeight.Bold
+            Text: ="Reporte del error del RGB del color"
+            Tooltip: =
+            Width: =430
+            X: =275
+            Y: =4
             ZIndex: =13
 
