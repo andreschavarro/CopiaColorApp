@@ -2879,6 +2879,21 @@ Pantalla_Vanisados As screen:
             Y: =258
             ZIndex: =10
 
+        Label14 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: =colortest
+            X: =454
+            Y: =258
+            ZIndex: =11
+
         Label8_11 As label:
             Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -2893,21 +2908,6 @@ Pantalla_Vanisados As screen:
             Text: ="Nombre color"
             X: =39
             Y: =325
-            ZIndex: =11
-
-        Label14 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Size: =13
-            Text: =colortest
-            X: =454
-            Y: =258
             ZIndex: =11
 
         Label8_12 As label:
