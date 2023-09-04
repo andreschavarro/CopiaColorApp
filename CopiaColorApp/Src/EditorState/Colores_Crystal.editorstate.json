@@ -1277,7 +1277,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ButtonGuardar_1",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6613,7 +6613,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_5",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8163,7 +8163,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_1",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8467,7 +8467,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_5",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8764,7 +8764,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_7",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10489,7 +10489,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInputReporteRGB_1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10787,7 +10787,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetacolorCrystal_1",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11090,7 +11090,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaNomColor_1",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11408,7 +11408,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaPantone_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11715,7 +11715,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaReporte_1",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
