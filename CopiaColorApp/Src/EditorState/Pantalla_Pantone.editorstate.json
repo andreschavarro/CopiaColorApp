@@ -3032,7 +3032,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Checkbox4",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6621,7 +6621,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EtiquetaTextoCodigoSAP",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6918,7 +6918,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EtiquetaTextoColorCrystal",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7215,7 +7215,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EtiquetaTextoNombreColor",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7519,7 +7519,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EtiquetaTextopantone",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8213,7 +8213,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "IconCerrarPopup",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9909,7 +9909,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label13",
-      "ParentIndex": 1,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10770,7 +10770,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelCapturaRGB_NO_BORRAR",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13088,7 +13088,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Mssimilar4",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14883,7 +14883,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle161",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16043,7 +16043,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInputReporteRGB1",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16341,7 +16341,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaCodigoSAP",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16644,7 +16644,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetacolorCrystal",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16947,7 +16947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaNomColor",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17265,7 +17265,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaPantone",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17572,7 +17572,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextoEtiquetaReporte",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
