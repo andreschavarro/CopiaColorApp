@@ -864,3 +864,1736 @@ Pantalla_Vanisados As screen:
             Y: =21
             ZIndex: =7
 
+    Gallery5_1 As gallery.galleryVertical:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Height: =285
+        Items: =CollectionShow
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        OnSelect: =Set(cuadroVisible,false)
+        TemplateSize: =206
+        Width: =1600
+        Y: =339
+        ZIndex: =151
+
+        contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
+            Height: =190
+            Visible: |
+                =If(IsBlank(ThisItem.elastico),false,true)
+            Width: =300
+            X: =863
+            Y: =6
+            ZIndex: =1
+
+            Rectangle85_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(252, 252, 254, 1)
+                FocusedBorderThickness: =4
+                Height: =159
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =31
+                ZIndex: =1
+
+            Rectangle86_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverFill: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =31
+                ZIndex: =2
+
+            Rectangle87_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =62
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =63
+                ZIndex: =3
+
+            Rectangle89_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        IsBlank(
+                            Text(
+                                First(
+                                    Filter(
+                                        coloresUnicos,
+                                        coColor = ThisItem.elastico
+                                    )
+                                ).rgb
+                            )
+                        ),
+                        RGBA(
+                            111,
+                            111,
+                            111,
+                            1
+                        ),
+                        RGBA(
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                1
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                2
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                3
+                            ).Value,
+                            1
+                        )
+                    )
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverFill: =
+                OnSelect: =If(IsBlank(ThisItem.elastico),Set(estadoTarjeta,false),Set(estadoTarjeta,true));
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =75
+                X: =39
+                Y: =80
+                ZIndex: =5
+
+            CdigoCrystal_6 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =14
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =8.25
+                Text: |-
+                    ="Datos del color:"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =82
+                X: =118
+                Y: =125
+                ZIndex: =6
+
+            Label9_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =14
+                OnSelect: =//Select(Parent)
+                Size: =9.25
+                Text: ="Color Crystal"
+                Width: =90
+                X: =35
+                Y: =155
+                ZIndex: =7
+
+            Datosdelcolor_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =20
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.elastico
+                VerticalAlign: =VerticalAlign.Top
+                Width: =75
+                X: =45
+                Y: =170
+                ZIndex: =8
+
+            Button3_3 As button:
+                Align: =Align.Left
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PaddingBottom: =7
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Ver alternativa"
+                Visible: =If(ThisItem.elastico = color_var,false,true)
+                Width: =145
+                X: =25
+                Y: =37
+                ZIndex: =9
+
+            Label5_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =26
+                Size: =13
+                Text: ="Coincidencia exacta"
+                Visible: =If(ThisItem.elastico = color_var,true,false)
+                Width: =170
+                X: =22
+                Y: =31
+                ZIndex: =10
+
+            Button9_6 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =293
+                X: =7
+                Y: =24
+                ZIndex: =12
+
+        "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.V782),false,true)
+            Width: =280
+            X: =208
+            Y: =6
+            ZIndex: =2
+
+            Rectangle15 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =258
+                X: =18
+                Y: =31
+                ZIndex: =1
+
+            Rectangle16 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =60
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =258
+                X: =18
+                Y: =63
+                ZIndex: =2
+
+            Datosdelcolor As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =19
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.V782
+                VerticalAlign: =VerticalAlign.Top
+                Width: =95
+                X: =45
+                Y: =170
+                ZIndex: =3
+
+            Rectangle73 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        IsBlank(
+                            Text(
+                                First(
+                                    Filter(
+                                        coloresUnicos,
+                                        coColor = ThisItem.V782
+                                    )
+                                ).rgb
+                            )
+                        ),
+                        RGBA(
+                            111,
+                            111,
+                            111,
+                            1
+                        ),
+                        RGBA(
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V782
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                1
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V782
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                2
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V782
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                3
+                            ).Value,
+                            1
+                        )
+                    )
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =75
+                X: =39
+                Y: =80
+                ZIndex: =5
+
+            Label9 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =14
+                OnSelect: =//Select(Parent)
+                Size: =9.25
+                Text: ="Color Crystal"
+                Width: =90
+                X: =40
+                Y: =155
+                ZIndex: =6
+
+            CdigoCrystal_4 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =14
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =8.25
+                Text: |-
+                    ="Datos del color:"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =90
+                X: =118
+                Y: =125
+                ZIndex: =7
+
+            Button3 As button:
+                Align: =Align.Left
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: |-
+                    =Clear(gallVanisadoUnico);
+                    Set(
+                        cuadroVisible,
+                        true
+                    );
+                    Set(
+                        mater,
+                        ThisItem.materiaPrima
+                    );
+                    Set(
+                        tipoVanisado,
+                        "Vanizado 78/2"
+                    );
+                    Set(
+                        vanisadoFlujo,
+                        "78"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false)
+                PaddingBottom: =7
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Ver alternativa"
+                Visible: =If(ThisItem.V782 = color_var,false,true)
+                Width: =145
+                X: =30
+                Y: =34
+                ZIndex: =9
+
+            Label5 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                Size: =13
+                Text: ="Coincidencia exacta"
+                Visible: =If(ThisItem.V782 = color_var,true,false)
+                Width: =170
+                X: =25
+                Y: =37
+                ZIndex: =10
+
+        "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.V442),false,true)
+            Width: =280
+            X: =535
+            Y: =6
+            ZIndex: =5
+
+            Vector11 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =38
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =image13215
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =0
+                X: =187
+                Y: =55
+                ZIndex: =1
+
+            Rectangle85 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(252, 252, 254, 1)
+                FocusedBorderThickness: =4
+                Height: =158
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =31
+                ZIndex: =2
+
+            Rectangle86 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverFill: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =31
+                ZIndex: =3
+
+            Rectangle87 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =60
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =63
+                ZIndex: =4
+
+            Rectangle89 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        IsBlank(
+                            Text(
+                                First(
+                                    Filter(
+                                        coloresUnicos,
+                                        coColor = ThisItem.V442
+                                    )
+                                ).rgb
+                            )
+                        ),
+                        RGBA(
+                            111,
+                            111,
+                            111,
+                            1
+                        ),
+                        RGBA(
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V442
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                1
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V442
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                2
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.V442
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                3
+                            ).Value,
+                            1
+                        )
+                    )
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverFill: =
+                OnSelect: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =75
+                X: =39
+                Y: =80
+                ZIndex: =6
+
+            CdigoCrystal_5 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =14
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =8.25
+                Text: |-
+                    ="Datos del color:"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =82
+                X: =118
+                Y: =125
+                ZIndex: =7
+
+            Label9_1 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =14
+                OnSelect: =//Select(Parent)
+                Size: =9.25
+                Text: ="Color Crystal"
+                Width: =90
+                X: =40
+                Y: =155
+                ZIndex: =8
+
+            Datosdelcolor_1 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =19
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.V442
+                VerticalAlign: =VerticalAlign.Top
+                Width: =75
+                X: =45
+                Y: =170
+                ZIndex: =9
+
+            Button3_2 As button:
+                Align: =Align.Left
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: |-
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Vanizado 44/2");
+                    Set(
+                        vanisadoFlujo,
+                        "44"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false)
+                PaddingBottom: =7
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Ver alternativa"
+                Visible: =If(ThisItem.V442 = color_var,false,true)
+                Width: =145
+                X: =25
+                Y: =37
+                ZIndex: =10
+
+            Label5_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                Size: =13
+                Text: ="Coincidencia exacta"
+                Visible: =If(ThisItem.V442 = color_var,true,false)
+                Width: =170
+                X: =25
+                Y: =37
+                ZIndex: =11
+
+        contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.lycra),false,true)
+            Width: =280
+            X: =1191
+            Y: =6
+            ZIndex: =6
+
+            Rectangle85_6 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(252, 252, 254, 1)
+                FocusedBorderThickness: =4
+                Height: =159
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =258
+                X: =22
+                Y: =31
+                ZIndex: =1
+
+            Rectangle86_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverFill: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =31
+                ZIndex: =2
+
+            Rectangle87_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =60
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =262
+                X: =18
+                Y: =63
+                ZIndex: =3
+
+            Rectangle89_4 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        IsBlank(
+                            Text(
+                                First(
+                                    Filter(
+                                        coloresUnicos,
+                                        coColor = ThisItem.lycra
+                                    )
+                                ).rgb
+                            )
+                        ),
+                        RGBA(
+                            111,
+                            111,
+                            111,
+                            1
+                        ),
+                        RGBA(
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.lycra
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                1
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.lycra
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                2
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.lycra
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                3
+                            ).Value,
+                            1
+                        )
+                    )
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =75
+                X: =39
+                Y: =80
+                ZIndex: =5
+
+            CdigoCrystal_11 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =14
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =8.25
+                Text: |-
+                    ="Datos del color:"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =82
+                X: =121
+                Y: =125
+                ZIndex: =6
+
+            Label9_6 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =14
+                OnSelect: =//Select(Parent)
+                Size: =9.25
+                Text: ="Color Crystal"
+                Width: =85
+                X: =35
+                Y: =155
+                ZIndex: =7
+
+            Datosdelcolor_6 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =20
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.lycra
+                VerticalAlign: =VerticalAlign.Top
+                Width: =75
+                X: =45
+                Y: =170
+                ZIndex: =8
+
+            Button3_4 As button:
+                Align: =Align.Left
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: |-
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"lycra");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false)
+                PaddingBottom: =7
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Ver alternativa "
+                Visible: =If(ThisItem.lycra = color_var,false,true)
+                Width: =145
+                X: =25
+                Y: =37
+                ZIndex: =9
+
+            Label5_4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =26
+                Size: =13
+                Text: ="Coincidencia exacta"
+                Visible: =If(ThisItem.lycra = color_var,true,false)
+                Width: =170
+                X: =22
+                Y: =31
+                ZIndex: =10
+
+        "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.V782),true,false)
+            Width: =280
+            X: =208
+            Y: =6
+            ZIndex: =20
+
+            Button9_1 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =280
+                Y: =13
+                ZIndex: =1
+
+            Button9_4 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Vanisado 78/2");
+                    Set(
+                        vanisadoFlujo,
+                        "78"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: |
+                    ="Ver alternativa"
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                X: =55
+                Y: =126
+                ZIndex: =2
+
+            Label4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =46
+                OnSelect: =//Select(Parent)
+                Size: =13
+                Text: ="No se hallaron resultados de búsqueda"
+                Width: =228
+                X: =26
+                Y: =61
+                ZIndex: =3
+
+            Image3_5 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =27
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='alert-circle'
+                OnSelect: =//Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58
+                X: =106
+                Y: =24
+                ZIndex: =4
+
+        "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.V442),true,false)
+            Width: =280
+            X: =546
+            Y: =6
+            ZIndex: =21
+
+            Button9_5 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =280
+                Y: =13
+                ZIndex: =1
+
+            Button9_2 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Vanisado 44/2");
+                    Set(
+                        vanisadoFlujo,
+                        "44"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: |
+                    ="Ver alternativa"
+                Visible: |
+                    =If(IsBlank(ThisItem.V442),true,false)
+                X: =55
+                Y: =126
+                ZIndex: =2
+
+            Label4_2 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =46
+                OnSelect: =//Select(Parent)
+                Size: =13
+                Text: ="No se hallaron resultados de búsqueda"
+                Width: =228
+                X: =26
+                Y: =61
+                ZIndex: =3
+
+            Image3_2 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =27
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='alert-circle'
+                OnSelect: =//Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58
+                X: =106
+                Y: =24
+                ZIndex: =4
+
+        ConAlertaElastico As groupContainer.manualLayoutContainer:
+            Height: =190
+            Visible: |
+                =If(IsBlank(ThisItem.elastico),true,false)
+            Width: =280
+            X: =873
+            Y: =6
+            ZIndex: =22
+
+            Button9_7 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =280
+                Y: =13
+                ZIndex: =1
+
+            Button9 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: |
+                    ="Ver alternativa"
+                Visible: |
+                    =If(IsBlank(ThisItem.elastico),true,false)
+                X: =55
+                Y: =126
+                ZIndex: =2
+
+            Label4_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =46
+                OnSelect: =//Select(Parent)
+                Size: =13
+                Text: ="No se hallaron resultados de búsqueda"
+                Width: =228
+                X: =26
+                Y: =61
+                ZIndex: =3
+
+            Image3_3 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =27
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='alert-circle'
+                OnSelect: =//Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =58
+                X: =106
+                Y: =24
+                ZIndex: =4
+
+        ConAlertaLycra As groupContainer.manualLayoutContainer:
+            Height: =190
+            Visible: =If(IsBlank(ThisItem.lycra),true,false)
+            Width: =280
+            X: =1203
+            Y: =6
+            ZIndex: =23
+
+            Button9_8 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =280
+                Y: =13
+                ZIndex: =1
+
+            Button9_3 As button:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"lycra rec interna");
+                    Set(
+                        vanisadoFlujo,
+                        "lycra"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: |
+                    ="Ver alternativa"
+                Visible: |
+                    =If(IsBlank(ThisItem.lycra),true,false)
+                X: =55
+                Y: =126
+                ZIndex: =2
+
+            Label4_4 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =46
+                OnSelect: =//Select(Parent)
+                Size: =13
+                Text: ="No se hallaron resultados de búsqueda"
+                Width: =228
+                X: =26
+                Y: =61
+                ZIndex: =3
+
+            Image3_4 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =25
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: ='alert-circle'
+                OnSelect: =//Select(Parent)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =54
+                X: =106
+                Y: =24
+                ZIndex: =4
+
+        materiaPrima As label:
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.materiaPrima
+            Width: =170
+            Y: =81
+            ZIndex: =24
+
