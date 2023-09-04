@@ -2437,8 +2437,8 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =815
-            X: =327
-            Y: =394
+            X: =340
+            Y: =397
             ZIndex: =7
 
         Rectangle16_3 As rectangle:
@@ -2535,7 +2535,7 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =815
-            X: =327
+            X: =340
             Y: =326
             ZIndex: =11
 
@@ -2700,7 +2700,7 @@ Pantalla_Vanisados As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.Light
         Fill: =RGBA(0, 0, 0, 0.76)
-        Height: =422
+        Height: =388
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -2858,7 +2858,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =tipoVanisado
+            Text: ="Materia prima"
             X: =210
             Y: =206
             ZIndex: =9
@@ -2873,7 +2873,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =
+            Text: ="Materia prima"
             X: =210
             Y: =258
             ZIndex: =10
@@ -2889,7 +2889,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: ="Color sugerido"
+            Text: ="Nombre color"
             X: =39
             Y: =325
             ZIndex: =11
