@@ -956,6 +956,9 @@ Pantalla_Vanisados As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |-
+                    =Set(contenedorVisible,true);
+                    ClearCollect(elastico,{elastico:Datosdelcolor_2})
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -965,8 +968,8 @@ Pantalla_Vanisados As screen:
                 RadiusTopRight: =0
                 Size: =15
                 Text: ="Botón"
-                X: =40
-                Y: =40
+                X: =110
+                Y: =70
                 ZIndex: =14
 
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
@@ -3004,9 +3007,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: |+
-                =solucion
-                
+            Text: =
             Visible: |
                 =true
             X: =210
