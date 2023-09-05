@@ -1250,7 +1250,7 @@ Pantalla_Vanisados As screen:
                 Icon: =Icon.QuestionMark
                 OnSelect: |+
                     =Set(contenedorVisible,true);
-                    
+                    //variables para llenar el popap
                     
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -3105,12 +3105,13 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
             OnSelect: |-
-                =ClearCollect(
+                =Collect(
                     SugerenciaVanizados,
                     {Color_Crystal: Label8_6.Text},
                     {MatePrima: Label8_8.Text},
                     {tipoVanisado: Label8_9.Text},
-                    {VanisadoActual: Label8_10.Text}
+                    {VanisadoActual: Label8_10.Text},
+                    {vanisadoActual: TextInput2_1}
                 )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
