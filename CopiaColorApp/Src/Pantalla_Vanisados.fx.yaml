@@ -3045,12 +3045,15 @@ Pantalla_Vanisados As screen:
             OnSelect: |-
                 =Collect(
                     SugerenciaVanizados,
-                    {Color_Crystal: Label8_6.Text},
-                    {MatePrima: Label8_8.Text},
-                    {tipoVanisado: Label8_9.Text},
-                    {VanisadoActual: Label8_10.Text},
-                    {vanisadoActual: TextInput2_1}
-                )
+                    {Color_Crystal: VarCodCrystal},
+                    {MatePrima: VarMateriaP},
+                    {tipoVanisado: VarTipovanizado},
+                    {VanisadoActual: Varvanizadoactual},
+                    {vanisadoRecomendado: RecomendadoTextinput}
+                );
+                
+                Clear(SugerenciaVanizados);
+                Notify("Tu sugerencia se guardo con exito",NotificationType.Success)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
