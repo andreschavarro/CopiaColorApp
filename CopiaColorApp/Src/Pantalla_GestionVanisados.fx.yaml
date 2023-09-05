@@ -306,7 +306,7 @@ Pantalla_GestionVanisados As screen:
                 =First(
                     Filter(
                         gestion_vanisados,
-                        coColor = Text(ComboBox2_1.Selected.coColor) &&
+                        coColor = Text(ComboBox2.Selected.coColor) &&
                         materiaPrima = Text(ComboBox1_1.Selected.Value)
                     )
                 ).V782
@@ -1183,7 +1183,7 @@ Pantalla_GestionVanisados As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =104
-            X: =105
+            X: =117
             ZIndex: =1
 
             Image5 As image:
