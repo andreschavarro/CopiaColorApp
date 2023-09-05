@@ -1227,18 +1227,19 @@ Pantalla_GestionVanisados As screen:
                 ZIndex: =2
 
             Subtitle3 As label:
+                BorderThickness: =1
                 Color: =RGBA(51, 51, 51, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =19
+                Height: =35
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =12
-                Text: =ThisItem.tipoVanisado
+                Text: =
                 VerticalAlign: =VerticalAlign.Top
                 Width: =103
                 X: =115

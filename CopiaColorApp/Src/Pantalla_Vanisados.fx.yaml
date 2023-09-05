@@ -2809,6 +2809,7 @@ Pantalla_Vanisados As screen:
                 Set(VarMateriaP,"");
                 Set(VarTipovanizado,"");
                 Set(Varvanizadoactual,"");
+                
                 //ocultar 
                 Set(contenedorVisible,false);
                 //ocultar
@@ -3043,17 +3044,18 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
             OnSelect: |-
-                =Collect(
+                =
+                ClearCollect(
                     SugerenciaVanizados,
-                    {Color_Crystal: VarCodCrystal},
-                    {MatePrima: VarMateriaP},
-                    {tipoVanisado: VarTipovanizado},
-                    {VanisadoActual: Varvanizadoactual},
-                    {vanisadoRecomendado: RecomendadoTextinput}
+                    {Color_Crystal: Label8_6.Text},
+                    {MatePrima: Label8_8.Text},
+                    {tipoVanisado: Label8_9.Text},
+                    {VanisadoActual: Label8_10.Text},
+                    {vanisadoRecomendado: RecomendadoTextinput.Text}
                 );
                 
-                Clear(SugerenciaVanizados);
-                Notify("Tu sugerencia se guardo con exito",NotificationType.Success)
+                Notify("Tu sugerencia se guardo con exito",NotificationType.Success);
+                Reset(RecomendadoTextinput)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
