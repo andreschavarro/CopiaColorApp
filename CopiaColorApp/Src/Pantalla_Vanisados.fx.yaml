@@ -954,34 +954,6 @@ Pantalla_Vanisados As screen:
                 Y: =152
                 ZIndex: =13
 
-            Button10 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: |-
-                    =Set(contenedorVisible,true);
-                    ClearCollect(elastico,{elastico:Datosdelcolor_2})
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: ="Botón"
-                X: =110
-                Y: =70
-                ZIndex: =14
-
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
@@ -1275,31 +1247,6 @@ Pantalla_Vanisados As screen:
                 X: =240
                 Y: =152
                 ZIndex: =11
-
-            Button14 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: ="Botón"
-                X: =60
-                Y: =60
-                ZIndex: =12
 
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
@@ -1616,31 +1563,6 @@ Pantalla_Vanisados As screen:
                 Y: =152
                 ZIndex: =12
 
-            Button12 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: ="Botón"
-                X: =60
-                Y: =60
-                ZIndex: =13
-
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
@@ -1940,35 +1862,6 @@ Pantalla_Vanisados As screen:
                 X: =240
                 Y: =152
                 ZIndex: =10
-
-            Button6 As button:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 120, 212, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: |-
-                    =Set(contenedorVisible,true);
-                    Set(solucion,Datosdelcolor_6)
-                    //crear un variable que me almacene el vanisado actual y la agregue al popap
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: ="Botón"
-                X: =60
-                Y: =80
-                ZIndex: =11
 
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
             Height: =190
