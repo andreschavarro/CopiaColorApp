@@ -589,14 +589,14 @@ Pantalla_Vanisados As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =525
+        Height: =471
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(cuadroVisible,false)
         TemplateSize: =230
         Width: =1516
-        X: =52
+        X: =54
         Y: =297
         ZIndex: =4
 
@@ -813,6 +813,12 @@ Pantalla_Vanisados As screen:
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
+                    //variables para el pop up
+                    Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Elastico expuesto");
+                    Set(Varvanizadoactual,ThisItem.elastico);
+                    //flujo---
                     Set(mater,ThisItem.materiaPrima);
                     Set(tipoVanisado,"Elastico expuesto");
                     Set(
@@ -933,8 +939,12 @@ Pantalla_Vanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.QuestionMark
                 OnSelect: |
-                    =Set(contenedorVisible,true);
-                    Clear(gallVanisadoUnico)
+                    =Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Elastico expuesto");
+                    Set(Varvanizadoactual,ThisItem.elastico);
+                    
+                    Set(contenedorVisible,true)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1200,6 +1210,12 @@ Pantalla_Vanisados As screen:
                             )
                         )
                     );
+                    //variables pop up
+                    Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Vanisado 78/2");
+                    Set(Varvanizadoactual,ThisItem.V782);
+                    //efecto garga
                     Set(gitcarga,false)
                 PaddingBottom: =7
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
@@ -1533,6 +1549,11 @@ Pantalla_Vanisados As screen:
                             )
                         )
                     );
+                    //varible para el pop up
+                    Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Vanizados44/2");
+                    Set(Varvanizadoactual,ThisItem.V442);
                     Set(gitcarga,false)
                 PaddingBottom: =7
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
@@ -1582,8 +1603,11 @@ Pantalla_Vanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.QuestionMark
                 OnSelect: |-
-                    =Set(contenedorVisible,true);
-                    Clear(gallVanisadoUnico)
+                    =Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Vanizados44/2");
+                    Set(Varvanizadoactual,ThisItem.V442);
+                    Set(contenedorVisible,true);
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1830,6 +1854,7 @@ Pantalla_Vanisados As screen:
                     Set(cuadroVisible,true);
                     Set(mater,ThisItem.materiaPrima);
                     Set(tipoVanisado,"lycra");
+                    
                     Set(
                         vanisadoFlujo,
                         "elastico"
@@ -1846,6 +1871,12 @@ Pantalla_Vanisados As screen:
                             )
                         )
                     );
+                    //varibles  para el pop up alternativa
+                    Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"lycra");
+                    Set(Varvanizadoactual,ThisItem.lycra);
+                    //efecto carga
                     Set(gitcarga,false);
                 PaddingBottom: =7
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
@@ -1895,8 +1926,11 @@ Pantalla_Vanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.QuestionMark
                 OnSelect: |
-                    =Set(contenedorVisible,true);
-                    Clear(gallVanisadoUnico)
+                    =Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"lycra");
+                    Set(Varvanizadoactual,ThisItem.lycra);
+                    Set(contenedorVisible,true)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -2799,7 +2833,7 @@ Pantalla_Vanisados As screen:
             PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =55
-            X: =1087
+            X: =1082
             Y: =333
             ZIndex: =22
 
@@ -2815,7 +2849,8 @@ Pantalla_Vanisados As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.QuestionMark
             OnSelect: |
-                =Set(contenedorVisible,true);
+                =
+                Set(contenedorVisible,true);
                 Set(botonvisible,true)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -2873,9 +2908,16 @@ Pantalla_Vanisados As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.CancelBadge
             OnSelect: |+
-                =Set(contenedorVisible,false);
+                =//limpiar todos los label
+                Set(VarCodCrystal,"");
+                Set(VarMateriaP,"");
+                Set(VarTipovanizado,"");
+                Set(Varvanizadoactual,"");
+                //ocultar 
+                Set(contenedorVisible,false);
+                //ocultar
                 Set(botonvisible,false);
-                Clear(gallVanisadoUnico)
+                
                 
                 
                 
@@ -2961,7 +3003,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =ComboBox2.Selected.coColor
+            Text: =VarCodCrystal
             X: =210
             Y: =88
             ZIndex: =7
@@ -2977,7 +3019,7 @@ Pantalla_Vanisados As screen:
             Font: =Font.'Segoe UI'
             Size: =13
             Text: |
-                =mater
+                =VarMateriaP
             X: =210
             Y: =148
             ZIndex: =8
@@ -2992,7 +3034,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =tipoVanisado
+            Text: =VarTipovanizado
             X: =210
             Y: =206
             ZIndex: =9
@@ -3007,14 +3049,14 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Size: =13
-            Text: =
+            Text: =Varvanizadoactual
             Visible: |
                 =true
             X: =210
             Y: =258
             ZIndex: =10
 
-        TextInput2_1 As text:
+        RecomendadoTextinput As text:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
