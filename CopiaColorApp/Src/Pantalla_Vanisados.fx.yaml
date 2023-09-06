@@ -595,8 +595,8 @@ Pantalla_Vanisados As screen:
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(cuadroVisible,false)
         TemplateSize: =230
-        Width: =1516
-        X: =54
+        Width: =1464
+        X: =52
         Y: =297
         ZIndex: =4
 
@@ -1954,6 +1954,10 @@ Pantalla_Vanisados As screen:
                             )
                         )
                     );
+                    Set(VarCodCrystal,ComboBox2.SearchText);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Vanisado 78/2");
+                    Set(Varvanizadoactual,Label3_3.Text);
                     Set(gitcarga,false);
                     
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
@@ -2009,6 +2013,33 @@ Pantalla_Vanisados As screen:
                 X: =106
                 Y: =24
                 ZIndex: =4
+
+            Icon10_5 As icon.QuestionMark:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =30
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(204, 204, 204, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.QuestionMark
+                OnSelect: |
+                    =//variables para llenar el popap
+                    Set(VarCodCrystal,ComboBox2.SearchText);
+                    Set(VarMateriaP,ComboBox4.Selected.Value);
+                    Set(VarTipovanizado,"Vanizados78/2");
+                    Set(Varvanizadoactual,ThisItem.V782);
+                    Set(contenedorVisible,true);
+                    Set(ComboBoxvisible,true);
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Width: =30
+                X: =254
+                Y: =136
+                ZIndex: =5
 
         "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
             Height: =190
@@ -2462,7 +2493,7 @@ Pantalla_Vanisados As screen:
         Fill: =RGBA(0, 0, 0, 0.2)
         Height: =837
         Visible: =If(cuadroVisible,true,false)
-        Width: =1333
+        Width: =1600
         Y: =63
         ZIndex: =5
 
@@ -2647,8 +2678,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.coColor
-            X: =410
-            Y: =658
+            X: =415
+            Y: =679
             ZIndex: =17
 
         Label9_7 As label:
@@ -2745,9 +2776,9 @@ Pantalla_Vanisados As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.QuestionMark
             OnSelect: |
-                =
-                Set(contenedorVisible,true);
-                Set(botonvisible,true)
+                =Set(contenedorVisible,true);
+                Set(botonvisible,true);
+                Set(ComboBoxvisible,true);
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -2814,6 +2845,7 @@ Pantalla_Vanisados As screen:
                 Set(contenedorVisible,false);
                 //ocultar
                 Set(botonvisible,false);
+                Set(ComboBoxvisible,false)
                 
                 
                 
@@ -2914,9 +2946,13 @@ Pantalla_Vanisados As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
+            OnSelect: =
             Size: =13
-            Text: |
+            Text: |+
                 =VarMateriaP
+                
+            Visible: |
+                =true
             X: =210
             Y: =148
             ZIndex: =8
@@ -2957,10 +2993,16 @@ Pantalla_Vanisados As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
-            Default: =""
+            Default: =If(botonvisible,Label3_3.Text,"")
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayMode: |-
+                =If(
+                    botonvisible,
+                    DisplayMode.View,
+                    DisplayMode.Edit
+                )
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Height: =49
@@ -3000,36 +3042,6 @@ Pantalla_Vanisados As screen:
             Y: =310
             ZIndex: =12
 
-        TextInput2 As text:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            Default: =Label3_3
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            DisplayMode: =DisplayMode.Disabled
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =49
-            HintText: ="Ingresa tu recomendado"
-            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            HoverColor: =RGBA(51, 51, 51, 1)
-            HoverFill: =RGBA(255, 255, 255, 1)
-            PressedBorderColor: =RGBA(0, 120, 212, 1)
-            PressedColor: =RGBA(51, 51, 51, 1)
-            PressedFill: =RGBA(255, 255, 255, 1)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Size: =13
-            Visible: =If(botonvisible,true,false)
-            Width: =328
-            X: =181
-            Y: =320
-            ZIndex: =13
-
         BotonGuardar As button:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -3043,18 +3055,22 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(230, 230, 230, 1)
             OnSelect: |-
-                =
-                ClearCollect(
-                    SugerenciaVanizados,
-                    {Color_Crystal: Label8_6.Text},
-                    {MatePrima: Label8_8.Text},
-                    {tipoVanisado: Label8_9.Text},
-                    {VanisadoActual: Label8_10.Text},
-                    {vanisadoRecomendado: RecomendadoTextinput.Text}
-                );
+                =Patch(
+                    SugerenciaVanisados,
+                    Defaults(SugerenciaVanisados),
+                    {
+                        Color_Crystal: Label8_6.Text,
+                        Materia_Prima:Label8_8.Text,
+                        Tipo_vanisado: Label8_9.Text,
+                        Vanisado_Actual: Label8_10.Text,
+                        vanisado_recomendado:If(IsBlank(RecomendadoTextinput.Text),Label8_10.Text),
+                        Estado:"pediente"
                 
-                Notify("Tu sugerencia se guardo con exito",NotificationType.Success);
-                Reset(RecomendadoTextinput)
+                
+                    }
+                );
+                Reset(RecomendadoTextinput);
+                Notify("Tu recomendación se envió con exito",NotificationType.Success)
             PressedBorderColor: |
                 =
             PressedColor: =RGBA(255, 255, 255, 1)
@@ -3068,4 +3084,48 @@ Pantalla_Vanisados As screen:
             X: =710
             Y: =329
             ZIndex: =14
+
+        ComboBox4 As combobox:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            ChevronBackground: =RGBA(255, 255, 255, 1)
+            ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+            ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+            ChevronFill: =RGBA(33, 33, 33, 1)
+            ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+            ChevronHoverFill: =RGBA(33, 33, 33, 1)
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.'Segoe UI'
+            HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverColor: =RGBA(51, 51, 51, 1)
+            HoverFill: =RGBA(212, 212, 212, 1)
+            InputTextPlaceholder: ="Buscar materia prima"
+            Items: =Distinct(gestion_vanisados , materiaPrima)
+            OnSelect: |+
+                =If(ComboBox4.Selected.Value,"",Label8_8.Text);
+                Set(VarMateriaP,ComboBox4.Selected.Value);
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            SearchFields: =["Value"]
+            SearchItems: =Search(Distinct(gestion_vanisados , materiaPrima),ComboBox4.SearchText,"Value")
+            SelectionFill: =RGBA(0, 120, 212, 1)
+            SelectMultiple: =false
+            Size: =13
+            X: =382
+            Y: =148
+            ZIndex: =16
 
