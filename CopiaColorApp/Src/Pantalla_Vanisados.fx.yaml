@@ -3030,44 +3030,42 @@ Pantalla_Vanisados As screen:
             Y: =320
             ZIndex: =13
 
-        Button5 As button:
-            BorderColor: =RGBA(0, 0, 0, 0)
+        BotonGuardar As button:
+            BorderColor: =RGBA(204, 204, 204, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 120, 212, 1)
+            Fill: =RGBA(0, 0, 0, 1)
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            Height: =76
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(230, 230, 230, 1)
             OnSelect: |-
-                =Patch(
-                    SugerenciaVanisados,
-                    Defaults(SugerenciaVanisados),
-                    {
-                        Color_Crystal: Label8_6.Text,
-                        Materia_Prima:Label8_8.Text,
-                        Tipo_vanisado: Label8_9.Text,
-                        Vanisado_Actual: Label8_10.Text,
-                        vanisado_recomendado:RecomendadoTextinput.Text
-                 
-                    }
+                =
+                ClearCollect(
+                    SugerenciaVanizados,
+                    {Color_Crystal: Label8_6.Text},
+                    {MatePrima: Label8_8.Text},
+                    {tipoVanisado: Label8_9.Text},
+                    {VanisadoActual: Label8_10.Text},
+                    {vanisadoRecomendado: RecomendadoTextinput.Text}
                 );
-                Reset(TextInputReporteRGB1);
-                Notify("Felicitaciones",NotificationType.Success)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                
+                Notify("Tu sugerencia se guardo con exito",NotificationType.Success);
+                Reset(RecomendadoTextinput)
+            PressedBorderColor: |
+                =
             PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(204, 204, 204, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =15
-            Text: ="Botón"
-            X: =636
-            Y: =234
+            Text: ="Enviar"
+            X: =710
+            Y: =329
             ZIndex: =14
 
