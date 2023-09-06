@@ -1241,8 +1241,8 @@ Pantalla_Pantone As screen:
                             Nombre_Color: TextoEtiquetaNomColor.Text,
                             Codigo_SAP: TextoEtiquetaCodigoSAP.Text,
                             color_Crystal: TextoEtiquetacolorCrystal.Text,
-                            comentarios: TextInputReporteRGB1.Text,
-                            rgb: Label13.Text
+                            comentarios: TextInputReporteRGB1.Text
+                            
                         }
                     );
                     Reset(TextInputReporteRGB1);

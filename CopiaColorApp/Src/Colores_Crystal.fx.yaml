@@ -788,7 +788,7 @@ Colores_Crystal As screen:
             Y: =117
             ZIndex: =6
 
-        TextInputReporteRGB_1 As text:
+        ReporteRGBcolorCrystal As text:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
@@ -830,6 +830,21 @@ Colores_Crystal As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =RGBA(153, 153, 153, 1)
+            OnSelect: |-
+                =Patch(
+                    ReporteDeErrores,
+                    Defaults(ReporteDeErrores),
+                    {
+                        Codigo_SAP: EtiquetaCodigoSAP.Text,
+                        Descripcion:EtiquetaDescripcion.Text,
+                        comentarios:ReporteRGBcolorCrystal.Text,
+                        color_Crystal:TextoEtiquetaCodigocolor_1.Text
+                        
+                        
+                    }
+                );
+                Reset(ReporteRGBcolorCrystal);
+                Notify("Se guardo con exito",NotificationType.Success)
             PressedBorderColor: =RGBA(204, 204, 204, 1)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(179, 179, 179, 1)
@@ -845,7 +860,7 @@ Colores_Crystal As screen:
             Y: =463
             ZIndex: =8
 
-        TextoEtiquetaPantone_1 As label:
+        TextoEtiquetaCodigocolor_1 As label:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -862,7 +877,7 @@ Colores_Crystal As screen:
             OnSelect: =
             Size: =13
             Text: |
-                =
+                =Label1
             X: =224
             Y: =117
             ZIndex: =9
@@ -889,7 +904,7 @@ Colores_Crystal As screen:
             Y: =8
             ZIndex: =10
 
-        TextoEtiquetacolorCrystal_1 As label:
+        EtiquetaCodigoSAP As label:
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -902,12 +917,13 @@ Colores_Crystal As screen:
             OnSelect: =
             Size: =13
             Text: |
-                =
+                =Label1_1
             X: =224
             Y: =179
             ZIndex: =11
 
-        TextoEtiquetaNomColor_1 As label:
+        EtiquetaDescripcion As label:
+            Align: =Align.Center
             BorderColor: =RGBA(255, 255, 255, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -916,12 +932,14 @@ Colores_Crystal As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            Height: =45
+            Height: =58
             OnSelect: =
             Size: =13
-            Text: |
+            Text: |-
                 =
-            X: =653
+                Label1_2
+            Width: =232
+            X: =626
             Y: =117
             ZIndex: =12
 

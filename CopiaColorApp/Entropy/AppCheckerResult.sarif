@@ -7244,19 +7244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.TextInputReporteRGB_1.AccessibleLabel"
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.TextInputReporteRGB_1.AccessibleLabel",
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_Popup.TextInputReporteRGB_1"
+                "type": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal"
               }
             }
           ],
