@@ -113,7 +113,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BotonGuardar",
-      "ParentIndex": 9,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9682,7 +9682,14 @@
           "NameMapSourceSchema": "?"
         },
         "Default",
-        "Visible",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(IsBlank(Label8_8.Text),ComboBoxvisible,true,false)",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -9710,7 +9717,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox4",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23032,7 +23039,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_10",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23313,7 +23320,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_11",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -23865,7 +23872,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_3",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -24141,7 +24148,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label8_4",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -28035,7 +28042,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "RecomendadoTextinput",
-      "ParentIndex": 13,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

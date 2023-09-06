@@ -2036,9 +2036,11 @@ Pantalla_Vanisados As screen:
                     =//variables para llenar el popap
                     Set(VarCodCrystal,ComboBox2.SearchText);
                     Set(VarTipovanizado,"Vanizados78/2");
+                    Set(VarMateriaP,ThisItem.materiaPrima);
                     Set(Varvanizadoactual,ThisItem.V782);
                     Set(contenedorVisible,true);
                     Set(ComboBoxvisible,true);
+                    Set(VarEscogerMateria , true)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -2781,10 +2783,30 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(204, 204, 204, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.QuestionMark
-            OnSelect: |
-                =Set(contenedorVisible,true);
-                Set(botonvisible,true);
-                Set(ComboBoxvisible,true);
+            OnSelect: |-
+                =Set(
+                    contenedorVisible,
+                    true
+                );
+                Set(
+                    botonvisible,
+                    true
+                );
+                Set(
+                    ComboBoxvisible,
+                    true
+                );
+                If(
+                    IsBlank(VarMateriaP),
+                    Set(
+                        VarEscogerMateria,
+                        true
+                    ),
+                    Set(
+                        VarEscogerMateria,
+                        false
+                    )
+                )
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -2846,8 +2868,6 @@ Pantalla_Vanisados As screen:
                 Set(VarMateriaP,"");
                 Set(VarTipovanizado,"");
                 Set(Varvanizadoactual,"");
-                Set(VarcomboBox,"");
-                
                 //ocultar 
                 Set(contenedorVisible,false);
                 //ocultar
@@ -3133,7 +3153,7 @@ Pantalla_Vanisados As screen:
             SelectionFill: =RGBA(0, 120, 212, 1)
             SelectMultiple: =false
             Size: =13
-            Visible: =If(IsBlank(Label8_8.Text),ComboBoxvisible,true,false)
+            Visible: =If(VarEscogerMateria,ComboBoxvisible,true,false)
             X: =382
             Y: =148
             ZIndex: =16
