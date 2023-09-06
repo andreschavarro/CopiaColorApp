@@ -47,9 +47,6 @@
           },
           "ReporteDeErrores": {
             "tableName": "f6020d80-fcbb-49c9-8b32-b9de57ded0d1"
-          },
-          "SugerenciaVanisados": {
-            "tableName": "89a9ff1f-28dd-4fa8-9a1f-2b30ce255bc3"
           }
         }
       }
@@ -65,8 +62,7 @@
       "coloresUnicosDev",
       "gestion_vanisadosDev",
       "pantoneRgbFull_1Dev",
-      "ReporteDeErrores",
-      "SugerenciaVanisados"
+      "ReporteDeErrores"
     ],
     "dependencies": {},
     "dependents": [],
