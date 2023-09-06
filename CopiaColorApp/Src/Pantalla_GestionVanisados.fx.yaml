@@ -184,13 +184,7 @@ Pantalla_GestionVanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: |
-                = Launch("https://apps.powerapps.com/play/e/default-6a4eb463-82bd-4a0b-ad11-ffebd2fb7285/a/dbcef574-afaf-4cdd-9fa8-e9108327fe97?tenantId=6a4eb463-82bd-4a0b-ad11-ffebd2fb7285&source=AppSharedV3&hint=88890c88-8b47-4226-b8b7-3a00fb1da03b");
-                Collect(
-                    DatosUsoColorApp,
-                    {User:Text(User().FullName),
-                    TipoRegistro:"Open_GestionVanizados",
-                    FechaHora:Now()}
-                )
+                =
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -733,6 +727,7 @@ Pantalla_GestionVanisados As screen:
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
+                Default: =First(Filter(Roles,Usuario = ThisItem.Usuario).Rol)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -742,8 +737,10 @@ Pantalla_GestionVanisados As screen:
                 HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
                 HoverFill: =RGBA(212, 212, 212, 1)
+                InputTextPlaceholder: =
                 IsSearchable: =false
-                Items: =["Usuario", "Propietario"]
+                Items: =["Usuario","Propietario"]
+                OnChange: =
                 OnSelect: =Select(Parent)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
@@ -754,9 +751,52 @@ Pantalla_GestionVanisados As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =189
-                X: =503
-                Y: =56
+                X: =359
+                Y: =51
                 ZIndex: =7
+
+            Icon18 As icon.Trash:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.Trash
+                OnSelect: =Remove(Roles,ThisItem)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                X: =768
+                Y: =46
+                ZIndex: =8
+
+            Icon19 As icon.GlobeRefresh:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.GlobeRefresh
+                OnSelect: |-
+                    =Patch(
+                        Roles,  
+                        LookUp(Roles, Usuario = ThisItem.Usuario),
+                        {
+                            Rol: ComboBox3.Selected.Value  
+                        }
+                    )
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                X: =626
+                Y: =47
+                ZIndex: =9
 
     Button1_12 As button:
         BorderColor: =ColorFade(Self.Fill, -100)
@@ -1449,6 +1489,12 @@ Pantalla_GestionVanisados As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Text: ="GESTIÓN VANISADOS"
+        Visible: |-
+            =If(
+                LookUp(Roles, Usuario = User().Email).Rol = "Propietario",
+                true,
+                false
+            )
         Width: =200
         X: =710
         Y: =11

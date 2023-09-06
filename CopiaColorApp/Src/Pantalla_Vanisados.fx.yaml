@@ -254,6 +254,12 @@ Pantalla_Vanisados As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Text: ="GESTIÓN VANISADOS"
+            Visible: |-
+                =If(
+                    LookUp(Roles, Usuario = User().Email).Rol = "Propietario",
+                    true,
+                    false
+                )
             Width: =200
             X: =710
             Y: =11
