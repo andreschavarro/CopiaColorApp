@@ -3044,18 +3044,20 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
             OnSelect: |-
-                =
-                ClearCollect(
-                    SugerenciaVanizados,
-                    {Color_Crystal: Label8_6.Text},
-                    {MatePrima: Label8_8.Text},
-                    {tipoVanisado: Label8_9.Text},
-                    {VanisadoActual: Label8_10.Text},
-                    {vanisadoRecomendado: RecomendadoTextinput.Text}
+                =Patch(
+                    SugerenciaVanisados,
+                    Defaults(SugerenciaVanisados),
+                    {
+                        Color_Crystal: Label8_6.Text,
+                        Materia_Prima:Label8_8.Text,
+                        Tipo_vanisado: Label8_9.Text,
+                        Vanisado_Actual: Label8_10.Text,
+                        vanisado_recomendado:RecomendadoTextinput.Text
+                 
+                    }
                 );
-                
-                Notify("Tu sugerencia se guardo con exito",NotificationType.Success);
-                Reset(RecomendadoTextinput)
+                Reset(TextInputReporteRGB1);
+                Notify("Felicitaciones",NotificationType.Success)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
