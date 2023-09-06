@@ -1243,6 +1243,7 @@ Pantalla_Vanisados As screen:
                     Set(VarMateriaP,ThisItem.materiaPrima);
                     Set(VarTipovanizado,"Vanizados78/2");
                     Set(Varvanizadoactual,ThisItem.V782);
+                    Set(ComboBoxvisible,false);
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -2028,7 +2029,6 @@ Pantalla_Vanisados As screen:
                 OnSelect: |
                     =//variables para llenar el popap
                     Set(VarCodCrystal,ComboBox2.SearchText);
-                    Set(VarMateriaP,ComboBox4.Selected.Value);
                     Set(VarTipovanizado,"Vanizados78/2");
                     Set(Varvanizadoactual,ThisItem.V782);
                     Set(contenedorVisible,true);
@@ -2840,6 +2840,7 @@ Pantalla_Vanisados As screen:
                 Set(VarMateriaP,"");
                 Set(VarTipovanizado,"");
                 Set(Varvanizadoactual,"");
+                Set(VarcomboBox,"");
                 
                 //ocultar 
                 Set(contenedorVisible,false);
@@ -2946,7 +2947,7 @@ Pantalla_Vanisados As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
-            OnSelect: =
+            OnSelect: =Set(ComboBoxvisible,true)
             Size: =13
             Text: |+
                 =VarMateriaP
@@ -3054,23 +3055,24 @@ Pantalla_Vanisados As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =RGBA(230, 230, 230, 1)
-            OnSelect: |-
+            OnSelect: |
                 =Patch(
                     SugerenciaVanisados,
                     Defaults(SugerenciaVanisados),
                     {
                         Color_Crystal: Label8_6.Text,
-                        Materia_Prima:Label8_8.Text,
+                        Materia_Prima:If(IsBlank(Label8_8.Text),ComboBox4.SearchText),
                         Tipo_vanisado: Label8_9.Text,
                         Vanisado_Actual: Label8_10.Text,
-                        vanisado_recomendado:If(IsBlank(RecomendadoTextinput.Text),Label8_10.Text),
+                        vanisado_recomendado:RecomendadoTextinput.Text,
                         Estado:"pediente"
                 
                 
                     }
                 );
                 Reset(RecomendadoTextinput);
-                Notify("Tu recomendación se envió con exito",NotificationType.Success)
+                Notify("Tu recomendación se envió con exito",NotificationType.Success);
+                Set(VarcomboBox,ComboBox4);
             PressedBorderColor: |
                 =
             PressedColor: =RGBA(255, 255, 255, 1)
@@ -3125,6 +3127,7 @@ Pantalla_Vanisados As screen:
             SelectionFill: =RGBA(0, 120, 212, 1)
             SelectMultiple: =false
             Size: =13
+            Visible: =If(IsBlank(Label8_8.Text),ComboBoxvisible,true,false)
             X: =382
             Y: =148
             ZIndex: =16
