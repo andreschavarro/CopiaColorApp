@@ -403,8 +403,9 @@ Pantalla_Pantone As screen:
                         Table(
                             ParseJSON(
                                 afColorCalceteriaDev.Run(
-                                    inv_selected_pantone.Text,
-                                    inv_selected_material.Text
+                                    "rgb",
+                                    "200, 200, 200",
+                                    "Algodon 20/1"
                                 ).response
                             )
                         )

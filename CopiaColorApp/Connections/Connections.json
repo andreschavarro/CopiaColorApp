@@ -125,7 +125,7 @@
     "dependents": [],
     "id": "2621fdbb-0dec-4ed5-af1c-0d14b3aac690"
   },
-  "44dfd75f-c34b-4f85-8f02-3cad58c4f24a": {
+  "429a8b83-496f-49ad-b46e-016232358cd0": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
@@ -149,7 +149,7 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "44dfd75f-c34b-4f85-8f02-3cad58c4f24a"
+    "id": "429a8b83-496f-49ad-b46e-016232358cd0"
   },
   "5397bef3-3a93-4303-b144-6bd2d3016aae": {
     "connectionRef": {
