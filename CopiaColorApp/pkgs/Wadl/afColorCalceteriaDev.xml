@@ -2,12 +2,10 @@
   <doc title="afColorCalceteriaDev" />
   <grammars>
     <jsonTypes targetNamespace="https://msmanaged-na.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <string name="ManualTriggerInput_tipoColor_Valor_def" />
-      <string name="ManualTriggerInput_codColor_Valor_def" />
+      <string name="ManualTriggerInput_Pantone_Valor_def" />
       <string name="ManualTriggerInput_Material_Valor_def" />
       <object name="ManualTriggerInput">
-        <property name="tipoColor_Valor" type="string" />
-        <property name="codColor_Valor" type="string" />
+        <property name="Pantone_Valor" type="string" />
         <property name="Material_Valor" type="string" />
       </object>
       <string name="ResponseActionOutput_response_def" />
@@ -27,8 +25,7 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="tipoColor_Valor" path="/tipoColor_Valor" type="xs:string" required="true" />
-            <param style="plain" name="codColor_Valor" path="/codColor_Valor" type="xs:string" required="true" />
+            <param style="plain" name="Pantone_Valor" path="/Pantone_Valor" type="xs:string" required="true" />
             <param style="plain" name="Material_Valor" path="/Material_Valor" type="xs:string" required="true" />
           </representation>
         </request>
