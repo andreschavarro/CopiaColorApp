@@ -1106,12 +1106,12 @@ Pantalla_GestionVanisados As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =23
+        Height: =33
         Size: =20
         Text: =CountRows(ReporteDeErrores)
-        Width: =38
-        X: =609
-        Y: =88
+        Width: =48
+        X: =601
+        Y: =80
         ZIndex: =162
 
     Button1_13 As button:
