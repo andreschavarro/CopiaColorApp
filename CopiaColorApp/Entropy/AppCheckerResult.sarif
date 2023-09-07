@@ -4674,42 +4674,6 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 13
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
-              }
             }
           ]
         }
@@ -7028,19 +6992,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputR.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputR.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Filtros.TextInput2"
+                "type": "Pantalla_Pantone.Container_Filtros.TextInputR"
               }
             }
           ],
@@ -7088,19 +7052,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2_1.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2_1.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Filtros.TextInput2_1"
+                "type": "Pantalla_Pantone.Container_Filtros.TextInputB"
               }
             }
           ],
@@ -7148,19 +7112,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputG.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInput2_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.TextInputG.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Filtros.TextInput2_2"
+                "type": "Pantalla_Pantone.Container_Filtros.TextInputG"
               }
             }
           ],
@@ -13742,36 +13706,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.ComboBox1vi"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.ComboBox1vi",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ComboBox1vi",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 9
         },
         {
           "locations": [

@@ -279,7 +279,7 @@ Pantalla_Pantone As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: |-
                 =If(
-                    IsBlank(inv_selected_rgb.Text),
+                    IsBlank(selectedRGB),
                     RGBA(
                         111,
                         111,
@@ -289,21 +289,21 @@ Pantalla_Pantone As screen:
                     RGBA(
                         Index(
                             Split(
-                                inv_selected_rgb.Text,
+                                selectedRGB,
                                 ","
                             ),
                             1
                         ).Value,
                         Index(
                             Split(
-                                inv_selected_rgb.Text,
+                                selectedRGB,
                                 ","
                             ),
                             2
                         ).Value,
                         Index(
                             Split(
-                                inv_selected_rgb.Text,
+                                selectedRGB,
                                 ","
                             ),
                             3
@@ -346,8 +346,34 @@ Pantalla_Pantone As screen:
                         Text(Self.SearchText)
                     )
                 )
-            OnChange: =
-            OnSelect: =
+            OnChange: |-
+                =Set(
+                    selectedPantoneVar,
+                    ComboBox1.Selected.Pantone
+                );
+                Set(
+                    selectedColorCode,
+                    ComboBox1.Selected.Pantone
+                );
+                Set(
+                    selectedRGB,
+                    First(
+                        Filter(
+                            pantoneRgbFull_1,
+                            Pantone = ComboBox1.Selected.Pantone
+                        )
+                    ).rgb
+                )
+            OnSelect: |-
+                =Set(
+                    selectedRGB,
+                    First(
+                        Filter(
+                            pantoneRgbFull_1,
+                            Pantone = ComboBox1.Selected.Pantone
+                        )
+                    ).rgb
+                )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
@@ -362,24 +388,6 @@ Pantalla_Pantone As screen:
             X: =480
             Y: =68
             ZIndex: =4
-
-        inv_selected_material As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =39
-            Size: =13
-            Text: =Dropdown1.Selected.Value
-            Visible: =false
-            Width: =127
-            X: =1444
-            Y: =101
-            ZIndex: =5
 
         Button2 As button:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -402,9 +410,9 @@ Pantalla_Pantone As screen:
                         Table(
                             ParseJSON(
                                 afColorCalceteriaDev.Run(
-                                    "rgb",
-                                    "200, 200, 200",
-                                    "Algodon 20/1"
+                                    tipoColorFlujo,
+                                    selectedColorCode,
+                                    selectedMat
                                 ).response
                             )
                         )
@@ -423,42 +431,6 @@ Pantalla_Pantone As screen:
             Y: =68
             ZIndex: =6
 
-        inv_selected_pantone As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =48
-            Size: =13
-            Text: =ComboBox1.Selected.Pantone
-            Visible: =false
-            Width: =127
-            X: =1444
-            Y: =3
-            ZIndex: =7
-
-        inv_selected_rgb As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =48
-            Size: =13
-            Text: =First(Filter(pantoneRgbFull_1,Pantone=ComboBox1.Selected.Pantone)).rgb
-            Visible: =false
-            Width: =127
-            X: =1444
-            Y: =53
-            ZIndex: =8
-
         Dropdown1 As dropdown:
             BorderColor: =RGBA(166, 166, 166, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
@@ -476,6 +448,8 @@ Pantalla_Pantone As screen:
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
             Items: =["Todos los materiales", "Algodon", "Algodon 20/1","Algodon 30/1","Nylon","Nylon 44/12","Nylon 78/24"]
+            OnChange: =Set(selectedMat,Dropdown1.Selected.Value)
+            OnSelect: =Set(selectedMat,Dropdown1.Selected.Value)
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
@@ -507,16 +481,55 @@ Pantalla_Pantone As screen:
             HoverFill: =RGBA(212, 212, 212, 1)
             Items: =["Buscar elemento","Pantone","Color crystal","RGB"]
             OnChange: |-
-                =Set(ComboBox1vi,true);
-                Set(tipoColor,Dropdown2.SelectedText.Value
-                )
-            OnSelect: |+
-                =Set(ComboBox1vi,false);
-                Set(tipoColor,"Pantone");
-                Set(tipoColor,"Color crystal");
-                Set(tipoColor,"RGB")
+                =Set(
+                    tipoColor,
+                    Dropdown2.SelectedText.Value
+                );
+                Switch(
+                    tipoColor,
+                    "Pantone",
+                    Set(
+                        tipoColorFlujo,
+                        "pantone"
+                    ),
+                    "Color crystal",
+                    Set(
+                        tipoColorFlujo,
+                        "coColor"
+                    ),
+                    "RGB",
+                    Set(
+                        tipoColorFlujo,
+                        "rgb"
+                    )
                 
+                );
+                Clear(gall)
+            OnSelect: |-
+                =Set(
+                    tipoColor,
+                    Dropdown2.SelectedText.Value
+                );
+                Switch(
+                    tipoColor,
+                    "Pantone",
+                    Set(
+                        tipoColorFlujo,
+                        "pantone"
+                    ),
+                    "Color crystal",
+                    Set(
+                        tipoColorFlujo,
+                        "coColor"
+                    ),
+                    "RGB",
+                    Set(
+                        tipoColorFlujo,
+                        "rgb"
+                    )
                 
+                );
+                Clear(gall)
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
@@ -580,14 +593,35 @@ Pantalla_Pantone As screen:
                         Text(ComboBox2_1.SearchText)
                     )
                 )
-            OnChange: =Clear(gallVanisadoUnico)
+            OnChange: |-
+                =Set(
+                    color_var,
+                    Self.Selected.coColor
+                );
+                Set(
+                    selectedColorCode,
+                    color_var
+                );
+                Set(
+                    selectedRGB,
+                    First(
+                        Filter(
+                            coloresUnicos,
+                            coColor = Self.Selected.coColor
+                        )
+                    ).rgb
+                );
             OnSelect: |-
                 =Set(
                     color_var,
                     Self.Selected.coColor
                 );
                 Set(
-                    rgb_var,
+                    selectedColorCode,
+                    color_var
+                );
+                Set(
+                    selectedRGB,
                     First(
                         Filter(
                             coloresUnicos,
@@ -595,40 +629,6 @@ Pantalla_Pantone As screen:
                         )
                     ).rgb
                 );
-                Set(
-                    rgb_vani1,
-                    First(
-                        Filter(
-                            coloresUnicos,
-                            coColor = Self.Selected.coColor
-                        )
-                    ).rgb
-                );
-                Set(
-                    collectionFiltered,
-                    Filter(
-                        gestion_vanisados,
-                        color_var = coColor
-                    )
-                );
-                Set(
-                    varRegistros,
-                    CountRows(collectionFiltered) > 0
-                );
-                If(
-                    varRegistros,
-                    Set(
-                        CollectionShow,
-                        Filter(
-                            gestion_vanisados,
-                            color_var = coColor
-                        )
-                    ),
-                    Set(
-                        CollectionShow,
-                        coleccionAlternativa
-                    )
-                )
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
@@ -668,7 +668,7 @@ Pantalla_Pantone As screen:
             Y: =32
             ZIndex: =13
 
-        TextInput2 As text:
+        TextInputR As text:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
@@ -685,6 +685,24 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
+            OnChange: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
+            OnSelect: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
             PressedBorderColor: =RGBA(0, 120, 212, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -699,7 +717,7 @@ Pantalla_Pantone As screen:
             Y: =68
             ZIndex: =14
 
-        TextInput2_1 As text:
+        TextInputB As text:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
@@ -714,6 +732,26 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
+            OnChange: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
+                Clear(gall)
+            OnSelect: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
+                Clear(gall)
             PressedBorderColor: =RGBA(0, 120, 212, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -728,7 +766,7 @@ Pantalla_Pantone As screen:
             Y: =68
             ZIndex: =15
 
-        TextInput2_2 As text:
+        TextInputG As text:
             Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
@@ -743,6 +781,24 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(255, 255, 255, 1)
+            OnChange: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
+            OnSelect: |-
+                =Set(
+                    selectedRGB,
+                    Concatenate(TextInputR.Text,", ",TextInputG.Text,", ",TextInputB.Text)
+                );
+                Set(
+                    selectedColorCode,
+                    selectedRGB
+                );
             PressedBorderColor: =RGBA(0, 120, 212, 1)
             PressedColor: =RGBA(51, 51, 51, 1)
             PressedFill: =RGBA(255, 255, 255, 1)
@@ -875,7 +931,40 @@ Pantalla_Pantone As screen:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
                     DisabledFill: =RGBA(166, 166, 166, 1)
-                    Fill: =If(IsBlank(inv_selected_rgb.Text),RGBA(111,111,111,1),RGBA(Index(Split(inv_selected_rgb.Text,","),1).Value, Index(Split(inv_selected_rgb.Text,","),2).Value,Index(Split(inv_selected_rgb.Text,","),3).Value, 1))
+                    Fill: |-
+                        =If(
+                            IsBlank(selectedRGB),
+                            RGBA(
+                                111,
+                                111,
+                                111,
+                                1
+                            ),
+                            RGBA(
+                                Index(
+                                    Split(
+                                        selectedRGB,
+                                        ","
+                                    ),
+                                    1
+                                ).Value,
+                                Index(
+                                    Split(
+                                        selectedRGB,
+                                        ","
+                                    ),
+                                    2
+                                ).Value,
+                                Index(
+                                    Split(
+                                        selectedRGB,
+                                        ","
+                                    ),
+                                    3
+                                ).Value,
+                                1
+                            )
+                        )
                     FocusedBorderThickness: =4
                     Height: =72
                     HoverFill: =
@@ -1192,21 +1281,21 @@ Pantalla_Pantone As screen:
                                 colorlargo: RGBA(
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         1
                                     ).Value,
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         2
                                     ).Value,
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         3
@@ -1254,21 +1343,21 @@ Pantalla_Pantone As screen:
                                 colorlargo: RGBA(
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         1
                                     ).Value,
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         2
                                     ).Value,
                                     Index(
                                         Split(
-                                            inv_selected_rgb.Text,
+                                            selectedRGB,
                                             ","
                                         ),
                                         3
@@ -1565,7 +1654,7 @@ Pantalla_Pantone As screen:
                     =Live.Off
                 OnSelect: =
                 Size: =13
-                Text: =inv_selected_pantone
+                Text: =selectedPantoneVar
                 X: =220
                 Y: =81
                 ZIndex: =17
@@ -1710,7 +1799,7 @@ Pantalla_Pantone As screen:
             HoverFill: =
             OnSelect: |-
                 =Navigate(ColoresSeleccionados);
-                Set(selectedPantone,inv_selected_pantone.Text)
+                Set(selectedPantone,selectedPantoneVar)
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
