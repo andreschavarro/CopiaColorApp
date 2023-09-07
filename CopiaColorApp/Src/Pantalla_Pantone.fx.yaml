@@ -472,6 +472,7 @@ Pantalla_Pantone As screen:
             ChevronHoverBackground: =RGBA(212, 212, 212, 1)
             ChevronHoverFill: =RGBA(33, 33, 33, 1)
             Color: =RGBA(51, 51, 51, 1)
+            Default: =
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -479,7 +480,7 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Buscar elemento","Pantone","Color crystal","RGB"]
+            Items: =["Pantone","Color crystal","RGB"]
             OnChange: |-
                 =Set(
                     tipoColor,
@@ -1010,28 +1011,6 @@ Pantalla_Pantone As screen:
                     Y: =165
                     ZIndex: =6
 
-                Pantone As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    FontWeight: =FontWeight.Bold
-                    Height: =17
-                    LineHeight: =1.210227
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =11.25
-                    Text: ="Pantone"
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =63
-                    X: =35
-                    Y: =203
-                    ZIndex: =7
-
                 Rectangle18 As rectangle:
                     BorderColor: =
                     BorderStyle: =
@@ -1210,28 +1189,6 @@ Pantalla_Pantone As screen:
                     X: =35
                     Y: =185
                     ZIndex: =14
-
-                TCX23453 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    FontWeight: =FontWeight.Lighter
-                    Height: =21
-                    LineHeight: =1.210227
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =11.25
-                    Text: =Text(ThisItem.Value.pantone)
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =119
-                    X: =27
-                    Y: =228
-                    ZIndex: =15
 
                 Checkbox4 As checkbox:
                     BorderColor: =RGBA(0, 0, 0, 0)
