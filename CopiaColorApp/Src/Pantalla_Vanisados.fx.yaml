@@ -2588,12 +2588,12 @@ Pantalla_Vanisados As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
             FocusedBorderThickness: =4
-            Height: =119
+            Height: =122
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =722
-            X: =379
-            Y: =442
+            Width: =815
+            X: =340
+            Y: =396
             ZIndex: =8
 
         Rectangle73_3 As rectangle:
@@ -2635,12 +2635,12 @@ Pantalla_Vanisados As screen:
                     )
                 )
             FocusedBorderThickness: =4
-            Height: =154
+            Height: =140
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =189
-            X: =421
-            Y: =487
+            Width: =190
+            X: =382
+            Y: =444
             ZIndex: =9
 
         CdigoCrystal_13 As label:
@@ -2662,8 +2662,8 @@ Pantalla_Vanisados As screen:
                 ="Datos del color:"
             VerticalAlign: =VerticalAlign.Top
             Width: =155
-            X: =628
-            Y: =572
+            X: =600
+            Y: =538
             ZIndex: =10
 
         Rectangle15_5 As rectangle:
@@ -2698,7 +2698,7 @@ Pantalla_Vanisados As screen:
             Text: =mater
             VerticalAlign: =VerticalAlign.Top
             Width: =300
-            X: =744
+            X: =774
             Y: =343
             ZIndex: =12
 
@@ -2734,8 +2734,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.colorName
-            X: =922
-            Y: =618
+            X: =863
+            Y: =567
             ZIndex: =16
 
         Label3_3 As label:
@@ -2748,8 +2748,8 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             Text: =First(gallVanisadoUnico).Value.coColor
-            X: =415
-            Y: =679
+            X: =382
+            Y: =620
             ZIndex: =17
 
         Label9_7 As label:
@@ -2767,8 +2767,8 @@ Pantalla_Vanisados As screen:
             Size: =15
             Text: ="Color Crystal"
             Width: =139
-            X: =421
-            Y: =641
+            X: =382
+            Y: =587
             ZIndex: =18
 
         Image2_4 As image:
@@ -2809,8 +2809,8 @@ Pantalla_Vanisados As screen:
             Text: ="Nombre del color"
             VerticalAlign: =VerticalAlign.Top
             Width: =170
-            X: =912
-            Y: =589
+            X: =863
+            Y: =538
             ZIndex: =21
 
         Icon1 As icon.Cancel:
@@ -2830,8 +2830,8 @@ Pantalla_Vanisados As screen:
             PressedColor: =ColorFade(RGBA(255, 255, 255,1),100%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =55
-            X: =1072
-            Y: =344
+            X: =1092
+            Y: =334
             ZIndex: =22
 
         Icon10_4 As icon.QuestionMark:
@@ -2844,7 +2844,7 @@ Pantalla_Vanisados As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(204, 204, 204, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.QuestionMark
+            Icon: =Icon.Warning
             OnSelect: |-
                 =Set(
                     VarCodCrystal,
@@ -2883,7 +2883,7 @@ Pantalla_Vanisados As screen:
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =30
-            X: =1112
+            X: =1102
             Y: =663
             ZIndex: =23
 
