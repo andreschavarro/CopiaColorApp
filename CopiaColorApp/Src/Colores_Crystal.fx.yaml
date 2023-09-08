@@ -124,8 +124,8 @@ Colores_Crystal As screen:
             Height: =59
             Size: =18
             Text: =User().FullName
-            Width: =314
-            X: =1148
+            Width: =340
+            X: =1163
             ZIndex: =5
 
         Button6_2 As button:

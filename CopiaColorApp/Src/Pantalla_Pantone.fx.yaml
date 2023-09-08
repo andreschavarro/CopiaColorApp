@@ -121,8 +121,8 @@ Pantalla_Pantone As screen:
             Height: =59
             Size: =18
             Text: =User().FullName
-            Width: =322
-            X: =1148
+            Width: =340
+            X: =1163
             ZIndex: =5
 
         Button6_1 As button:
@@ -247,8 +247,8 @@ Pantalla_Pantone As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =tipoColor = "Pantone"
             Width: =162
-            X: =585
-            Y: =32
+            X: =549
+            Y: =33
             ZIndex: =1
 
         Materiaprimaprincipal1 As label:
@@ -387,7 +387,7 @@ Pantalla_Pantone As screen:
             Visible: |
                 =tipoColor ="Pantone"
             Width: =372
-            X: =480
+            X: =444
             Y: =68
             ZIndex: =4
 
@@ -668,7 +668,7 @@ Pantalla_Pantone As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =tipoColor = "Color crystal"
             Width: =162
-            X: =585
+            X: =559
             Y: =32
             ZIndex: =13
 
@@ -831,8 +831,8 @@ Pantalla_Pantone As screen:
             Size: =13
             Text: ="RGB"
             Visible: =tipoColor ="RGB"
-            X: =583
-            Y: =25
+            X: =565
+            Y: =27
             ZIndex: =17
 
     Container_Gallery2 As groupContainer.manualLayoutContainer:
@@ -1011,7 +1011,7 @@ Pantalla_Pantone As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =98
                     X: =35
-                    Y: =165
+                    Y: =179
                     ZIndex: =6
 
                 Rectangle18 As rectangle:
@@ -1058,7 +1058,7 @@ Pantalla_Pantone As screen:
                     PressedFill: =RGBA(0, 120, 212, 1)
                     Width: =153
                     X: =22
-                    Y: =65
+                    Y: =80
                     ZIndex: =8
 
                 Mssimilar4 As label:
@@ -1190,7 +1190,7 @@ Pantalla_Pantone As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =48
                     X: =35
-                    Y: =185
+                    Y: =199
                     ZIndex: =14
 
                 Checkbox4 As checkbox:
