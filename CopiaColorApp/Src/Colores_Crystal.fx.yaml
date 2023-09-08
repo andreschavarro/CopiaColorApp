@@ -326,6 +326,7 @@ Colores_Crystal As screen:
             ZIndex: =5
 
         DropdownMaterial As dropdown:
+            AllowEmptySelection: =true
             BorderColor: =RGBA(166, 166, 166, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
             ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -341,7 +342,7 @@ Colores_Crystal As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Todos los materiales", "Algodon", "Nylon"]
+            Items: =["Algodon", "Nylon"]
             OnChange: =Set(var_mat,Text(Self.Selected.Value))
             PaddingBottom: =5
             PaddingLeft: =12
@@ -388,7 +389,7 @@ Colores_Crystal As screen:
             ChevronHoverBackground: =RGBA(212, 212, 212, 1)
             ChevronHoverFill: =RGBA(33, 33, 33, 1)
             Color: =RGBA(51, 51, 51, 1)
-            Default: ="adsadsa"
+            Default: =""
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -451,11 +452,31 @@ Colores_Crystal As screen:
             =//colorInput.Text
             //codigoInput.Text
             //DropdownColores.Selected.Value
-            Filter(
+            Switch(
+                DropdownMaterial.Selected.Value,
+                "Algodon",
+                Filter(
                     colorCalceteriaDev,
                     IsBlank(colorInput.Text) || coColor = colorInput.Text,
                     IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
-                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value)
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value,
+                    algodon = "si"
+                ),
+                "Nylon",
+                Filter(
+                    colorCalceteriaDev,
+                    IsBlank(colorInput.Text) || coColor = colorInput.Text,
+                    IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value,
+                    nylon = "si"
+                ),
+                Filter(
+                    colorCalceteriaDev,
+                    IsBlank(colorInput.Text) || coColor = colorInput.Text,
+                    IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value
+                )
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
