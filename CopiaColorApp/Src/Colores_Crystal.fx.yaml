@@ -326,6 +326,7 @@ Colores_Crystal As screen:
             ZIndex: =5
 
         DropdownMaterial As dropdown:
+            AllowEmptySelection: =true
             BorderColor: =RGBA(166, 166, 166, 1)
             ChevronBackground: =RGBA(255, 255, 255, 1)
             ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
@@ -341,7 +342,7 @@ Colores_Crystal As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Todos los materiales", "Algodon", "Nylon"]
+            Items: =["Algodon", "Nylon"]
             OnChange: =Set(var_mat,Text(Self.Selected.Value))
             PaddingBottom: =5
             PaddingLeft: =12
@@ -388,7 +389,7 @@ Colores_Crystal As screen:
             ChevronHoverBackground: =RGBA(212, 212, 212, 1)
             ChevronHoverFill: =RGBA(33, 33, 33, 1)
             Color: =RGBA(51, 51, 51, 1)
-            Default: =""""""
+            Default: =""
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -396,7 +397,7 @@ Colores_Crystal As screen:
             HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
-            Items: =["Todos","Amarillo", "Azul", "Rojo", "Verde", "Morado", "Naranjado" , "Gris", "Rosado", "Negro", "Blanco", "Beige", "Cafe"]
+            Items: =["Amarillo", "Azul", "Rojo", "Verde", "Morado", "Naranjado" , "Gris", "Rosado", "Negro", "Blanco", "Beige", "Cafe"]
             PaddingBottom: =5
             PaddingLeft: =12
             PaddingRight: =5
@@ -448,61 +449,29 @@ Colores_Crystal As screen:
         DelayItemLoading: =true
         Height: =681
         Items: |-
-            =If (
-                var_mat = "Algodon",
+            =Switch(
+                DropdownMaterial.Selected.Value,
+                "Algodon",
                 Filter(
                     colorCalceteriaDev,
-                    StartsWith(
-                        coColor,
-                        colorInput.Text
-                    ) && StartsWith(
-                        coMaterial,
-                        codigoInput.Text
-                    ) && StartsWith(
-                        principalColor,
-                        If(
-                            Text(DropdownColores.Selected.Value) = "Todos",
-                            "",
-                            Text(DropdownColores.Selected.Value)
-                        )
-                    ) && algodon = "Si"
+                    IsBlank(colorInput.Text) || coColor = colorInput.Text,
+                    IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value,
+                    algodon = "si"
                 ),
-                If (
-                    var_mat = "Nylon",
-                    Filter(
-                        colorCalceteriaDev,
-                        StartsWith(
-                            coColor,
-                            colorInput.Text
-                        ) && StartsWith(
-                            coMaterial,
-                            codigoInput.Text
-                        ) && StartsWith(
-                            principalColor,
-                            If(
-                                Text(DropdownColores.Selected.Value) = "Todos",
-                                "",
-                                Text(DropdownColores.Selected.Value)
-                            )
-                        ) && nylon = "Si"
-                    ),
-                    Filter(
-                        colorCalceteriaDev,
-                        StartsWith(
-                            coColor,
-                            colorInput.Text
-                        ) && StartsWith(
-                            coMaterial,
-                            codigoInput.Text
-                        ) && StartsWith(
-                            principalColor,
-                            If(
-                                Text(DropdownColores.Selected.Value) = "Todos",
-                                "",
-                                Text(DropdownColores.Selected.Value)
-                            )
-                        )
-                    )
+                "Nylon",
+                Filter(
+                    colorCalceteriaDev,
+                    IsBlank(colorInput.Text) || coColor = colorInput.Text,
+                    IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value,
+                    nylon = "si"
+                ),
+                Filter(
+                    colorCalceteriaDev,
+                    IsBlank(colorInput.Text) || coColor = colorInput.Text,
+                    IsBlank(codigoInput.Text) || coMaterial = codigoInput.Text,
+                    IsBlank(DropdownColores.Selected.Value) || principalColor = DropdownColores.Selected.Value
                 )
             )
         Layout: =Layout.Vertical
