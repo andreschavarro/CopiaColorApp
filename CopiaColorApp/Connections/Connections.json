@@ -181,6 +181,34 @@
     "dependents": [],
     "id": "b6965406-cef4-4463-b637-dee95013238d"
   },
+  "be17d431-295c-4c4f-9b79-c92f1c506352": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "obtener_usuarios_color_app"
+    ],
+    "dependencies": {
+      "shared_powerappsforappmakers": "dcb26d09-c5b2-40ee-bf9b-4ff80bb4130b"
+    },
+    "dependents": [],
+    "id": "be17d431-295c-4c4f-9b79-c92f1c506352"
+  },
   "daaf74f7-7e2a-42ab-a559-6dded62a0bad": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -206,5 +234,19 @@
     "dependencies": {},
     "dependents": [],
     "id": "daaf74f7-7e2a-42ab-a559-6dded62a0bad"
+  },
+  "dcb26d09-c5b2-40ee-bf9b-4ff80bb4130b": {
+    "connectionRef": {
+      "displayName": "Power Apps para creadores",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/powerappsforappmakers/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "be17d431-295c-4c4f-9b79-c92f1c506352"
+    ],
+    "id": "dcb26d09-c5b2-40ee-bf9b-4ff80bb4130b"
   }
 }
