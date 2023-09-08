@@ -1188,12 +1188,27 @@ Pantalla_Vanisados As screen:
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Warning
-                OnSelect: |-
-                    =Set(VarCodCrystal,ThisItem.coColor);
-                    Set(VarMateriaP,ThisItem.materiaPrima);
-                    Set(VarTipovanizado,"Vanizados44/2");
-                    Set(Varvanizadoactual,ThisItem.V442);
-                    Set(contenedorVisible,true);
+                OnSelect: |
+                    =Set(
+                        VarCodCrystal,
+                        ThisItem.coColor
+                    );
+                    Set(
+                        VarMateriaP,
+                        ThisItem.materiaPrima
+                    );
+                    Set(
+                        VarTipovanizado,
+                        "Vanizados44/2"
+                    );
+                    Set(
+                        Varvanizadoactual,
+                        ThisItem.V442
+                    );
+                    Set(
+                        contenedorVisible,
+                        true
+                    );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1893,7 +1908,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =293
+                Width: =296
                 X: =3
                 Y: =3
                 ZIndex: =1
@@ -2010,7 +2025,8 @@ Pantalla_Vanisados As screen:
                     Set(Varvanizadoactual,ThisItem.V782);
                     Set(contenedorVisible,true);
                     Set(ComboBoxvisible,true);
-                    Set(VarEscogerMateria , true)
+                    Set(VarEscogerMateria,true);
+                    Set(VarOcultar, false)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -2077,7 +2093,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =293
+                Width: =296
                 X: =3
                 Y: =3
                 ZIndex: =1
@@ -2206,7 +2222,8 @@ Pantalla_Vanisados As screen:
                     Set(Varvanizadoactual,ThisItem.V442);
                     Set(contenedorVisible,true);
                     Set(ComboBoxvisible,true);
-                    Set(VarEscogerMateria , true)
+                    Set(VarEscogerMateria , true);
+                    Set(VarOcultar,true)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -2900,6 +2917,7 @@ Pantalla_Vanisados As screen:
                     ComboBoxvisible,
                     true
                 );
+                Set(VarOcultar, true);
                 If(
                     IsBlank(VarMateriaP),
                     Set(
@@ -2908,6 +2926,17 @@ Pantalla_Vanisados As screen:
                     ),
                     Set(
                         VarEscogerMateria,
+                        false
+                    )
+                );
+                If(
+                    //IsBlank(VarOcultar);
+                    Set(
+                        VarOcultar,
+                        true
+                    ),
+                    Set(
+                        VarOcultar,
                         false
                     )
                 )
@@ -2976,7 +3005,8 @@ Pantalla_Vanisados As screen:
                 Set(contenedorVisible,false);
                 //ocultar
                 Set(botonvisible,false);
-                Set(ComboBoxvisible,false)
+                Set(ComboBoxvisible,false);
+                
                 
                 
                 
@@ -3079,11 +3109,12 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             OnSelect: |
-                =Set(ComboBoxvisible,true)
+                =
             Size: =13
             Text: |+
                 =VarMateriaP
                 
+            Width: =180
             X: =210
             Y: =148
             ZIndex: =8
@@ -3243,7 +3274,6 @@ Pantalla_Vanisados As screen:
             OnSelect: |+
                 =If(ComboBox4.Selected.Value,"",Label8_8.Text);
                 Set(VarMateriaP,ComboBox4.Selected.Value);
-                Set(maptpri,ComboBox4.Selected.Value)
                 
                 
                 

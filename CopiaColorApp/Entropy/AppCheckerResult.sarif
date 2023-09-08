@@ -12441,36 +12441,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.maptpri"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.maptpri",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "maptpri",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 11
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.VarcomboBox"
                 }
               ],
@@ -12512,6 +12482,36 @@
               },
               "properties": {
                 "member": "var_mat",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.VarOcultar"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VarOcultar",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VarOcultar",
                 "module": "App",
                 "type": "App"
               }
