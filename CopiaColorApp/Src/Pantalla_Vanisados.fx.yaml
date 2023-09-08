@@ -581,7 +581,7 @@ Pantalla_Vanisados As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =571
+        Height: =471
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1838,13 +1838,13 @@ Pantalla_Vanisados As screen:
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =166
+            Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V782),true,false)
-            Width: =299
+            Width: =315
             X: =208
             Y: =20
             ZIndex: =5
@@ -2015,21 +2015,21 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =262
+                X: =278
                 Y: =125
                 ZIndex: =5
 
         "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =166
+            Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V442),true,false)
-            Width: =299
-            X: =525
+            Width: =315
+            X: =533
             Y: =20
             ZIndex: =6
 
@@ -2211,22 +2211,22 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =29
-                X: =262
+                X: =278
                 Y: =125
                 ZIndex: =5
 
         ConAlertaElastico As groupContainer.manualLayoutContainer:
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =166
+            Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Visible: |
                 =If(IsBlank(ThisItem.elastico),true,false)
-            Width: =299
-            X: =866
+            Width: =315
+            X: =858
             Y: =20
             ZIndex: =7
 
@@ -2392,21 +2392,21 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =262
+                X: =278
                 Y: =125
                 ZIndex: =5
 
         ConAlertaLycra As groupContainer.manualLayoutContainer:
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =166
+            Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.lycra),true,false)
-            Width: =299
-            X: =1161
+            Width: =315
+            X: =1183
             Y: =20
             ZIndex: =8
 
@@ -3064,6 +3064,7 @@ Pantalla_Vanisados As screen:
             Font: =Font.'Segoe UI'
             Size: =13
             Text: =VarCodCrystal
+            Width: =180
             X: =210
             Y: =88
             ZIndex: =7
@@ -3098,6 +3099,7 @@ Pantalla_Vanisados As screen:
             Font: =Font.'Segoe UI'
             Size: =13
             Text: =VarTipovanizado
+            Width: =180
             X: =210
             Y: =206
             ZIndex: =9
@@ -3115,11 +3117,13 @@ Pantalla_Vanisados As screen:
             Text: =Varvanizadoactual
             Visible: |
                 =true
+            Width: =180
             X: =210
-            Y: =258
+            Y: =264
             ZIndex: =10
 
         RecomendadoTextinput As text:
+            Align: =Align.Center
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =2
             Color: =RGBA(51, 51, 51, 1)
@@ -3147,11 +3151,12 @@ Pantalla_Vanisados As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Size: =13
+            Size: =10
             Visible: |+
                 =true
                 
-            X: =181
+            Width: =180
+            X: =210
             Y: =320
             ZIndex: =11
 
@@ -3258,8 +3263,9 @@ Pantalla_Vanisados As screen:
             SearchItems: =Search(Distinct(gestion_vanisados , materiaPrima),ComboBox4.SearchText,"Value")
             SelectionFill: =RGBA(0, 120, 212, 1)
             SelectMultiple: =false
-            Size: =13
+            Size: =10
             Visible: =If(VarEscogerMateria,ComboBoxvisible,true,false)
+            Width: =180
             X: =210
             Y: =148
             ZIndex: =16
