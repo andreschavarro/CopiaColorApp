@@ -2226,7 +2226,7 @@ Pantalla_Vanisados As screen:
             Visible: |
                 =If(IsBlank(ThisItem.elastico),true,false)
             Width: =299
-            X: =844
+            X: =866
             Y: =20
             ZIndex: =7
 
