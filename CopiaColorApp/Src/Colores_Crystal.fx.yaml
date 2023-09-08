@@ -449,10 +449,7 @@ Colores_Crystal As screen:
         DelayItemLoading: =true
         Height: =681
         Items: |-
-            =//colorInput.Text
-            //codigoInput.Text
-            //DropdownColores.Selected.Value
-            Switch(
+            =Switch(
                 DropdownMaterial.Selected.Value,
                 "Algodon",
                 Filter(
