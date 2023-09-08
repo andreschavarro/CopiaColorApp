@@ -1836,15 +1836,22 @@ Pantalla_Vanisados As screen:
                 ZIndex: =10
 
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
-            Height: =190
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+            Height: =166
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V782),true,false)
-            Width: =300
+            Width: =299
             X: =208
-            Y: =6
+            Y: =20
             ZIndex: =5
 
             Button9_1 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -1852,10 +1859,10 @@ Pantalla_Vanisados As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =166
-                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                Height: =160
+                HoverBorderColor: =RGBA(0, 0, 0, 0.44)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverFill: =RGBA(0, 0, 0, 0.43)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -1879,15 +1886,16 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =RGBA(202, 202, 202, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 Size: =15
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =300
-                Y: =13
+                Width: =293
+                X: =3
+                Y: =3
                 ZIndex: =1
 
             Button9_4 As button:
@@ -1900,8 +1908,8 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(230, 230, 230, 1)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -1929,9 +1937,9 @@ Pantalla_Vanisados As screen:
                     Set(Varvanizadoactual,ThisItem.V782);
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedBorderColor: =
+                PressedColor: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1941,8 +1949,8 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                X: =70
-                Y: =126
+                X: =57
+                Y: =115
                 ZIndex: =2
 
             Label4 As label:
@@ -1960,8 +1968,8 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =36
-                Y: =61
+                X: =30
+                Y: =50
                 ZIndex: =3
 
             Image3_5 As image:
@@ -1979,8 +1987,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =121
-                Y: =25
+                X: =118
+                Y: =12
                 ZIndex: =4
 
             Icon10_5 As icon.QuestionMark:
@@ -2007,20 +2015,27 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =254
-                Y: =136
+                X: =262
+                Y: =125
                 ZIndex: =5
 
         "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
-            Height: =190
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+            Height: =166
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V442),true,false)
-            Width: =300
-            X: =533
-            Y: =6
+            Width: =299
+            X: =525
+            Y: =20
             ZIndex: =6
 
             Button9_5 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2028,10 +2043,10 @@ Pantalla_Vanisados As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =166
+                Height: =160
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverFill: =RGBA(0, 0, 0, 0.43)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -2055,15 +2070,16 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =RGBA(202, 202, 202, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 Size: =15
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =300
-                Y: =13
+                Width: =293
+                X: =3
+                Y: =3
                 ZIndex: =1
 
             Button9_2 As button:
@@ -2076,8 +2092,8 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(230, 230, 230, 1)
                 OnSelect: |
                     =Clear(gallVanisadoUnico);
                     Set(
@@ -2117,9 +2133,9 @@ Pantalla_Vanisados As screen:
                         gitcarga,
                         false
                     );
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedBorderColor: =RGBA(202, 202, 202, 1)
+                PressedColor: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2129,8 +2145,8 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.V442),true,false)
-                X: =55
-                Y: =126
+                X: =73
+                Y: =115
                 ZIndex: =2
 
             Label4_2 As label:
@@ -2148,8 +2164,8 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =26
-                Y: =61
+                X: =30
+                Y: =50
                 ZIndex: =3
 
             Image3_2 As image:
@@ -2167,8 +2183,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =106
-                Y: =24
+                X: =118
+                Y: =12
                 ZIndex: =4
 
             Icon10_6 As icon.QuestionMark:
@@ -2195,21 +2211,28 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =29
-                X: =240
-                Y: =135
+                X: =262
+                Y: =125
                 ZIndex: =5
 
         ConAlertaElastico As groupContainer.manualLayoutContainer:
-            Height: =190
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+            Height: =166
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: |
                 =If(IsBlank(ThisItem.elastico),true,false)
-            Width: =300
-            X: =868
-            Y: =6
+            Width: =299
+            X: =844
+            Y: =20
             ZIndex: =7
 
             Button9_7 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2217,10 +2240,10 @@ Pantalla_Vanisados As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =166
+                Height: =160
                 HoverBorderColor: =RGBA(0, 0, 0, 1)
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(0, 0, 0, 0.61)
+                HoverFill: =RGBA(0, 0, 0, 0.43)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -2244,15 +2267,16 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 Size: =15
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =300
-                Y: =13
+                Width: =293
+                X: =3
+                Y: =3
                 ZIndex: =1
 
             Button9 As button:
@@ -2265,8 +2289,8 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(204, 204, 204, 1)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -2290,9 +2314,9 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2302,8 +2326,8 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.elastico),true,false)
-                X: =55
-                Y: =126
+                X: =65
+                Y: =115
                 ZIndex: =2
 
             Label4_3 As label:
@@ -2321,8 +2345,8 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =26
-                Y: =61
+                X: =30
+                Y: =50
                 ZIndex: =3
 
             Image3_3 As image:
@@ -2340,8 +2364,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =106
-                Y: =24
+                X: =118
+                Y: =12
                 ZIndex: =4
 
             Icon10_7 As icon.QuestionMark:
@@ -2368,20 +2392,27 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =235
-                Y: =131
+                X: =262
+                Y: =125
                 ZIndex: =5
 
         ConAlertaLycra As groupContainer.manualLayoutContainer:
-            Height: =190
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+            Height: =166
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.lycra),true,false)
-            Width: =300
-            X: =1190
-            Y: =6
+            Width: =299
+            X: =1161
+            Y: =20
             ZIndex: =8
 
             Button9_8 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
+                BorderStyle: =BorderStyle.None
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -2389,10 +2420,10 @@ Pantalla_Vanisados As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
-                Height: =166
-                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                Height: =160
+                HoverBorderColor: =RGBA(204, 204, 204, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverFill: =RGBA(0, 0, 0, 0.45)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -2416,15 +2447,16 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 Size: =15
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =300
-                Y: =13
+                Width: =293
+                X: =3
+                Y: =3
                 ZIndex: =1
 
             Button9_3 As button:
@@ -2437,8 +2469,8 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(204, 204, 204, 1)
                 OnSelect: |+
                     =Clear(gallVanisadoUnico);
                     Set(cuadroVisible,true);
@@ -2462,9 +2494,9 @@ Pantalla_Vanisados As screen:
                     );
                     Set(gitcarga,false);
                     
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(202, 202, 202, 1)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -2474,8 +2506,8 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.lycra),true,false)
-                X: =60
-                Y: =126
+                X: =65
+                Y: =115
                 ZIndex: =2
 
             Label4_4 As label:
@@ -2493,8 +2525,8 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =26
-                Y: =61
+                X: =30
+                Y: =50
                 ZIndex: =3
 
             Image3_4 As image:
@@ -2512,8 +2544,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =54
-                X: =113
-                Y: =25
+                X: =118
+                Y: =12
                 ZIndex: =4
 
             Icon10_8 As icon.QuestionMark:
@@ -2540,8 +2572,8 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =237
-                Y: =136
+                X: =262
+                Y: =125
                 ZIndex: =5
 
         materiaPrima As label:
