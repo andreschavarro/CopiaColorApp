@@ -1908,7 +1908,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =296
+                Width: =309
                 X: =3
                 Y: =3
                 ZIndex: =1
@@ -2093,7 +2093,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =296
+                Width: =309
                 X: =3
                 Y: =3
                 ZIndex: =1
@@ -2291,7 +2291,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =293
+                Width: =309
                 X: =3
                 Y: =3
                 ZIndex: =1
@@ -2471,7 +2471,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =293
+                Width: =309
                 X: =3
                 Y: =3
                 ZIndex: =1
