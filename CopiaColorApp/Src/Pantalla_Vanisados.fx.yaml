@@ -937,10 +937,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(0, 0, 0, 1)
                 FocusedBorderThickness: =4
-                Height: =32
+                Height: =30
                 HoverFill: =RGBA(0, 0, 0, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 ZIndex: =3
 
             Rectangle87 As rectangle:
@@ -949,10 +949,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
                 FocusedBorderThickness: =4
-                Height: =60
+                Height: =53
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 Y: =32
                 ZIndex: =4
 
@@ -1025,13 +1025,13 @@ Pantalla_Vanisados As screen:
                         )
                     )
                 FocusedBorderThickness: =4
-                Height: =72
+                Height: =65
                 HoverFill: =
                 OnSelect: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =75
-                X: =39
-                Y: =49
+                Width: =90
+                X: =27
+                Y: =56
                 ZIndex: =6
 
             CdigoCrystal_5 As label:
@@ -1052,9 +1052,9 @@ Pantalla_Vanisados As screen:
                 Text: |-
                     ="Datos del color:"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =82
-                X: =118
-                Y: =94
+                Width: =90
+                X: =130
+                Y: =90
                 ZIndex: =7
 
             Label9_1 As label:
@@ -1072,8 +1072,8 @@ Pantalla_Vanisados As screen:
                 Size: =9.25
                 Text: ="Color Crystal"
                 Width: =90
-                X: =40
-                Y: =124
+                X: =20
+                Y: =121
                 ZIndex: =8
 
             Datosdelcolor_1 As label:
@@ -1095,8 +1095,8 @@ Pantalla_Vanisados As screen:
                 Text: =ThisItem.V442
                 VerticalAlign: =VerticalAlign.Top
                 Width: =75
-                X: =45
-                Y: =139
+                X: =25
+                Y: =136
                 ZIndex: =9
 
             Button3_2 As button:
@@ -1183,11 +1183,11 @@ Pantalla_Vanisados As screen:
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =30
+                Height: =25
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.QuestionMark
+                Icon: =Icon.Warning
                 OnSelect: |-
                     =Set(VarCodCrystal,ThisItem.coColor);
                     Set(VarMateriaP,ThisItem.materiaPrima);
@@ -1197,9 +1197,9 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =30
-                X: =240
-                Y: =121
+                Width: =25
+                X: =279
+                Y: =133
                 ZIndex: =12
 
         contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
@@ -1220,10 +1220,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(0, 0, 0, 1)
                 FocusedBorderThickness: =4
-                Height: =32
+                Height: =30
                 HoverFill: =RGBA(0, 0, 0, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 ZIndex: =2
 
             Rectangle87_2 As rectangle:
@@ -1232,10 +1232,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
                 FocusedBorderThickness: =4
-                Height: =62
+                Height: =53
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 Y: =32
                 ZIndex: =3
 
@@ -1308,13 +1308,13 @@ Pantalla_Vanisados As screen:
                         )
                     )
                 FocusedBorderThickness: =4
-                Height: =72
+                Height: =65
                 HoverFill: =
                 OnSelect: =If(IsBlank(ThisItem.elastico),Set(estadoTarjeta,false),Set(estadoTarjeta,true));
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =75
-                X: =39
-                Y: =49
+                Width: =90
+                X: =27
+                Y: =56
                 ZIndex: =5
 
             CdigoCrystal_6 As label:
@@ -1335,9 +1335,9 @@ Pantalla_Vanisados As screen:
                 Text: |-
                     ="Datos del color:"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =82
-                X: =118
-                Y: =101
+                Width: =90
+                X: =130
+                Y: =90
                 ZIndex: =6
 
             Label9_2 As label:
@@ -1355,8 +1355,8 @@ Pantalla_Vanisados As screen:
                 Size: =9.25
                 Text: ="Color Crystal"
                 Width: =90
-                X: =35
-                Y: =131
+                X: =20
+                Y: =121
                 ZIndex: =7
 
             Datosdelcolor_2 As label:
@@ -1378,8 +1378,8 @@ Pantalla_Vanisados As screen:
                 Text: =ThisItem.elastico
                 VerticalAlign: =VerticalAlign.Top
                 Width: =75
-                X: =45
-                Y: =146
+                X: =25
+                Y: =136
                 ZIndex: =8
 
             Button3_3 As button:
@@ -1517,11 +1517,11 @@ Pantalla_Vanisados As screen:
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =30
+                Height: =25
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.QuestionMark
+                Icon: =Icon.Warning
                 OnSelect: |
                     =Set(VarCodCrystal,ThisItem.coColor);
                     Set(VarMateriaP,ThisItem.materiaPrima);
@@ -1533,9 +1533,9 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Visible: =If(ThisItem.lycra = color_var,false,true)
-                Width: =30
-                X: =240
-                Y: =128
+                Width: =25
+                X: =279
+                Y: =133
                 ZIndex: =13
 
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
@@ -1568,10 +1568,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(0, 0, 0, 1)
                 FocusedBorderThickness: =4
-                Height: =32
+                Height: =30
                 HoverFill: =RGBA(0, 0, 0, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 ZIndex: =2
 
             Rectangle87_4 As rectangle:
@@ -1580,10 +1580,10 @@ Pantalla_Vanisados As screen:
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
                 FocusedBorderThickness: =4
-                Height: =60
+                Height: =53
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
+                Width: =315
                 Y: =32
                 ZIndex: =3
 
@@ -1656,12 +1656,12 @@ Pantalla_Vanisados As screen:
                         )
                     )
                 FocusedBorderThickness: =4
-                Height: =72
+                Height: =65
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =75
-                X: =39
-                Y: =49
+                Width: =90
+                X: =27
+                Y: =56
                 ZIndex: =4
 
             CdigoCrystal_11 As label:
@@ -1682,9 +1682,9 @@ Pantalla_Vanisados As screen:
                 Text: |-
                     ="Datos del color:"
                 VerticalAlign: =VerticalAlign.Top
-                Width: =82
-                X: =121
-                Y: =94
+                Width: =90
+                X: =130
+                Y: =90
                 ZIndex: =5
 
             Label9_6 As label:
@@ -1702,8 +1702,8 @@ Pantalla_Vanisados As screen:
                 Size: =9.25
                 Text: ="Color Crystal"
                 Width: =85
-                X: =35
-                Y: =124
+                X: =20
+                Y: =121
                 ZIndex: =6
 
             Datosdelcolor_6 As label:
@@ -1725,8 +1725,8 @@ Pantalla_Vanisados As screen:
                 Text: =ThisItem.lycra
                 VerticalAlign: =VerticalAlign.Top
                 Width: =75
-                X: =45
-                Y: =139
+                X: =25
+                Y: =136
                 ZIndex: =7
 
             Button3_4 As button:
@@ -1814,11 +1814,11 @@ Pantalla_Vanisados As screen:
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =30
+                Height: =25
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.QuestionMark
+                Icon: =Icon.Warning
                 OnSelect: |
                     =Set(VarCodCrystal,ThisItem.coColor);
                     Set(VarMateriaP,ThisItem.materiaPrima);
@@ -1830,9 +1830,9 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Visible: |
                     =If(ThisItem.lycra = color_var,false,true)
-                Width: =30
-                X: =240
-                Y: =121
+                Width: =25
+                X: =279
+                Y: =133
                 ZIndex: =10
 
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
