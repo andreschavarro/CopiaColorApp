@@ -122,8 +122,8 @@ Pantalla_Vanisados As screen:
             Height: =59
             Size: =18
             Text: =User().FullName
-            Width: =378
-            X: =1148
+            Width: =340
+            X: =1163
             ZIndex: =5
 
         Button6_5 As button:
@@ -174,6 +174,7 @@ Pantalla_Vanisados As screen:
         Button11 As button:
             AutoDisableOnSelect: =false
             BorderColor: =RGBA(255, 255, 255, 1)
+            BorderStyle: =BorderStyle.None
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -294,8 +295,8 @@ Pantalla_Vanisados As screen:
             Text: ="Color Crystal"
             VerticalAlign: =VerticalAlign.Top
             Width: =138
-            X: =122
-            Y: =53
+            X: =186
+            Y: =45
             ZIndex: =1
 
         Button1_5 As button:
@@ -324,8 +325,8 @@ Pantalla_Vanisados As screen:
             RadiusTopRight: =0
             Text: ="LIMPIAR"
             Width: =120
-            X: =697
-            Y: =100
+            X: =724
+            Y: =76
             ZIndex: =2
 
         ComboBox2 As combobox:
@@ -417,8 +418,8 @@ Pantalla_Vanisados As screen:
             SelectionFill: =RGBA(0, 120, 212, 1)
             SelectMultiple: =false
             Size: =13
-            X: =40
-            Y: =99
+            X: =91
+            Y: =76
             ZIndex: =3
 
         Rectangle5 As rectangle:
@@ -433,8 +434,8 @@ Pantalla_Vanisados As screen:
             OnSelect: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =145
-            X: =458
-            Y: =14
+            X: =502
+            Y: =13
             ZIndex: =4
 
     ContainerbarratablaGallery5 As groupContainer.manualLayoutContainer:
@@ -444,8 +445,8 @@ Pantalla_Vanisados As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =1516
-        X: =52
+        Width: =1525
+        X: =40
         Y: =255
         ZIndex: =3
 
@@ -458,7 +459,7 @@ Pantalla_Vanisados As screen:
             Height: =42
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =1516
+            Width: =1525
             ZIndex: =1
 
         Elasticoexpuesto_7 As label:
@@ -526,7 +527,7 @@ Pantalla_Vanisados As screen:
             Text: ="Vanisado 44/2"
             VerticalAlign: =VerticalAlign.Top
             Width: =200
-            X: =560
+            X: =584
             Y: =8
             ZIndex: =4
 
@@ -548,8 +549,8 @@ Pantalla_Vanisados As screen:
             Size: =15
             Text: ="Elastico expuesto"
             VerticalAlign: =VerticalAlign.Top
-            Width: =250
-            X: =856
+            Width: =200
+            X: =910
             Y: =8
             ZIndex: =5
 
@@ -571,409 +572,40 @@ Pantalla_Vanisados As screen:
             Size: =15
             Text: ="Lycra rec interna"
             VerticalAlign: =VerticalAlign.Top
-            Width: =300
-            X: =1154
+            Width: =200
+            X: =1246
             Y: =8
             ZIndex: =6
-
-        Rectangle7 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(127, 178, 57, 1)
-            FocusedBorderThickness: =4
-            Height: =5
-            HoverFill: =RGBA(0, 120, 212, 1)
-            PressedFill: =RGBA(0, 120, 212, 1)
-            Width: =5
-            X: =1468
-            Y: =21
-            ZIndex: =7
 
     Gallery5_1 As gallery.galleryVertical:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =471
+        Height: =571
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(cuadroVisible,false)
-        TemplateSize: =230
-        Width: =1516
-        X: =52
+        TemplateSize: =204
+        Width: =1525
+        X: =40
         Y: =297
         ZIndex: =4
-
-        contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
-            BorderColor: =RGBA(230, 230, 230, 1)
-            BorderThickness: =1
-            DropShadow: =DropShadow.Light
-            Height: =190
-            Visible: |
-                =If(IsBlank(ThisItem.elastico),false,true)
-            Width: =280
-            X: =836
-            Y: =6
-            ZIndex: =1
-
-            Rectangle85_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: =RGBA(252, 252, 254, 1)
-                FocusedBorderThickness: =4
-                Height: =159
-                HoverFill: =
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =262
-                X: =18
-                Y: =31
-                ZIndex: =1
-
-            Rectangle86_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: =RGBA(0, 0, 0, 1)
-                FocusedBorderThickness: =4
-                Height: =32
-                HoverFill: =RGBA(0, 0, 0, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
-                Y: =31
-                ZIndex: =2
-
-            Rectangle87_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
-                FocusedBorderThickness: =4
-                Height: =62
-                HoverFill: =
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
-                Y: =63
-                ZIndex: =3
-
-            Rectangle89_2 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: |-
-                    =If(
-                        IsBlank(
-                            Text(
-                                First(
-                                    Filter(
-                                        coloresUnicos,
-                                        coColor = ThisItem.elastico
-                                    )
-                                ).rgb
-                            )
-                        ),
-                        RGBA(
-                            111,
-                            111,
-                            111,
-                            1
-                        ),
-                        RGBA(
-                            Index(
-                                Split(
-                                    Text(
-                                        First(
-                                            Filter(
-                                                coloresUnicos,
-                                                coColor = ThisItem.elastico
-                                            )
-                                        ).rgb
-                                    ),
-                                    ","
-                                ),
-                                1
-                            ).Value,
-                            Index(
-                                Split(
-                                    Text(
-                                        First(
-                                            Filter(
-                                                coloresUnicos,
-                                                coColor = ThisItem.elastico
-                                            )
-                                        ).rgb
-                                    ),
-                                    ","
-                                ),
-                                2
-                            ).Value,
-                            Index(
-                                Split(
-                                    Text(
-                                        First(
-                                            Filter(
-                                                coloresUnicos,
-                                                coColor = ThisItem.elastico
-                                            )
-                                        ).rgb
-                                    ),
-                                    ","
-                                ),
-                                3
-                            ).Value,
-                            1
-                        )
-                    )
-                FocusedBorderThickness: =4
-                Height: =72
-                HoverFill: =
-                OnSelect: =If(IsBlank(ThisItem.elastico),Set(estadoTarjeta,false),Set(estadoTarjeta,true));
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =75
-                X: =39
-                Y: =80
-                ZIndex: =5
-
-            CdigoCrystal_6 As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Height: =14
-                LineHeight: =1.210227
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =8.25
-                Text: |-
-                    ="Datos del color:"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =82
-                X: =118
-                Y: =125
-                ZIndex: =6
-
-            Label9_2 As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Height: =14
-                OnSelect: =//Select(Parent)
-                Size: =9.25
-                Text: ="Color Crystal"
-                Width: =90
-                X: =35
-                Y: =155
-                ZIndex: =7
-
-            Datosdelcolor_2 As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Lighter
-                Height: =20
-                LineHeight: =1.210227
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =ThisItem.elastico
-                VerticalAlign: =VerticalAlign.Top
-                Width: =75
-                X: =45
-                Y: =170
-                ZIndex: =8
-
-            Button3_3 As button:
-                Align: =Align.Left
-                BorderColor: =RGBA(128, 128, 128, 1)
-                BorderThickness: =1
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =20
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                OnSelect: |+
-                    =Clear(gallVanisadoUnico);
-                    Set(cuadroVisible,true);
-                    //variables para el pop up
-                    Set(VarCodCrystal,ThisItem.coColor);
-                    Set(VarMateriaP,ThisItem.materiaPrima);
-                    Set(VarTipovanizado,"Elastico expuesto");
-                    Set(Varvanizadoactual,ThisItem.elastico);
-                    //flujo---
-                    Set(mater,ThisItem.materiaPrima);
-                    Set(tipoVanisado,"Elastico expuesto");
-                    Set(
-                        vanisadoFlujo,
-                        "elastico"
-                    );
-                    Set(gitcarga,true);
-                    ClearCollect(
-                        gallVanisadoUnico,
-                        Table(
-                            ParseJSON(
-                                afVanizadosUnico.Run(
-                                    rgb_var,
-                                    vanisadoFlujo
-                                ).responsevar
-                            )
-                        )
-                    );
-                    Set(gitcarga,false);
-                    
-                PaddingBottom: =7
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: ="Ver alternativa"
-                Visible: =If(ThisItem.elastico = color_var,false,true)
-                Width: =145
-                X: =20
-                Y: =36
-                ZIndex: =9
-
-            Label5_3 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(255, 255, 255, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =26
-                Size: =13
-                Text: ="Coincidencia exacta"
-                Visible: =If(ThisItem.elastico = color_var,true,false)
-                Width: =170
-                X: =22
-                Y: =31
-                ZIndex: =10
-
-            Button9_6 As button:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =166
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-                OnSelect: |+
-                    =Clear(gallVanisadoUnico);
-                    Set(cuadroVisible,true);
-                    Set(mater,ThisItem.materiaPrima);
-                    Set(tipoVanisado,"Elastico expuesto");
-                    Set(
-                        vanisadoFlujo,
-                        "elastico"
-                    );
-                    Set(gitcarga,true);
-                    ClearCollect(
-                        gallVanisadoUnico,
-                        Table(
-                            ParseJSON(
-                                afVanizadosUnico.Run(
-                                    rgb_var,
-                                    vanisadoFlujo
-                                ).responsevar
-                            )
-                        )
-                    );
-                    Set(gitcarga,false);
-                    
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-                PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =15
-                Text: =""
-                Visible: |
-                    =If(IsBlank(ThisItem.V782),true,false)
-                Width: =293
-                X: =7
-                Y: =24
-                ZIndex: =12
-
-            Icon10_1 As icon.QuestionMark:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(220, 220, 220, 1)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =30
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(204, 204, 204, 1)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.QuestionMark
-                OnSelect: |
-                    =Set(VarCodCrystal,ThisItem.coColor);
-                    Set(VarMateriaP,ThisItem.materiaPrima);
-                    Set(VarTipovanizado,"Elastico expuesto");
-                    Set(Varvanizadoactual,ThisItem.elastico);
-                    
-                    Set(contenedorVisible,true)
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                Visible: =If(ThisItem.lycra = color_var,false,true)
-                Width: =30
-                X: =240
-                Y: =152
-                ZIndex: =13
 
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =190
+            Height: =165
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
             RadiusTopLeft: =1
             RadiusTopRight: =1
             Visible: =If(IsBlank(ThisItem.V782),false,true)
-            Width: =280
+            Width: =315
             X: =208
-            Y: =6
-            ZIndex: =2
+            Y: =20
+            ZIndex: =1
 
             Rectangle15 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -984,8 +616,7 @@ Pantalla_Vanisados As screen:
                 Height: =30
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
-                Y: =31
+                Width: =315
                 ZIndex: =1
 
             Rectangle16 As rectangle:
@@ -997,8 +628,8 @@ Pantalla_Vanisados As screen:
                 Height: =53
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =280
-                Y: =61
+                Width: =315
+                Y: =30
                 ZIndex: =2
 
             Datosdelcolor As label:
@@ -1020,8 +651,8 @@ Pantalla_Vanisados As screen:
                 Text: =ThisItem.V782
                 VerticalAlign: =VerticalAlign.Top
                 Width: =95
-                X: =45
-                Y: =170
+                X: =25
+                Y: =136
                 ZIndex: =3
 
             Rectangle73 As rectangle:
@@ -1093,12 +724,12 @@ Pantalla_Vanisados As screen:
                         )
                     )
                 FocusedBorderThickness: =4
-                Height: =72
+                Height: =65
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =75
-                X: =39
-                Y: =80
+                Width: =90
+                X: =27
+                Y: =56
                 ZIndex: =5
 
             Label9 As label:
@@ -1116,8 +747,8 @@ Pantalla_Vanisados As screen:
                 Size: =9.25
                 Text: ="Color Crystal"
                 Width: =90
-                X: =40
-                Y: =155
+                X: =20
+                Y: =121
                 ZIndex: =6
 
             CdigoCrystal_4 As label:
@@ -1139,8 +770,8 @@ Pantalla_Vanisados As screen:
                     ="Datos del color:"
                 VerticalAlign: =VerticalAlign.Top
                 Width: =90
-                X: =118
-                Y: =125
+                X: =130
+                Y: =90
                 ZIndex: =7
 
             Button3 As button:
@@ -1208,7 +839,7 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.V782 = color_var,false,true)
                 Width: =145
                 X: =20
-                Y: =36
+                Y: =5
                 ZIndex: =9
 
             Label5 As label:
@@ -1228,7 +859,7 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.V782 = color_var,true,false)
                 Width: =170
                 X: =25
-                Y: =37
+                Y: =6
                 ZIndex: =10
 
             Icon10_3 As icon.QuestionMark:
@@ -1237,11 +868,11 @@ Pantalla_Vanisados As screen:
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
-                Height: =30
+                Height: =25
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.QuestionMark
+                Icon: =Icon.Warning
                 OnSelect: |
                     =Set(contenedorVisible,true);
                     //variables para llenar el popap
@@ -1253,21 +884,21 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =30
-                X: =240
-                Y: =152
+                Width: =25
+                X: =279
+                Y: =133
                 ZIndex: =11
 
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =190
+            Height: =165
             Visible: =If(IsBlank(ThisItem.V442),false,true)
-            Width: =280
-            X: =521
-            Y: =6
-            ZIndex: =5
+            Width: =315
+            X: =533
+            Y: =20
+            ZIndex: =2
 
             Vector11 As image:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -1284,7 +915,7 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =0
                 X: =187
-                Y: =55
+                Y: =24
                 ZIndex: =1
 
             Rectangle85 As rectangle:
@@ -1298,7 +929,6 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =262
                 X: =18
-                Y: =31
                 ZIndex: =2
 
             Rectangle86 As rectangle:
@@ -1311,7 +941,6 @@ Pantalla_Vanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =280
-                Y: =31
                 ZIndex: =3
 
             Rectangle87 As rectangle:
@@ -1324,7 +953,7 @@ Pantalla_Vanisados As screen:
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =280
-                Y: =63
+                Y: =32
                 ZIndex: =4
 
             Rectangle89 As rectangle:
@@ -1402,7 +1031,7 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =75
                 X: =39
-                Y: =80
+                Y: =49
                 ZIndex: =6
 
             CdigoCrystal_5 As label:
@@ -1425,7 +1054,7 @@ Pantalla_Vanisados As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =82
                 X: =118
-                Y: =125
+                Y: =94
                 ZIndex: =7
 
             Label9_1 As label:
@@ -1444,7 +1073,7 @@ Pantalla_Vanisados As screen:
                 Text: ="Color Crystal"
                 Width: =90
                 X: =40
-                Y: =155
+                Y: =124
                 ZIndex: =8
 
             Datosdelcolor_1 As label:
@@ -1467,7 +1096,7 @@ Pantalla_Vanisados As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =75
                 X: =45
-                Y: =170
+                Y: =139
                 ZIndex: =9
 
             Button3_2 As button:
@@ -1525,7 +1154,7 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.V442 = color_var,false,true)
                 Width: =145
                 X: =20
-                Y: =36
+                Y: =5
                 ZIndex: =10
 
             Label5_1 As label:
@@ -1545,7 +1174,7 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.V442 = color_var,true,false)
                 Width: =170
                 X: =25
-                Y: =37
+                Y: =6
                 ZIndex: =11
 
             Icon10_2 As icon.QuestionMark:
@@ -1570,19 +1199,355 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
                 X: =240
-                Y: =152
+                Y: =121
                 ZIndex: =12
+
+        contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderThickness: =1
+            DropShadow: =DropShadow.Light
+            Height: =165
+            Visible: |
+                =If(IsBlank(ThisItem.elastico),false,true)
+            Width: =315
+            X: =858
+            Y: =20
+            ZIndex: =3
+
+            Rectangle86_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                Height: =32
+                HoverFill: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =280
+                ZIndex: =2
+
+            Rectangle87_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: =If(IsBlank(rgb_var),RGBA(111,111,111,1),RGBA(Index(Split(rgb_var,","),1).Value,Index(Split(rgb_var,","),2).Value,Index(Split(rgb_var,","),3).Value, 1))
+                FocusedBorderThickness: =4
+                Height: =62
+                HoverFill: =
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =280
+                Y: =32
+                ZIndex: =3
+
+            Rectangle89_2 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =If(
+                        IsBlank(
+                            Text(
+                                First(
+                                    Filter(
+                                        coloresUnicos,
+                                        coColor = ThisItem.elastico
+                                    )
+                                ).rgb
+                            )
+                        ),
+                        RGBA(
+                            111,
+                            111,
+                            111,
+                            1
+                        ),
+                        RGBA(
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                1
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                2
+                            ).Value,
+                            Index(
+                                Split(
+                                    Text(
+                                        First(
+                                            Filter(
+                                                coloresUnicos,
+                                                coColor = ThisItem.elastico
+                                            )
+                                        ).rgb
+                                    ),
+                                    ","
+                                ),
+                                3
+                            ).Value,
+                            1
+                        )
+                    )
+                FocusedBorderThickness: =4
+                Height: =72
+                HoverFill: =
+                OnSelect: =If(IsBlank(ThisItem.elastico),Set(estadoTarjeta,false),Set(estadoTarjeta,true));
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =75
+                X: =39
+                Y: =49
+                ZIndex: =5
+
+            CdigoCrystal_6 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =14
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =8.25
+                Text: |-
+                    ="Datos del color:"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =82
+                X: =118
+                Y: =101
+                ZIndex: =6
+
+            Label9_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =14
+                OnSelect: =//Select(Parent)
+                Size: =9.25
+                Text: ="Color Crystal"
+                Width: =90
+                X: =35
+                Y: =131
+                ZIndex: =7
+
+            Datosdelcolor_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
+                Height: =20
+                LineHeight: =1.210227
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.elastico
+                VerticalAlign: =VerticalAlign.Top
+                Width: =75
+                X: =45
+                Y: =146
+                ZIndex: =8
+
+            Button3_3 As button:
+                Align: =Align.Left
+                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderThickness: =1
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =20
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    //variables para el pop up
+                    Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Elastico expuesto");
+                    Set(Varvanizadoactual,ThisItem.elastico);
+                    //flujo---
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PaddingBottom: =7
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: ="Ver alternativa"
+                Visible: =If(ThisItem.elastico = color_var,false,true)
+                Width: =145
+                X: =20
+                Y: =5
+                ZIndex: =9
+
+            Label5_3 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =26
+                Size: =13
+                Text: ="Coincidencia exacta"
+                Visible: =If(ThisItem.elastico = color_var,true,false)
+                Width: =170
+                X: =22
+                ZIndex: =10
+
+            Button9_6 As button:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =166
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
+                OnSelect: |+
+                    =Clear(gallVanisadoUnico);
+                    Set(cuadroVisible,true);
+                    Set(mater,ThisItem.materiaPrima);
+                    Set(tipoVanisado,"Elastico expuesto");
+                    Set(
+                        vanisadoFlujo,
+                        "elastico"
+                    );
+                    Set(gitcarga,true);
+                    ClearCollect(
+                        gallVanisadoUnico,
+                        Table(
+                            ParseJSON(
+                                afVanizadosUnico.Run(
+                                    rgb_var,
+                                    vanisadoFlujo
+                                ).responsevar
+                            )
+                        )
+                    );
+                    Set(gitcarga,false);
+                    
+                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =15
+                Text: =""
+                Visible: |
+                    =If(IsBlank(ThisItem.V782),true,false)
+                Width: =315
+                ZIndex: =12
+
+            Icon10_1 As icon.QuestionMark:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(220, 220, 220, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =30
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(204, 204, 204, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Icon: =Icon.QuestionMark
+                OnSelect: |
+                    =Set(VarCodCrystal,ThisItem.coColor);
+                    Set(VarMateriaP,ThisItem.materiaPrima);
+                    Set(VarTipovanizado,"Elastico expuesto");
+                    Set(Varvanizadoactual,ThisItem.elastico);
+                    
+                    Set(contenedorVisible,true)
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                Visible: =If(ThisItem.lycra = color_var,false,true)
+                Width: =30
+                X: =240
+                Y: =128
+                ZIndex: =13
 
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
             DropShadow: =DropShadow.Light
-            Height: =190
+            Height: =165
             Visible: =If(IsBlank(ThisItem.lycra),false,true)
-            Width: =280
-            X: =1152
-            Y: =6
-            ZIndex: =6
+            Width: =315
+            X: =1183
+            Y: =20
+            ZIndex: =4
 
             Rectangle85_6 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -1595,7 +1560,6 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =258
                 X: =11
-                Y: =31
                 ZIndex: =1
 
             Rectangle86_4 As rectangle:
@@ -1608,7 +1572,6 @@ Pantalla_Vanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =280
-                Y: =31
                 ZIndex: =2
 
             Rectangle87_4 As rectangle:
@@ -1621,7 +1584,7 @@ Pantalla_Vanisados As screen:
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =280
-                Y: =63
+                Y: =32
                 ZIndex: =3
 
             Rectangle89_4 As rectangle:
@@ -1698,7 +1661,7 @@ Pantalla_Vanisados As screen:
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =75
                 X: =39
-                Y: =80
+                Y: =49
                 ZIndex: =4
 
             CdigoCrystal_11 As label:
@@ -1721,7 +1684,7 @@ Pantalla_Vanisados As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =82
                 X: =121
-                Y: =125
+                Y: =94
                 ZIndex: =5
 
             Label9_6 As label:
@@ -1740,7 +1703,7 @@ Pantalla_Vanisados As screen:
                 Text: ="Color Crystal"
                 Width: =85
                 X: =35
-                Y: =155
+                Y: =124
                 ZIndex: =6
 
             Datosdelcolor_6 As label:
@@ -1763,7 +1726,7 @@ Pantalla_Vanisados As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =75
                 X: =45
-                Y: =170
+                Y: =139
                 ZIndex: =7
 
             Button3_4 As button:
@@ -1823,7 +1786,7 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.lycra = color_var,false,true)
                 Width: =145
                 X: =20
-                Y: =36
+                Y: =5
                 ZIndex: =8
 
             Label5_4 As label:
@@ -1843,7 +1806,6 @@ Pantalla_Vanisados As screen:
                 Visible: =If(ThisItem.lycra = color_var,true,false)
                 Width: =170
                 X: =22
-                Y: =31
                 ZIndex: =9
 
             Icon10 As icon.QuestionMark:
@@ -1870,16 +1832,16 @@ Pantalla_Vanisados As screen:
                     =If(ThisItem.lycra = color_var,false,true)
                 Width: =30
                 X: =240
-                Y: =152
+                Y: =121
                 ZIndex: =10
 
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
             Height: =190
             Visible: =If(IsBlank(ThisItem.V782),true,false)
-            Width: =313
+            Width: =300
             X: =208
             Y: =6
-            ZIndex: =20
+            ZIndex: =5
 
             Button9_1 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
@@ -1924,7 +1886,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =301
+                Width: =300
                 Y: =13
                 ZIndex: =1
 
@@ -1979,7 +1941,7 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                X: =55
+                X: =70
                 Y: =126
                 ZIndex: =2
 
@@ -1998,7 +1960,7 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =26
+                X: =36
                 Y: =61
                 ZIndex: =3
 
@@ -2017,8 +1979,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =106
-                Y: =24
+                X: =121
+                Y: =25
                 ZIndex: =4
 
             Icon10_5 As icon.QuestionMark:
@@ -2052,10 +2014,10 @@ Pantalla_Vanisados As screen:
         "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
             Height: =190
             Visible: =If(IsBlank(ThisItem.V442),true,false)
-            Width: =280
-            X: =546
+            Width: =300
+            X: =533
             Y: =6
-            ZIndex: =21
+            ZIndex: =6
 
             Button9_5 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
@@ -2100,7 +2062,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =280
+                Width: =300
                 Y: =13
                 ZIndex: =1
 
@@ -2241,10 +2203,10 @@ Pantalla_Vanisados As screen:
             Height: =190
             Visible: |
                 =If(IsBlank(ThisItem.elastico),true,false)
-            Width: =280
-            X: =873
+            Width: =300
+            X: =868
             Y: =6
-            ZIndex: =22
+            ZIndex: =7
 
             Button9_7 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
@@ -2289,7 +2251,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =280
+                Width: =300
                 Y: =13
                 ZIndex: =1
 
@@ -2413,10 +2375,10 @@ Pantalla_Vanisados As screen:
         ConAlertaLycra As groupContainer.manualLayoutContainer:
             Height: =190
             Visible: =If(IsBlank(ThisItem.lycra),true,false)
-            Width: =280
-            X: =1203
+            Width: =300
+            X: =1190
             Y: =6
-            ZIndex: =23
+            ZIndex: =8
 
             Button9_8 As button:
                 BorderColor: =RGBA(0, 0, 0, 1)
@@ -2461,7 +2423,7 @@ Pantalla_Vanisados As screen:
                 Text: =""
                 Visible: |
                     =If(IsBlank(ThisItem.V782),true,false)
-                Width: =280
+                Width: =300
                 Y: =13
                 ZIndex: =1
 
@@ -2512,7 +2474,7 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.lycra),true,false)
-                X: =55
+                X: =60
                 Y: =126
                 ZIndex: =2
 
@@ -2550,8 +2512,8 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =54
-                X: =106
-                Y: =24
+                X: =113
+                Y: =25
                 ZIndex: =4
 
             Icon10_8 As icon.QuestionMark:
@@ -2593,9 +2555,9 @@ Pantalla_Vanisados As screen:
             Size: =13
             Text: =ThisItem.materiaPrima
             Width: =173
-            X: =20
-            Y: =50
-            ZIndex: =24
+            X: =17
+            Y: =81
+            ZIndex: =9
 
     ContenedorPopPapSugerencia As groupContainer.manualLayoutContainer:
         Fill: =RGBA(0, 0, 0, 0.2)
