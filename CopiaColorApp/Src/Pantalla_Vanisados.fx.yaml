@@ -581,7 +581,7 @@ Pantalla_Vanisados As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         BorderThickness: =1
         DelayItemLoading: =true
-        Height: =471
+        Height: =571
         Items: =CollectionShow
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
