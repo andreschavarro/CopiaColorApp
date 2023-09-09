@@ -953,7 +953,7 @@ Pantalla_Vanisados As screen:
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =315
-                Y: =32
+                Y: =28
                 ZIndex: =4
 
             Rectangle89 As rectangle:
@@ -1599,7 +1599,7 @@ Pantalla_Vanisados As screen:
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =315
-                Y: =32
+                Y: =28
                 ZIndex: =3
 
             Rectangle89_4 As rectangle:
