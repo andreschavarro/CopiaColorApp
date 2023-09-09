@@ -595,7 +595,7 @@ Pantalla_Vanisados As screen:
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
@@ -776,7 +776,7 @@ Pantalla_Vanisados As screen:
 
             Button3 As button:
                 Align: =Align.Left
-                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderColor: =RGBA(97, 96, 96, 0.82)
                 BorderThickness: =1
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -786,7 +786,7 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =20
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 OnSelect: |-
@@ -827,9 +827,9 @@ Pantalla_Vanisados As screen:
                     //efecto garga
                     Set(gitcarga,false)
                 PaddingBottom: =7
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -892,7 +892,7 @@ Pantalla_Vanisados As screen:
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             Visible: =If(IsBlank(ThisItem.V442),false,true)
             Width: =315
@@ -1101,7 +1101,7 @@ Pantalla_Vanisados As screen:
 
             Button3_2 As button:
                 Align: =Align.Left
-                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderColor: =RGBA(97, 96, 96, 0.82)
                 BorderThickness: =1
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1111,7 +1111,7 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =20
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 OnSelect: |-
@@ -1142,9 +1142,9 @@ Pantalla_Vanisados As screen:
                     Set(Varvanizadoactual,ThisItem.V442);
                     Set(gitcarga,false)
                 PaddingBottom: =7
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1220,7 +1220,7 @@ Pantalla_Vanisados As screen:
         contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             Visible: |
                 =If(IsBlank(ThisItem.elastico),false,true)
@@ -1251,7 +1251,7 @@ Pantalla_Vanisados As screen:
                 HoverFill: =
                 PressedFill: =RGBA(0, 120, 212, 1)
                 Width: =315
-                Y: =32
+                Y: =28
                 ZIndex: =3
 
             Rectangle89_2 As rectangle:
@@ -1399,7 +1399,7 @@ Pantalla_Vanisados As screen:
 
             Button3_3 As button:
                 Align: =Align.Left
-                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderColor: =RGBA(97, 96, 96, 0.82)
                 BorderThickness: =1
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1409,7 +1409,7 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =20
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 OnSelect: |+
@@ -1442,9 +1442,9 @@ Pantalla_Vanisados As screen:
                     Set(gitcarga,false);
                     
                 PaddingBottom: =7
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1556,7 +1556,7 @@ Pantalla_Vanisados As screen:
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             Visible: =If(IsBlank(ThisItem.lycra),false,true)
             Width: =315
@@ -1746,7 +1746,7 @@ Pantalla_Vanisados As screen:
 
             Button3_4 As button:
                 Align: =Align.Left
-                BorderColor: =RGBA(128, 128, 128, 1)
+                BorderColor: =RGBA(97, 96, 96, 0.83)
                 BorderThickness: =1
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -1756,7 +1756,7 @@ Pantalla_Vanisados As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =20
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 OnSelect: |
@@ -1789,9 +1789,9 @@ Pantalla_Vanisados As screen:
                     //efecto carga
                     Set(gitcarga,false);
                 PaddingBottom: =7
-                PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+                PressedBorderColor: =
                 PressedColor: =RGBA(255, 255, 255, 1)
-                PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                PressedFill: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
@@ -1851,8 +1851,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =10
 
         "'ConAlerta78/2' As groupContainer.manualLayoutContainer":
+            BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -2036,8 +2037,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =5
 
         "'ConAlerta44/2' As groupContainer.manualLayoutContainer":
+            BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -2233,8 +2235,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =5
 
         ConAlertaElastico As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
@@ -2414,8 +2417,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =5
 
         ConAlertaLycra As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.ExtraBold
             Height: =165
             RadiusBottomLeft: =8
             RadiusBottomRight: =8
