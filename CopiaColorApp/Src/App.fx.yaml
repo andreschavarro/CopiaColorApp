@@ -1,7 +1,15 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =Collect(
+    OnStart: |
+        =ClearCollect(
+            usersGall,
+            AddColumns(
+                Table(ParseJSON(obtener_usuarios_color_app.Run().response)),
+                "Usermail",
+                ThisRecord.Value.email 
+            )
+        );
+        Collect(
             DatosUsoColorApp,
             {
                 User: Text(User().FullName),
@@ -26,7 +34,7 @@ App As appinfo:
                 Roles,
                 Rol = "Administrador"
             )
-        )
+        );
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
