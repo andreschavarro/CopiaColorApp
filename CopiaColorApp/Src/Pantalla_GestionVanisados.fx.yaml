@@ -631,7 +631,20 @@ Pantalla_GestionVanisados As screen:
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
         OnSelect: |+
-            =UpdateContext({ ShowToolTipRoles: !ShowToolTipRoles, ShowToolTipRgb: false, ShowToolTipVanizados: false })
+            =UpdateContext({ ShowToolTipRoles: !ShowToolTipRoles, ShowToolTipRgb: false, ShowToolTipVanizados: false });
+            ClearCollect(
+                usersGall,
+                AddColumns(
+                    Table(ParseJSON(obtener_usuarios_color_app.Run().response)),
+                    "Usermail",
+                    ThisRecord.Value.email 
+                )
+            );
+            
+            
+            
+            
+            
             
             
         Size: =17
@@ -660,13 +673,13 @@ Pantalla_GestionVanisados As screen:
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
             Height: =539
-            Items: =Roles
+            Items: =usersGall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =167
-            Width: =1343
-            X: =40
+            Width: =1367
+            X: =16
             ZIndex: =1
 
             Image3 As image:
@@ -695,18 +708,18 @@ Pantalla_GestionVanisados As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Segoe UI'
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =24
+                Height: =34
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
                 Size: =12
-                Text: =ThisItem.Usuario
+                Text: =ThisItem.Value.email
                 VerticalAlign: =VerticalAlign.Top
-                Width: =260
-                X: =99
-                Y: =73
+                Width: =230
+                X: =123
+                Y: =62
                 ZIndex: =3
 
             Rectangle1 As rectangle:
@@ -751,8 +764,8 @@ Pantalla_GestionVanisados As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =189
-                X: =359
-                Y: =51
+                X: =379
+                Y: =56
                 ZIndex: =7
 
             Icon18 As icon.Trash:
@@ -765,12 +778,12 @@ Pantalla_GestionVanisados As screen:
                 HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Trash
-                OnSelect: =Remove(Roles,ThisItem)
+                OnSelect: =Remove(usersGall,ThisItem)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =768
-                Y: =46
+                X: =814
+                Y: =47
                 ZIndex: =8
 
             Icon19 As icon.GlobeRefresh:
@@ -784,17 +797,17 @@ Pantalla_GestionVanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.GlobeRefresh
                 OnSelect: |-
-                    =Patch(
-                        Roles,  
-                        LookUp(Roles, Usuario = ThisItem.Usuario),
+                    =/*Patch(
+                        Roles;  
+                        LookUp(Roles; Usuario = ThisItem.Usuario);
                         {
                             Rol: ComboBox3.Selected.Value  
                         }
-                    )
+                    )*/
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =626
+                X: =717
                 Y: =47
                 ZIndex: =9
 
@@ -944,7 +957,7 @@ Pantalla_GestionVanisados As screen:
                 Height: =35
                 OnSelect: =Select(Parent)
                 Size: =13
-                Text: =ThisItem.rgb
+                Text: =//ThisItem.rgb
                 Width: =132
                 X: =13
                 Y: =52
@@ -1175,7 +1188,8 @@ Pantalla_GestionVanisados As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Visible: =ShowToolTipVanizados
+        Visible: |
+            =ShowToolTipVanizados
         Width: =1418
         X: =98
         Y: =217
@@ -1553,7 +1567,7 @@ Pantalla_GestionVanisados As screen:
             HoverFill: =RGBA(212, 212, 212, 1)
             IsSearchable: =false
             Items: =["Usuario", "Propietario"]
-            OnSelect: =Select(Parent)
+            OnSelect: =
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
@@ -1601,7 +1615,7 @@ Pantalla_GestionVanisados As screen:
             Height: =191
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =UsuariosdeOffice365.UserPhoto(ComboBox4.Selected.UserPrincipalName)
+            Image: =//UsuariosdeOffice365.UserPhoto(ComboBox4.Selected.UserPrincipalName)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             RadiusBottomLeft: =150
@@ -1662,24 +1676,24 @@ Pantalla_GestionVanisados As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Check
             OnSelect: |
-                =Collect(
-                    colletRoles,
+                =/*Collect(
+                    colletRoles;
                     {
-                        user: ComboBox5.Selected.UserPrincipalName,
+                        user: ComboBox5.Selected.UserPrincipalName;
                         roll: ComboBox3_1.Selected.Value
                     }
-                );
+                );;
                 ForAll(
-                    colletRoles,
+                    colletRoles;
                     Patch(
-                        Roles,  
-                        Defaults(Roles), 
+                        Roles;  
+                        Defaults(Roles); 
                         {
-                            Usuario: user,
+                            Usuario: user;
                             Rol: roll
                         }
                     )
-                )
+                )*/
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -1728,7 +1742,7 @@ Pantalla_GestionVanisados As screen:
             IsSearchable: =false
             Items: |
                 =//UsuariosdeOffice365.SearchUser({searchTerm:TextInputSearchUser.Text;top:10})
-                UsuariosdeOffice365.("ColorAppCopia").value
+                //UsuariosdeOffice365.("ColorAppCopia").value
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
@@ -1752,10 +1766,25 @@ Pantalla_GestionVanisados As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(0, 120, 212, 1), -10%)
-        OnSelect: |-
+        OnSelect: |
             =ClearCollect(
                 usersGall,
-                Table(ParseJSON(obtener_usuarios_color_app.Run().response))
+                AddColumns(
+                    Table(ParseJSON(obtener_usuarios_color_app.Run().response)),
+                    "Usermail",
+                    ThisRecord.Value.email
+                )
+            );
+            ForAll(
+                usersGall,
+                Patch(
+                    Roles, 
+                    Defaults(Roles),
+                    { 
+                        Usuario: ThisRecord.Value.email,
+                        Rol: "User"
+                    }
+                )
             )
         PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
@@ -1769,33 +1798,4 @@ Pantalla_GestionVanisados As screen:
         X: =1206
         Y: =728
         ZIndex: =171
-
-    Gallery6 As gallery.galleryVertical:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DelayItemLoading: =true
-        Height: =337
-        Items: =usersGall
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =62
-        Width: =562
-        X: =71
-        Y: =257
-        ZIndex: =172
-
-        Label21 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            OnSelect: =Select(Parent)
-            Size: =13
-            Text: =ThisItem.Value.email
-            X: =40
-            Y: =40
-            ZIndex: =1
 
