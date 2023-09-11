@@ -6285,19 +6285,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_Pantone",
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18"
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle171"
               }
             }
           ],
@@ -6315,19 +6345,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.Rectangle18"
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18"
               }
             }
           ],
@@ -6339,6 +6369,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Pantone",
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Rectangle18"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -6465,19 +6525,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.labelCoColor.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.CdigoCrystal9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.labelCoColor.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.CdigoCrystal9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.labelCoColor"
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.CdigoCrystal9"
               }
             }
           ],
@@ -6525,19 +6585,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.CdigoCrystal9.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.labelCoColor.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.CdigoCrystal9.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.labelCoColor.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Pantone",
-                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.Container12.CdigoCrystal9"
+                "type": "Pantalla_Pantone.Container_Gallery2.Gallery2.ContainerTarjetas.labelCoColor"
               }
             }
           ],
@@ -7605,36 +7665,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.AccessibleLabel"
                 }
               ],
@@ -7659,6 +7689,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -8055,19 +8115,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Datosdelcolor.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Datosdelcolor.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Datosdelcolor"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73"
               }
             }
           ],
@@ -8077,27 +8137,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Label9.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Label9.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Label9"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Rectangle73"
               }
             }
           ],
@@ -8145,19 +8205,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Label9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Label9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Label9"
               }
             }
           ],
@@ -8235,19 +8295,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Datosdelcolor.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.ContainerDatoscolor_4.Rectangle73"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.78/2'.Datosdelcolor"
               }
             }
           ],
@@ -8257,8 +8317,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -8625,19 +8685,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Datosdelcolor_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Label9_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Datosdelcolor_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Label9_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Datosdelcolor_2"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Label9_1"
               }
             }
           ],
@@ -8715,19 +8775,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Label9_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Label9_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Datosdelcolor_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Label9_2"
+                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.Datosdelcolor_1"
               }
             }
           ],
@@ -9015,49 +9075,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.ContainerDatoscolor_2.Rectangle89_2"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2"
               }
             }
           ],
@@ -9069,6 +9099,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Rectangle89_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -9105,19 +9165,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Datosdelcolor_1.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Label9_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Datosdelcolor_1.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Label9_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Datosdelcolor_1"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Label9_2"
               }
             }
           ],
@@ -9195,19 +9255,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Label9_1.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Label9_1.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Datosdelcolor_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.'contenedortarjetaVani.44/2'.ContainerDatoscolor_3.Label9_1"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaElastico.Datosdelcolor_2"
               }
             }
           ],
@@ -9495,19 +9555,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Datosdelcolor_6.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Datosdelcolor_6.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Datosdelcolor_6"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4"
               }
             }
           ],
@@ -9517,27 +9577,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Label9_6.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Label9_6.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Label9_6"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Rectangle89_4"
               }
             }
           ],
@@ -9585,19 +9645,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Label9_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Label9_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Label9_6"
               }
             }
           ],
@@ -9675,19 +9735,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Datosdelcolor_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.ContainerDaToscolor_1.Rectangle89_4"
+                "type": "Pantalla_Vanisados.Gallery5_1.contenedorTarjetaLycra.Datosdelcolor_6"
               }
             }
           ],
@@ -9697,8 +9757,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
         },
         {
           "locations": [
