@@ -20,6 +20,8 @@ App As appinfo:
                 lycra: ""
             }
         )
+        ClearCollect(adminUsers ,
+        Filter(Roles , 
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:

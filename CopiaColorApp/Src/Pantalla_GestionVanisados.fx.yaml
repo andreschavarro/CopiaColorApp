@@ -193,12 +193,9 @@ Pantalla_GestionVanisados As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Text: ="GESTIÓN VANISADOS"
-            Visible: |-
-                =If(
-                    User().FullName = "Miguel Angel Lopez Cardenas" Or User().FullName = "Mario Andres Arango Vasco" Or User().FullName = "Juan Esteban Escobar Gomez" Or User().FullName = "Jaime Alonso Ceballos Morales",
-                    true,
-                    false
-                )
+            Visible: |+
+                =true
+                
             Width: =190
             X: =725
             Y: =10
@@ -678,8 +675,7 @@ Pantalla_GestionVanisados As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =167
-            Width: =1367
-            X: =16
+            Width: =1383
             ZIndex: =1
 
             Image3 As image:
@@ -718,8 +714,8 @@ Pantalla_GestionVanisados As screen:
                 Text: =ThisItem.Value.email
                 VerticalAlign: =VerticalAlign.Top
                 Width: =230
-                X: =123
-                Y: =62
+                X: =139
+                Y: =66
                 ZIndex: =3
 
             Rectangle1 As rectangle:
@@ -740,7 +736,6 @@ Pantalla_GestionVanisados As screen:
                 ChevronHoverBackground: =RGBA(212, 212, 212, 1)
                 ChevronHoverFill: =RGBA(33, 33, 33, 1)
                 Color: =RGBA(51, 51, 51, 1)
-                Default: =First(Filter(Roles,Usuario = ThisItem.Usuario).Rol)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -752,7 +747,7 @@ Pantalla_GestionVanisados As screen:
                 HoverFill: =RGBA(212, 212, 212, 1)
                 InputTextPlaceholder: =
                 IsSearchable: =false
-                Items: =["Usuario","Propietario"]
+                Items: =["Usuario","Administrador"]
                 OnChange: =
                 OnSelect: =Select(Parent)
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
@@ -764,7 +759,7 @@ Pantalla_GestionVanisados As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =189
-                X: =379
+                X: =549
                 Y: =56
                 ZIndex: =7
 
@@ -782,8 +777,8 @@ Pantalla_GestionVanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =814
-                Y: =47
+                X: =976
+                Y: =51
                 ZIndex: =8
 
             Icon19 As icon.GlobeRefresh:
@@ -797,19 +792,69 @@ Pantalla_GestionVanisados As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.GlobeRefresh
                 OnSelect: |-
-                    =/*Patch(
-                        Roles;  
-                        LookUp(Roles; Usuario = ThisItem.Usuario);
-                        {
-                            Rol: ComboBox3.Selected.Value  
-                        }
-                    )*/
+                    =Set(
+                        VarRecord,
+                        LookUp(
+                            Roles,
+                            Usuario = Text(ThisItem.Value.email)
+                        )
+                    );
+                    If(
+                        IsBlank(VarRecord),
+                        Patch(
+                            Roles,
+                            Defaults(Roles),
+                            {
+                                Usuario: Text(ThisItem.Value.email),
+                                Rol: ComboBox3.Selected.Value
+                            }
+                        ),
+                        Patch(
+                            Roles,
+                            VarRecord,
+                            {Rol: ComboBox3.Selected.Value}
+                        )
+                    )
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =717
-                Y: =47
+                X: =815
+                Y: =46
                 ZIndex: =9
+
+            Label20 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =33
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: |-
+                    =If(
+                        IsBlank(
+                            First(
+                                Filter(
+                                    Roles,
+                                    Usuario = Text(ThisItem.Value.email)
+                                )
+                            ).Rol
+                        ),
+                        "Usuario",
+                        First(
+                            Filter(
+                                Roles,
+                                Usuario = Text(ThisItem.Value.email)
+                            )
+                        ).Rol
+                    )
+                X: =386
+                Y: =62
+                ZIndex: =10
 
     Button1_12 As button:
         BorderColor: =ColorFade(Self.Fill, -100)
@@ -897,7 +942,7 @@ Pantalla_GestionVanisados As screen:
             Rectangle8 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                Height: =Parent.TemplateHeight - Separator1.Height
+                Height: =//Parent.TemplateHeight - Separator1.Height
                 OnSelect: =Select(Parent)
                 Visible: =ThisItem.IsSelected
                 Width: =4
@@ -909,32 +954,32 @@ Pantalla_GestionVanisados As screen:
                 BorderThickness: =6
                 DisabledFill: =RGBA(166, 166, 166, 1)
                 Fill: |+
-                    =RGBA(
+                    =/*RGBA(
                                 Index(
                                     Split(
-                                        Text(ThisItem.rgb),
+                                        Text(ThisItem.rgb);
                                         ","
-                                    ),
+                                    );
                                     1
-                                ).Value,
+                                ).Value;
                                 Index(
                                     Split(
-                                        Text(ThisItem.rgb),
+                                        Text(ThisItem.rgb);
                                         ","
-                                    ),
+                                    );
                                     2
-                                ).Value,
+                                ).Value;
                                 Index(
                                     Split(
-                                        Text(ThisItem.rgb),
+                                        Text(ThisItem.rgb);
                                         ","
-                                    ),
+                                    );
                                     3
-                                ).Value,
+                                ).Value;
                                 1
                             )
                     
-                    
+                    */
                     
                     
                 FocusedBorderThickness: =4
