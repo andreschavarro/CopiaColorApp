@@ -595,13 +595,13 @@ Pantalla_Vanisados As screen:
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Regular
             Fill: =RGBA(230, 230, 230, 0.41)
             Height: =165
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V782),false,true)
             Width: =315
             X: =208
@@ -752,8 +752,8 @@ Pantalla_Vanisados As screen:
                 Fill: =RGBA(230, 230, 230, 1)
                 FocusedBorderThickness: =4
                 Height: =102
-                HoverFill: =RGBA(0, 120, 212, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =88
                 X: =27
                 Y: =56
@@ -769,7 +769,7 @@ Pantalla_Vanisados As screen:
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(204, 204, 204, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.Warning
+                Icon: =Icon.Lightbulb
                 OnSelect: |
                     =Set(contenedorVisible,true);
                     //variables para llenar el popap
@@ -891,7 +891,7 @@ Pantalla_Vanisados As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Lighter
-                Height: =19
+                Height: =23
                 LineHeight: =1.210227
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -900,17 +900,21 @@ Pantalla_Vanisados As screen:
                 Size: =12
                 Text: =ThisItem.V782
                 VerticalAlign: =VerticalAlign.Top
-                Width: =95
+                Width: =72
                 X: =30
-                Y: =136
+                Y: =135
                 ZIndex: =10
 
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
             BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Regular
             Fill: =RGBA(230, 230, 230, 0.53)
             Height: =165
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.V442),false,true)
             Width: =315
             X: =533
@@ -1239,9 +1243,13 @@ Pantalla_Vanisados As screen:
         contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Regular
             Fill: =RGBA(230, 230, 230, 0.57)
             Height: =165
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: |
                 =If(IsBlank(ThisItem.elastico),false,true)
             Width: =315
@@ -1591,9 +1599,13 @@ Pantalla_Vanisados As screen:
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Regular
             Fill: =RGBA(230, 230, 230, 0.66)
             Height: =165
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
             Visible: =If(IsBlank(ThisItem.lycra),false,true)
             Width: =315
             X: =1183
