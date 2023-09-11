@@ -2987,7 +2987,7 @@ Pantalla_Vanisados As screen:
             FocusedBorderThickness: =4
             Height: =30
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(204, 204, 204, 1)
+            HoverColor: =RGBA(184, 149, 9, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Lightbulb
             OnSelect: |-
