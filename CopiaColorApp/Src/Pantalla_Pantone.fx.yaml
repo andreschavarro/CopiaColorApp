@@ -1271,7 +1271,7 @@ Pantalla_Pantone As screen:
                     FocusedBorderThickness: =4
                     Height: =38
                     HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =RGBA(0, 0, 0, 0.71)
+                    HoverColor: =RGBA(255, 0, 0, 1)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Error
                     OnSelect: |

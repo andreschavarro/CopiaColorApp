@@ -486,7 +486,7 @@ Colores_Crystal As screen:
         Container2 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(179, 179, 179, 1)
             BorderThickness: =2
-            DropShadow: =DropShadow.Light
+            DropShadow: =DropShadow.Regular
             Height: =276
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
@@ -658,7 +658,7 @@ Colores_Crystal As screen:
                 FocusedBorderThickness: =4
                 Height: =25
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =RGBA(255, 0, 0, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Error
                 OnSelect: |-
@@ -676,15 +676,15 @@ Colores_Crystal As screen:
         BorderThickness: =2
         DropShadow: =DropShadow.Light
         Fill: =RGBA(0, 0, 0, 0.68)
-        Height: =534
+        Height: =558
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ShowToolTip
-        Width: =947
-        X: =327
-        Y: =252
+        Width: =940
+        X: =324
+        Y: =210
         ZIndex: =25
 
         Label8_1 As label:
