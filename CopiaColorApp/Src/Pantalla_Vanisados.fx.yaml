@@ -186,13 +186,12 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: |
-                = Launch("https://apps.powerapps.com/play/e/default-6a4eb463-82bd-4a0b-ad11-ffebd2fb7285/a/dbcef574-afaf-4cdd-9fa8-e9108327fe97?tenantId=6a4eb463-82bd-4a0b-ad11-ffebd2fb7285&source=AppSharedV3&hint=88890c88-8b47-4226-b8b7-3a00fb1da03b");
-                Collect(
-                    DatosUsoColorApp,
-                    {User:Text(User().FullName),
-                    TipoRegistro:"Open_GestionVanizados",
+                =/*Collect(
+                    DatosUsoColorApp;
+                    {User:Text(User().FullName);
+                    TipoRegistro:"Open_GestionVanizados";
                     FechaHora:Now()}
-                )
+                )*/
             PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
