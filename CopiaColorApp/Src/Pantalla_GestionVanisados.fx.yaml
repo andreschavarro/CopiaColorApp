@@ -194,7 +194,7 @@ Pantalla_GestionVanisados As screen:
             RadiusTopRight: =0
             Text: ="GESTIÓN VANISADOS"
             Visible: |+
-                =true
+                =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
             Width: =190
             X: =725
@@ -762,24 +762,6 @@ Pantalla_GestionVanisados As screen:
                 X: =549
                 Y: =56
                 ZIndex: =7
-
-            Icon18 As icon.Trash:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(220, 220, 220, 1)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Icon: =Icon.Trash
-                OnSelect: =Remove(usersGall,ThisItem)
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                X: =976
-                Y: =51
-                ZIndex: =8
 
             Icon19 As icon.GlobeRefresh:
                 BorderColor: =RGBA(166, 166, 166, 1)
@@ -1558,25 +1540,6 @@ Pantalla_GestionVanisados As screen:
         X: =710
         Y: =11
         ZIndex: =168
-
-    Icon9 As icon.AddUser:
-        BorderColor: =RGBA(166, 166, 166, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(220, 220, 220, 1)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        HoverFill: =RGBA(0, 0, 0, 0)
-        Icon: =Icon.AddUser
-        OnSelect: |-
-            =UpdateContext({ ShowToolTipAGregarUsusario: !ShowToolTipAGregarUsusario})
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        PressedFill: =RGBA(0, 0, 0, 0)
-        X: =1015
-        Y: =91
-        ZIndex: =169
 
     Container6 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light

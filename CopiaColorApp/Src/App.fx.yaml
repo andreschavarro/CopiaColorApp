@@ -19,9 +19,14 @@ App As appinfo:
                 elastico: "",
                 lycra: ""
             }
+        );
+        ClearCollect(
+            adminUsers,
+            Filter(
+                Roles,
+                Rol = "Administrador"
+            )
         )
-        ClearCollect(adminUsers ,
-        Filter(Roles , 
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
