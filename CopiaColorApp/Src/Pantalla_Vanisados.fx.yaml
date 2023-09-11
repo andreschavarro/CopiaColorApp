@@ -593,9 +593,9 @@ Pantalla_Vanisados As screen:
         ZIndex: =4
 
         "'contenedortarjetaVani.78/2' As groupContainer.manualLayoutContainer":
-            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.ExtraBold
+            DropShadow: =DropShadow.Light
             Height: =165
             RadiusBottomLeft: =1
             RadiusBottomRight: =1
@@ -890,9 +890,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =11
 
         "'contenedortarjetaVani.44/2' As groupContainer.manualLayoutContainer":
-            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.ExtraBold
+            DropShadow: =DropShadow.Light
             Height: =165
             Visible: =If(IsBlank(ThisItem.V442),false,true)
             Width: =315
@@ -1218,9 +1218,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =12
 
         contenedorTarjetaElastico As groupContainer.manualLayoutContainer:
-            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.ExtraBold
+            DropShadow: =DropShadow.Light
             Height: =165
             Visible: |
                 =If(IsBlank(ThisItem.elastico),false,true)
@@ -1554,9 +1554,9 @@ Pantalla_Vanisados As screen:
                 ZIndex: =10
 
         contenedorTarjetaLycra As groupContainer.manualLayoutContainer:
-            BorderColor: =RGBA(230, 230, 230, 1)
+            BorderColor: =RGBA(204, 204, 204, 1)
             BorderThickness: =1
-            DropShadow: =DropShadow.ExtraBold
+            DropShadow: =DropShadow.Light
             Height: =165
             Visible: =If(IsBlank(ThisItem.lycra),false,true)
             Width: =315
