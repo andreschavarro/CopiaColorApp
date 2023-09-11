@@ -2450,7 +2450,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CdigoMaterial",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5818,7 +5818,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Datosdelcolor9",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6479,7 +6479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Descripcin",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8831,7 +8831,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3",
-      "ParentIndex": 16,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11758,7 +11758,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelCodigoSap",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12092,7 +12092,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelDescripcion",
-      "ParentIndex": 12,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12426,7 +12426,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelNombre",
-      "ParentIndex": 15,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13442,7 +13442,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Nombredecolor",
-      "ParentIndex": 14,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
