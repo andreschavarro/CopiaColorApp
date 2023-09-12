@@ -856,6 +856,7 @@ Pantalla_GestionVanisados As screen:
                 DisplayFields: =["Value"]
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(186, 202, 226, 1)
+                IsSearchable: =false
                 Items: =Distinct(GestionVanisadosDEV , materiaPrima)
                 OnChange: |-
                     =Set(
@@ -881,7 +882,7 @@ Pantalla_GestionVanisados As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 18, 107, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Search(Distinct(GestionVanisadosDEV , materiaPrima),ComboBox1_1.SearchText,"Value")
+                SearchItems: =[]
                 SelectionFill: =RGBA(56, 96, 178, 1)
                 SelectMultiple: =false
                 Size: =13

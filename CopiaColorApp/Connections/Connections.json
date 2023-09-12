@@ -1,4 +1,30 @@
 {
+  "0919e02e-b92e-4ea9-b5e7-abdaddee695b": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "vanisadosCalceteriaUnico"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "0919e02e-b92e-4ea9-b5e7-abdaddee695b"
+  },
   "1978edba-129a-4788-ac84-95c33de78f45": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -42,6 +68,9 @@
           "gestion_vanisadosDev": {
             "tableName": "58faf64f-39aa-48ae-9a00-777d041c0295"
           },
+          "GestionVanisadosDEV": {
+            "tableName": "63409b7a-a18a-4d69-9a39-727616ffe6ac"
+          },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
           },
@@ -66,7 +95,8 @@
       "gestion_vanisadosDev",
       "pantoneRgbFull_1Dev",
       "ReporteDeErrores",
-      "SugerenciaVanisados"
+      "SugerenciaVanisados",
+      "GestionVanisadosDEV"
     ],
     "dependencies": {},
     "dependents": [],
@@ -105,6 +135,32 @@
     },
     "dependents": [],
     "id": "328686de-30ee-4626-8c09-41ce6413aff1"
+  },
+  "4bf475f1-8dc8-4be1-abd2-76fc1b92e84f": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "8fd14bc9-e408-469a-a135-83877499542c"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "afColorCalceteria"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4bf475f1-8dc8-4be1-abd2-76fc1b92e84f"
   },
   "5397bef3-3a93-4303-b144-6bd2d3016aae": {
     "connectionRef": {
@@ -146,32 +202,6 @@
     "dependents": [],
     "id": "55239ff6-3b7d-493c-9ff0-7e94cfce4e3c"
   },
-  "59da2bca-7b26-43fc-b553-e0a9d66ff507": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "afVanizadosUnico"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "59da2bca-7b26-43fc-b553-e0a9d66ff507"
-  },
   "7df666c6-7d79-4d58-b33b-d82d977c2d79": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -197,32 +227,6 @@
     "dependencies": {},
     "dependents": [],
     "id": "7df666c6-7d79-4d58-b33b-d82d977c2d79"
-  },
-  "9a24fbdc-798f-486f-b584-e62af4cd2856": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "8fd14bc9-e408-469a-a135-83877499542c"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "afColorCalceteria"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "9a24fbdc-798f-486f-b584-e62af4cd2856"
   },
   "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1": {
     "connectionRef": {
