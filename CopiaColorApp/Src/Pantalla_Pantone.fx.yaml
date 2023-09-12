@@ -1336,7 +1336,7 @@ Pantalla_Pantone As screen:
                     BorderStyle: =BorderStyle.None
                     BorderThickness: =1
                     DropShadow: =DropShadow.Regular
-                    Fill: =RGBA(173, 168, 168, 0.52)
+                    Fill: =RGBA(230, 230, 230, 0.8)
                     Height: =197
                     RadiusBottomLeft: =5
                     RadiusBottomRight: =5
