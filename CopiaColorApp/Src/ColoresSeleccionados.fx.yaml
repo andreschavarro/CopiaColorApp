@@ -50,8 +50,8 @@ ColoresSeleccionados As screen:
                         Fill: =RGBA(0, 0, 0, 1)
                         FocusedBorderThickness: =4
                         Height: =44
-                        HoverFill: =RGBA(0, 120, 212, 1)
-                        PressedFill: =RGBA(0, 120, 212, 1)
+                        HoverFill: =RGBA(0, 0, 0, 1)
+                        PressedFill: =RGBA(0, 0, 0, 1)
                         Width: =1000
                         ZIndex: =1
 
@@ -63,8 +63,9 @@ ColoresSeleccionados As screen:
                         Fill: =ThisItem.colorlargo
                         FocusedBorderThickness: =4
                         Height: =120
-                        HoverFill: =RGBA(0, 120, 212, 1)
-                        PressedFill: =RGBA(0, 120, 212, 1)
+                        HoverFill: =
+                        PressedFill: |
+                            =
                         Width: =1000
                         Y: =40
                         ZIndex: =2
@@ -90,8 +91,8 @@ ColoresSeleccionados As screen:
                             Fill: =ThisItem.color
                             FocusedBorderThickness: =4
                             Height: =145
-                            HoverFill: =RGBA(0, 120, 212, 1)
-                            PressedFill: =RGBA(0, 120, 212, 1)
+                            HoverFill: =
+                            PressedFill: =
                             Width: =250
                             ZIndex: =1
 
@@ -152,8 +153,8 @@ ColoresSeleccionados As screen:
                         Font: =Font.'Segoe UI'
                         Size: =13
                         Text: =ThisItem.codigomaterial
-                        X: =700
-                        Y: =236
+                        X: =600
+                        Y: =212
                         ZIndex: =5
 
                     Label22_2 As label:
@@ -168,8 +169,8 @@ ColoresSeleccionados As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =13
                         Text: ="Descripciòn"
-                        X: =334
-                        Y: =236
+                        X: =282
+                        Y: =212
                         ZIndex: =6
 
                     Label22_3 As label:
@@ -184,8 +185,8 @@ ColoresSeleccionados As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =13
                         Text: ="Codigo SAP"
-                        X: =683
-                        Y: =196
+                        X: =600
+                        Y: =172
                         ZIndex: =7
 
                     Label22_4 As label:
@@ -201,8 +202,8 @@ ColoresSeleccionados As screen:
                         Size: =13
                         Text: =ThisItem.Descripcion
                         Width: =196
-                        X: =334
-                        Y: =276
+                        X: =282
+                        Y: =252
                         ZIndex: =8
 
                     Label22_5 As label:
@@ -217,8 +218,8 @@ ColoresSeleccionados As screen:
                         FontWeight: =FontWeight.Bold
                         Size: =13
                         Text: ="Nombre Color"
-                        X: =850
-                        Y: =196
+                        X: =600
+                        Y: =252
                         ZIndex: =9
 
                     Label22_6 As label:
@@ -232,8 +233,8 @@ ColoresSeleccionados As screen:
                         Font: =Font.'Segoe UI'
                         Size: =13
                         Text: =ThisItem.nombrecolor
-                        X: =850
-                        Y: =236
+                        X: =600
+                        Y: =290
                         ZIndex: =10
 
                     Label22_7 As label:
@@ -405,7 +406,7 @@ ColoresSeleccionados As screen:
         PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =40
-        X: =20
+        X: =19
         Y: =717
         ZIndex: =3
 

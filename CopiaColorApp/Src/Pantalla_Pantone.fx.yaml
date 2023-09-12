@@ -906,7 +906,7 @@ Pantalla_Pantone As screen:
             TemplateSize: =289
             Width: =1567
             WrapCount: =2
-            X: =3
+            Y: =6
             ZIndex: =1
 
             ContainerTarjetas As groupContainer.manualLayoutContainer:
