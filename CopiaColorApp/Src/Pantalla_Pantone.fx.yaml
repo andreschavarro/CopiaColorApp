@@ -1437,6 +1437,22 @@ Pantalla_Pantone As screen:
                         Y: =159
                         ZIndex: =3
 
+                Label20 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Size: =13
+                    Text: =ThisItem.Value.rgb
+                    Visible: =false
+                    X: =36
+                    Y: =95
+                    ZIndex: =22
+
         Container_pop_up As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(230, 230, 230, 1)
             BorderThickness: =2
@@ -1610,12 +1626,13 @@ Pantalla_Pantone As screen:
                             Nombre_Color: TextoEtiquetaNomColor.Text,
                             Codigo_SAP: TextoEtiquetaCodigoSAP.Text,
                             color_Crystal: TextoEtiquetacolorCrystal.Text,
-                            comentarios: TextInputReporteRGB1.Text
+                            comentarios: TextInputReporteRGB1.Text,
+                            rgb:Label20.Text
                             
                         }
                     );
                     Reset(TextInputReporteRGB1);
-                    Notify("Felicitaciones",NotificationType.Success)
+                    Notify("Felicitaciones",NotificationType.Success,8000)
                 PressedBorderColor: =RGBA(204, 204, 204, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(179, 179, 179, 1)
@@ -1743,6 +1760,38 @@ Pantalla_Pantone As screen:
                 X: =550
                 Y: =267
                 ZIndex: =22
+
+            Label19 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Size: =13
+                Text: ="Texto"
+                Visible: =
+                X: =595
+                Y: =282
+                ZIndex: =23
+
+            Label21 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Size: =13
+                Text: =Label20.Text
+                Visible: =false
+                X: =630
+                Y: =282
+                ZIndex: =24
 
     Container_Botton As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light

@@ -848,8 +848,8 @@ Pantalla_GestionVanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =815
-                Y: =46
+                X: =977
+                Y: =47
                 ZIndex: =9
 
             Dropdown2_1 As dropdown:
@@ -899,8 +899,8 @@ Pantalla_GestionVanisados As screen:
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 Size: =13
                 Width: =323
-                X: =390
-                Y: =58
+                X: =654
+                Y: =71
                 ZIndex: =11
 
             Container10 As groupContainer.manualLayoutContainer:
@@ -910,123 +910,39 @@ Pantalla_GestionVanisados As screen:
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                X: =40
+                Width: =376
+                X: =164
                 ZIndex: =12
 
     Container4 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(230, 230, 230, 1)
-        Height: =528
+        Height: =739
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ShowToolTipRgb
-        Width: =750
-        X: =367
+        Width: =1600
         Y: =157
         ZIndex: =160
 
-        "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        "Gallery4 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =528
+            Height: =590
             Items: =ReporteDeErrores
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =191
-            X: =40
+            TemplatePadding: =4
+            TemplateSize: =366
+            Width: =1478
+            WrapCount: =2
+            X: =60
+            Y: =75
             ZIndex: =1
 
-            Title1 As label:
-                Color: =RGBA(50, 49, 48, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =27
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Comentarios"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =111
-                X: =164
-                ZIndex: =1
-
-            Subtitle2 As label:
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =25
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =ThisItem.pantone
-                VerticalAlign: =VerticalAlign.Top
-                Width: =137
-                X: =24
-                Y: =166
-                ZIndex: =2
-
-            Rectangle8 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                Height: =//Parent.TemplateHeight - Separator1.Height
-                OnSelect: =Select(Parent)
-                Visible: =ThisItem.IsSelected
-                Width: =4
-                ZIndex: =3
-
-            Rectangle9 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 1)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =6
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: |+
-                    =/*RGBA(
-                                Index(
-                                    Split(
-                                        Text(ThisItem.rgb);
-                                        ","
-                                    );
-                                    1
-                                ).Value;
-                                Index(
-                                    Split(
-                                        Text(ThisItem.rgb);
-                                        ","
-                                    );
-                                    2
-                                ).Value;
-                                Index(
-                                    Split(
-                                        Text(ThisItem.rgb);
-                                        ","
-                                    );
-                                    3
-                                ).Value;
-                                1
-                            )
-                    
-                    */
-                    
-                    
-                FocusedBorderThickness: =4
-                Height: =139
-                HoverFill: =RGBA(0, 120, 212, 1)
-                OnSelect: =Select(Parent)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =158
-                ZIndex: =4
-
-            Label11 As label:
+            Label26 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1035,14 +951,89 @@ Pantalla_GestionVanisados As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =35
+                Height: =62
+                OnSelect: =Select(Parent)
+                Size: =16
+                Text: =ThisItem.comentarios
+                Width: =478
+                X: =217
+                Y: =290
+                ZIndex: =1
+
+            Rectangle10 As rectangle:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                Fill: |-
+                    =RGBA(
+                                Index(
+                                    Split(
+                                        Text(ThisItem.rgb),
+                                        ","
+                                    ),
+                                    1
+                                ).Value,
+                                Index(
+                                    Split(
+                                        Text(ThisItem.rgb),
+                                        ","
+                                    ),
+                                    2
+                                ).Value,
+                                Index(
+                                    Split(
+                                        Text(ThisItem.rgb),
+                                        ","
+                                    ),
+                                    3
+                                ).Value,
+                                1
+                            )
+                FocusedBorderThickness: =4
+                Height: =220
+                HoverFill: =RGBA(0, 120, 212, 1)
+                OnSelect: =Select(Parent)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =216
+                X: =12
+                Y: =12
+                ZIndex: =2
+
+            Label27 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                OnSelect: =Select(Parent)
+                Size: =20
+                Text: ="Color Crystal"
+                Width: =214
+                X: =237
+                Y: =14
+                ZIndex: =3
+
+            CapruradelRGBNOBORRAR As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
                 OnSelect: =Select(Parent)
                 Size: =13
-                Text: =//ThisItem.rgb
-                Width: =132
-                X: =13
-                Y: =52
-                ZIndex: =5
+                Text: =ThisItem.rgb
+                Visible: =false
+                X: =567
+                Y: =261
+                ZIndex: =4
 
             Icon6 As icon.Trash:
                 BorderColor: =RGBA(166, 166, 166, 1)
@@ -1059,12 +1050,12 @@ Pantalla_GestionVanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                Width: =45
-                X: =544
-                Y: =27
-                ZIndex: =6
+                Width: =48
+                X: =669
+                Y: =12
+                ZIndex: =5
 
-            Label12 As label:
+            Label26_1 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
@@ -1073,108 +1064,206 @@ Pantalla_GestionVanisados As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                Height: =25
                 OnSelect: =Select(Parent)
-                Size: =13
-                Text: =ThisItem.comentarios
-                Width: =151
-                X: =158
-                Y: =40
+                Size: =16
+                Text: =ThisItem.color_Crystal
+                Width: =108
+                X: =280
+                Y: =56
+                ZIndex: =6
+
+            Label27_1 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                OnSelect: =Select(Parent)
+                Size: =20
+                Text: ="Comentario"
+                Width: =214
+                X: =319
+                Y: =245
                 ZIndex: =7
 
-            Subtitle2_1 As label:
+            Label27_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =28
+                FontWeight: =FontWeight.Bold
                 OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =ThisItem.Codigo_SAP
-                VerticalAlign: =VerticalAlign.Top
-                Width: =137
-                X: =309
-                Y: =125
+                Size: =20
+                Text: ="Pantone"
+                Width: =132
+                X: =52
+                Y: =250
                 ZIndex: =8
 
-            Subtitle2_2 As label:
+            Label27_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =19
+                FontWeight: =FontWeight.Bold
                 OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =ThisItem.Nombre_Color
-                VerticalAlign: =VerticalAlign.Top
-                Width: =137
-                X: =158
-                Y: =129
+                Size: =20
+                Text: ="Nombre Color"
+                Width: =214
+                X: =444
+                Y: =18
                 ZIndex: =9
 
-            Subtitle2_3 As label:
+            Label26_2 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =28
                 OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: ="Codigo SAP"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =137
-                X: =309
-                Y: =84
+                Size: =16
+                Text: =ThisItem.pantone
+                X: =34
+                Y: =300
                 ZIndex: =10
 
-            Subtitle2_4 As label:
+            Label26_3 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =19
+                Height: =32
                 OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: ="Nombre Color"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =137
-                X: =158
-                Y: =87
+                Size: =16
+                Text: =ThisItem.Nombre_Color
+                Width: =148
+                X: =466
+                Y: =64
                 ZIndex: =11
 
-            Title1_2 As label:
-                Color: =RGBA(50, 49, 48, 1)
+            Label27_4 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =27
+                FontWeight: =FontWeight.Bold
                 OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: ="Pantone"
-                VerticalAlign: =VerticalAlign.Top
-                Width: =111
-                X: =25
-                Y: =139
+                Size: =20
+                Text: ="Codigo SAP"
+                Width: =214
+                X: =240
+                Y: =109
                 ZIndex: =12
+
+            Label26_4 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                OnSelect: =Select(Parent)
+                Size: =16
+                Text: =ThisItem.Codigo_SAP
+                Width: =138
+                X: =271
+                Y: =160
+                ZIndex: =13
+
+            Label29 As label:
+                BorderColor: =RGBA(153, 153, 153, 1)
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =366
+                OnSelect: =Select(Parent)
+                Size: =13
+                Text: =ThisItem.Título
+                Width: =733
+                ZIndex: =14
+
+            Label27_5 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                OnSelect: =Select(Parent)
+                Size: =20
+                Text: ="Descripcion"
+                Width: =214
+                X: =432
+                Y: =109
+                ZIndex: =15
+
+            Label26_5 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Height: =52
+                OnSelect: =Select(Parent)
+                Size: =16
+                Text: =ThisItem.Descripcion
+                Width: =297
+                X: =419
+                Y: =160
+                ZIndex: =16
+
+        Icon9 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(128, 128, 128, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =54
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CancelBadge
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =49
+            X: =1551
+            ZIndex: =2
 
     Cont_Sugerencia_vanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -1829,8 +1918,8 @@ Pantalla_GestionVanisados As screen:
             Height: =33
             Size: =20
             Text: =CountRows(ReporteDeErrores)
-            Width: =48
-            X: =896
+            Width: =36
+            X: =906
             ZIndex: =4
 
         Button1_13 As button:
