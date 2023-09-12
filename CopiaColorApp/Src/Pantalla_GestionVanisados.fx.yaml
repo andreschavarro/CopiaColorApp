@@ -13,7 +13,7 @@ Pantalla_GestionVanisados As screen:
 
     Container_barraNavegacionvanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =63
+        Height: =59
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -27,7 +27,7 @@ Pantalla_GestionVanisados As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 0, 0, 1)
             FocusedBorderThickness: =4
-            Height: =63
+            Height: =59
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =1600
@@ -208,7 +208,7 @@ Pantalla_GestionVanisados As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =39
+            Height: =40
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: =User().Image
@@ -218,8 +218,8 @@ Pantalla_GestionVanisados As screen:
             RadiusBottomRight: =20
             RadiusTopLeft: =20
             RadiusTopRight: =20
-            Width: =37
-            X: =1542
+            Width: =40
+            X: =1549
             Y: =11
             ZIndex: =9
 

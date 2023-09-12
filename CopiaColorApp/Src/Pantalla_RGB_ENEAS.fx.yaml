@@ -161,7 +161,7 @@ Pantalla_RGB_ENEAS As screen:
 
     Container_BarraNavegacionRGB As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =63
+        Height: =59
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -175,7 +175,7 @@ Pantalla_RGB_ENEAS As screen:
             DisabledFill: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 0, 0, 1)
             FocusedBorderThickness: =4
-            Height: =63
+            Height: =59
             HoverFill: =
             PressedFill: =RGBA(0, 120, 212, 1)
             Width: =1600
@@ -347,8 +347,8 @@ Pantalla_RGB_ENEAS As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Width: =40
-            X: =1550
-            Y: =14
+            X: =1549
+            Y: =11
             ZIndex: =8
 
         Button11_5 As button:

@@ -214,7 +214,7 @@ Pantalla_Pantone As screen:
             RadiusTopRight: =20
             Width: =40
             X: =1549
-            Y: =9
+            Y: =11
             ZIndex: =9
 
         Button11_2 As button:

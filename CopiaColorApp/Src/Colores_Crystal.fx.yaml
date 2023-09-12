@@ -190,8 +190,8 @@ Colores_Crystal As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Width: =40
-            X: =1548
-            Y: =9
+            X: =1549
+            Y: =11
             ZIndex: =8
 
         Button11_3 As button:
