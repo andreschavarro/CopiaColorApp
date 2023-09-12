@@ -372,14 +372,31 @@ Pantalla_RGB_ENEAS As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Text: ="GESTIÓN VANISADOS"
+            Text: ="GESTIÓN"
             Visible: |+
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
-            Width: =190
+            Width: =90
             X: =852
             Y: =11
             ZIndex: =10
+
+        Label6_5 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =59
+            Size: =18
+            Text: =User().FullName
+            Width: =340
+            X: =1163
+            ZIndex: =11
 
     ContainerBarratabla As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -622,8 +639,8 @@ Pantalla_RGB_ENEAS As screen:
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =161
-        X: =1273
-        Y: =714
+        X: =1205
+        Y: =715
         ZIndex: =42
 
         Button8 As button:
@@ -659,7 +676,7 @@ Pantalla_RGB_ENEAS As screen:
             Size: =15
             Text: ="Crear Excel"
             Width: =130
-            X: =18
-            Y: =22
+            X: =31
+            Y: =4
             ZIndex: =1
 

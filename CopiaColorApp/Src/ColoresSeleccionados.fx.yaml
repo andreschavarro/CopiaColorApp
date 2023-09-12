@@ -29,52 +29,6 @@ ColoresSeleccionados As screen:
                 Y: =13
                 ZIndex: =20
 
-                Title1_1 As label:
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Semibold
-                    Height: =Self.Size * 1.8
-                    OnSelect: =
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =20
-                    Text: =ThisItem.Descripcion
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =
-                    X: =
-                    Y: =19
-                    ZIndex: =1
-
-                Subtitle1_1 As label:
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Font: =Font.'Segoe UI'
-                    Height: =Self.Size * 1.8
-                    OnSelect: =
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =18
-                    Text: =ThisItem.Descripcion
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =Title1_1.Width
-                    X: =Title1_1.X
-                    Y: =Title1_1.Y + Title1_1.Height + 4
-                    ZIndex: =2
-
-                Separator1_1 As rectangle:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    Fill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    Height: =1
-                    OnSelect: =
-                    Width: =
-                    Y: =
-                    ZIndex: =3
-
                 Rectangle6_1 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
@@ -159,22 +113,6 @@ ColoresSeleccionados As screen:
                     X: =204
                     Y: =270
                     ZIndex: =8
-
-                Label2_10 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    OnSelect: =
-                    Size: =13
-                    Text: =""
-                    X: =968
-                    Y: =188
-                    ZIndex: =9
 
                 Label2_15 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)

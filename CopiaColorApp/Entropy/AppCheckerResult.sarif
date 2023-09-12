@@ -4938,6 +4938,30 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 8
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 8
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -4948,12 +4972,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.Label10.Text"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.Label10.Text",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -4967,7 +4991,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container9.Label10"
+                "type": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10"
               }
             }
           ],
@@ -4988,12 +5012,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.Label10_1.Text"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10_1.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.Label10_1.Text",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10_1.Text",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -5007,7 +5031,7 @@
               "properties": {
                 "member": "Text",
                 "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container9.Label10_1"
+                "type": "Pantalla_GestionVanisados.Container9.ContainerLandingPage.Label10_1"
               }
             }
           ],
