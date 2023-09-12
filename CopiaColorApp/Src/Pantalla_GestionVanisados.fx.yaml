@@ -1100,7 +1100,6 @@ Pantalla_GestionVanisados As screen:
             TemplatePadding: =0
             TemplateSize: =146
             Width: =1600
-            X: =108
             ZIndex: =1
 
             Container14 As groupContainer.manualLayoutContainer:
