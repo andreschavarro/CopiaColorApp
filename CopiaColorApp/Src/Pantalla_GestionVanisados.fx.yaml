@@ -1110,7 +1110,7 @@ Pantalla_GestionVanisados As screen:
         "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =631
+            Height: =616
             Items: =usersGall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -1118,6 +1118,7 @@ Pantalla_GestionVanisados As screen:
             TemplateSize: =109
             Width: =1324
             X: =149
+            Y: =16
             ZIndex: =1
 
             Rectangle1 As rectangle:
@@ -1131,7 +1132,6 @@ Pantalla_GestionVanisados As screen:
 
             Icon19 As icon.GlobeRefresh:
                 BorderColor: =RGBA(166, 166, 166, 1)
-                Color: =RGBA(149, 149, 149, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
@@ -1225,7 +1225,8 @@ Pantalla_GestionVanisados As screen:
                 ZIndex: =11
 
             Container10 As groupContainer.manualLayoutContainer:
-                DropShadow: =DropShadow.Light
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(237, 237, 237, 1)
                 Height: =100
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
