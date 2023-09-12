@@ -11,6 +11,257 @@ Pantalla_GestionVanisados As screen:
         )
     Width: =1600
 
+    Container9 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Fill: =RGBA(204, 204, 204, 1)
+        Height: =837
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =1600
+        Y: =59
+        ZIndex: =1
+
+        ContainerLandingPage As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.ExtraBold
+            Fill: =RGBA(237, 237, 237, 1)
+            Height: =192
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =1600
+            ZIndex: =1
+
+            Button1_11 As button:
+                BorderColor: =ColorFade(Self.Fill, -100)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(202, 202, 202, 1)
+                OnSelect: |-
+                    =UpdateContext(
+                        {
+                            ShowToolTipRoles: !ShowToolTipRoles,
+                            ShowToolTipRgb: false,
+                            ShowToolTipVanizados: false,
+                            ContenedorLandingPage: false
+                        }
+                    )
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =17
+                Text: ="ADMINISTRADOR DE ROLES"
+                Width: =302
+                X: =729
+                Y: =26
+                ZIndex: =1
+
+            Button1_12 As button:
+                BorderColor: =ColorFade(Self.Fill, -100)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(202, 202, 202, 1)
+                OnSelect: |-
+                    =UpdateContext(
+                        {
+                            ShowToolTipRgb: !ShowToolTipRgb,
+                            ShowToolTipRoles: false,
+                            ShowToolTipVanizados: false,
+                            ContenedorLandingPage: false
+                        }
+                    )
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =17
+                Text: ="RGB REPORTADOS"
+                Width: =302
+                X: =729
+                Y: =109
+                ZIndex: =2
+
+            Circle2 As circle:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(187, 221, 140, 1)
+                Height: =40
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =50
+                X: =1018
+                Y: =84
+                ZIndex: =3
+
+            Label10 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: =CountRows(ReporteDeErrores)
+                Width: =50
+                X: =1018
+                Y: =84
+                ZIndex: =4
+
+            Button1_13 As button:
+                BorderColor: =ColorFade(Self.Fill, -100)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(202, 202, 202, 1)
+                OnSelect: |-
+                    =UpdateContext(
+                        {
+                            ShowToolTipVanizados: !ShowToolTipVanizados,
+                            ShowToolTipRoles: false,
+                            ShowToolTipRgb: false,
+                            ContenedorLandingPage: false
+                        }
+                    )
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =17
+                Text: ="SUGERENCIA DE VANISADOS"
+                Width: =325
+                X: =1156
+                Y: =26
+                ZIndex: =5
+
+            Circle2_1 As circle:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledFill: =RGBA(0, 120, 212, 1)
+                Fill: =RGBA(187, 221, 140, 1)
+                Height: =40
+                HoverFill: =RGBA(0, 120, 212, 1)
+                PressedFill: =RGBA(0, 120, 212, 1)
+                Width: =50
+                X: =1468
+                Y: =5
+                ZIndex: =6
+
+            Label10_1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Size: =20
+                Text: =CountRows(SugerenciaVanisados)
+                Width: =50
+                X: =1468
+                Y: =5
+                ZIndex: =7
+
+            Button1_15 As button:
+                BorderColor: =ColorFade(Self.Fill, -100)
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Semibold
+                Height: =45
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(202, 202, 202, 1)
+                OnSelect: =
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =17
+                Text: ="GESTIÓN DE VANISADOS"
+                Width: =325
+                X: =1156
+                Y: =109
+                ZIndex: =8
+
+            Label6_4 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                Height: =63
+                Size: =18
+                Text: =User().FullName
+                Width: =377
+                X: =241
+                Y: =61
+                ZIndex: =9
+
+            Image1_7 As image:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                FocusedBorderThickness: =4
+                Height: =150
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
+                HoverFill: =RGBA(0, 0, 0, 0)
+                Image: =User().Image
+                PressedBorderColor: =RGBA(0, 0, 0, 0)
+                PressedFill: =RGBA(0, 0, 0, 0)
+                RadiusBottomLeft: =50
+                RadiusBottomRight: =50
+                RadiusTopLeft: =50
+                RadiusTopRight: =50
+                Width: =150
+                X: =36
+                Y: =20
+                ZIndex: =10
+
     Container_barraNavegacionvanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Height: =59
@@ -19,7 +270,7 @@ Pantalla_GestionVanisados As screen:
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =1600
-        ZIndex: =1
+        ZIndex: =2
 
         Rectangle1_2 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 0)
@@ -258,7 +509,7 @@ Pantalla_GestionVanisados As screen:
         Visible: =false
         Width: =1600
         Y: =157
-        ZIndex: =2
+        ZIndex: =3
 
         Container8 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
@@ -842,70 +1093,32 @@ Pantalla_GestionVanisados As screen:
                 ZIndex: =2
 
     Container3 As groupContainer.manualLayoutContainer:
+        BorderStyle: =BorderStyle.None
         BorderThickness: =2
-        DropShadow: =DropShadow.Light
-        Fill: =RGBA(230, 230, 230, 1)
-        Height: =739
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =640
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ShowToolTipRoles
         Width: =1600
-        Y: =157
-        ZIndex: =3
+        Y: =257
+        ZIndex: =4
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =539
+            Height: =631
             Items: =usersGall
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
-            TemplateSize: =167
-            Width: =1383
+            TemplateSize: =109
+            Width: =1324
+            X: =149
             ZIndex: =1
-
-            Image3 As image:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =72
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                OnSelect: =Select(Parent)
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                RadiusBottomLeft: =8
-                RadiusBottomRight: =8
-                RadiusTopLeft: =8
-                RadiusTopRight: =8
-                Width: =72
-                Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                ZIndex: =1
-
-            Subtitle1 As label:
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =34
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =12
-                Text: =ThisItem.Value.email
-                VerticalAlign: =VerticalAlign.Top
-                Width: =230
-                X: =139
-                Y: =66
-                ZIndex: =3
 
             Rectangle1 As rectangle:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -918,10 +1131,12 @@ Pantalla_GestionVanisados As screen:
 
             Icon19 As icon.GlobeRefresh:
                 BorderColor: =RGBA(166, 166, 166, 1)
+                Color: =RGBA(149, 149, 149, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(220, 220, 220, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
                 FocusedBorderThickness: =4
+                Height: =40
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
@@ -953,8 +1168,9 @@ Pantalla_GestionVanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
-                X: =977
-                Y: =47
+                Width: =40
+                X: =1058
+                Y: =33
                 ZIndex: =9
 
             Dropdown2_1 As dropdown:
@@ -1004,23 +1220,65 @@ Pantalla_GestionVanisados As screen:
                 SelectionFill: =RGBA(0, 120, 212, 1)
                 Size: =13
                 Width: =323
-                X: =654
-                Y: =71
+                X: =644
+                Y: =33
                 ZIndex: =11
 
             Container10 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =167
+                Height: =100
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =376
-                X: =164
+                Width: =481
+                X: =44
+                Y: =3
                 ZIndex: =12
+
+                Image3 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    Height: =80
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    RadiusBottomLeft: =8
+                    RadiusBottomRight: =8
+                    RadiusTopLeft: =8
+                    RadiusTopRight: =8
+                    Width: =80
+                    X: =49
+                    Y: =7
+                    ZIndex: =1
+
+                Subtitle1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =49
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =15
+                    Text: =ThisItem.Value.email
+                    Width: =271
+                    X: =180
+                    Y: =23
+                    ZIndex: =2
 
         Icon16_1 As icon.CancelBadge:
             BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(116, 116, 116, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -1033,8 +1291,8 @@ Pantalla_GestionVanisados As screen:
             OnSelect: |-
                 =UpdateContext(
                     {
-                        ShowToolTipRoles: false,
-                        ContenedorLandingPage: true
+                        ShowToolTipRoles: !ShowToolTipRoles,
+                        ContenedorLandingPage: !ContenedorLandingPage
                     }
                 )
             PressedBorderColor: =RGBA(0, 0, 0, 0)
@@ -1055,7 +1313,7 @@ Pantalla_GestionVanisados As screen:
         Visible: =ShowToolTipRgb
         Width: =1600
         Y: =157
-        ZIndex: =4
+        ZIndex: =5
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1356,6 +1614,8 @@ Pantalla_GestionVanisados As screen:
             HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =UpdateContext({ ShowToolTipRgb: !ShowToolTipRgb,ContenedorLandingPage:!ContenedorLandingPage})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -1376,7 +1636,7 @@ Pantalla_GestionVanisados As screen:
         Width: =1418
         X: =98
         Y: =217
-        ZIndex: =5
+        ZIndex: =6
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1656,7 +1916,7 @@ Pantalla_GestionVanisados As screen:
             HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.CancelBadge
             OnSelect: |-
-                =UpdateContext({ ShowToolTipVanizados: !ShowToolTipVanizados})
+                =UpdateContext({ ShowToolTipVanizados: !ShowToolTipVanizados,ContenedorLandingPage:!ContenedorLandingPage})
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -1676,7 +1936,7 @@ Pantalla_GestionVanisados As screen:
         Width: =1113
         X: =253
         Y: =232
-        ZIndex: =6
+        ZIndex: =7
 
         ComboBox3_1 As combobox:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -1884,257 +2144,4 @@ Pantalla_GestionVanisados As screen:
             X: =36
             Y: =159
             ZIndex: =12
-
-    Container9 As groupContainer.manualLayoutContainer:
-        DropShadow: =DropShadow.Light
-        Fill: =RGBA(204, 204, 204, 1)
-        Height: =837
-        RadiusBottomLeft: =4
-        RadiusBottomRight: =4
-        RadiusTopLeft: =4
-        RadiusTopRight: =4
-        Width: =1600
-        Y: =59
-        ZIndex: =7
-
-        ContainerLandingPage As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.ExtraBold
-            Fill: =RGBA(237, 237, 237, 1)
-            Height: =700
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
-            Width: =800
-            X: =400
-            Y: =60
-            ZIndex: =1
-
-            Button1_11 As button:
-                BorderColor: =ColorFade(Self.Fill, -100)
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =45
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(202, 202, 202, 1)
-                OnSelect: |-
-                    =UpdateContext(
-                        {
-                            ShowToolTipRoles: !ShowToolTipRoles,
-                            ShowToolTipRgb: false,
-                            ShowToolTipVanizados: false,
-                            ContenedorLandingPage: false
-                        }
-                    )
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =17
-                Text: ="ADMINISTRADOR DE ROLES"
-                Width: =302
-                X: =11
-                Y: =445
-                ZIndex: =1
-
-            Button1_12 As button:
-                BorderColor: =ColorFade(Self.Fill, -100)
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =45
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(202, 202, 202, 1)
-                OnSelect: |-
-                    =UpdateContext(
-                        {
-                            ShowToolTipRgb: !ShowToolTipRgb,
-                            ShowToolTipRoles: false,
-                            ShowToolTipVanizados: false,
-                            ContenedorLandingPage: false
-                        }
-                    )
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =17
-                Text: ="RGB REPORTADOS"
-                Width: =302
-                X: =11
-                Y: =591
-                ZIndex: =2
-
-            Circle2 As circle:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledFill: =RGBA(0, 120, 212, 1)
-                Fill: =RGBA(187, 221, 140, 1)
-                Height: =40
-                HoverFill: =RGBA(0, 120, 212, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =50
-                X: =300
-                Y: =566
-                ZIndex: =3
-
-            Label10 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Size: =20
-                Text: =CountRows(ReporteDeErrores)
-                Width: =50
-                X: =300
-                Y: =566
-                ZIndex: =4
-
-            Button1_13 As button:
-                BorderColor: =ColorFade(Self.Fill, -100)
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =45
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(202, 202, 202, 1)
-                OnSelect: |-
-                    =UpdateContext(
-                        {
-                            ShowToolTipVanizados: !ShowToolTipVanizados,
-                            ShowToolTipRoles: false,
-                            ShowToolTipRgb: false,
-                            ContenedorLandingPage: false
-                        }
-                    )
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =17
-                Text: ="SUGERENCIA DE VANISADOS"
-                Width: =325
-                X: =438
-                Y: =445
-                ZIndex: =5
-
-            Circle2_1 As circle:
-                BorderColor: =RGBA(166, 166, 166, 1)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledFill: =RGBA(0, 120, 212, 1)
-                Fill: =RGBA(187, 221, 140, 1)
-                Height: =40
-                HoverFill: =RGBA(0, 120, 212, 1)
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =50
-                X: =750
-                Y: =424
-                ZIndex: =6
-
-            Label10_1 As label:
-                Align: =Align.Center
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Size: =20
-                Text: =CountRows(SugerenciaVanisados)
-                Width: =50
-                X: =750
-                Y: =424
-                ZIndex: =7
-
-            Button1_15 As button:
-                BorderColor: =ColorFade(Self.Fill, -100)
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(255, 255, 255, 1)
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Semibold
-                Height: =45
-                HoverColor: =RGBA(0, 0, 0, 1)
-                HoverFill: =RGBA(202, 202, 202, 1)
-                OnSelect: =
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =17
-                Text: ="GESTIÓN DE VANISADOS"
-                Width: =325
-                X: =438
-                Y: =591
-                ZIndex: =8
-
-            Label6_4 As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                FontWeight: =FontWeight.Bold
-                Height: =63
-                Size: =18
-                Text: =User().FullName
-                Width: =345
-                X: =236
-                Y: =312
-                ZIndex: =9
-
-            Image1_7 As image:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledFill: =RGBA(0, 0, 0, 0)
-                FocusedBorderThickness: =4
-                Height: =250
-                HoverBorderColor: =RGBA(0, 0, 0, 0)
-                HoverFill: =RGBA(0, 0, 0, 0)
-                Image: =User().Image
-                PressedBorderColor: =RGBA(0, 0, 0, 0)
-                PressedFill: =RGBA(0, 0, 0, 0)
-                RadiusBottomLeft: =50
-                RadiusBottomRight: =50
-                RadiusTopLeft: =50
-                RadiusTopRight: =50
-                Width: =250
-                X: =284
-                Y: =34
-                ZIndex: =10
 
