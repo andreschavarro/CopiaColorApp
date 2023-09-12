@@ -14,7 +14,7 @@ Pantalla_GestionVanisados As screen:
     Container9 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(204, 204, 204, 1)
-        Height: =837
+        Height: =841
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -1146,7 +1146,7 @@ Pantalla_GestionVanisados As screen:
                     RadiusTopLeft: =8
                     RadiusTopRight: =8
                     Width: =80
-                    X: =49
+                    X: =27
                     Y: =7
                     ZIndex: =1
 
@@ -1197,14 +1197,14 @@ Pantalla_GestionVanisados As screen:
     Container4 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(230, 230, 230, 1)
-        Height: =739
+        Height: =639
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ShowToolTipRgb
         Width: =1600
-        Y: =157
+        Y: =257
         ZIndex: =5
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -1518,29 +1518,28 @@ Pantalla_GestionVanisados As screen:
     Cont_Sugerencia_vanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =433
+        Height: =623
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: |
             =ShowToolTipVanizados
-        Width: =1418
-        X: =98
-        Y: =217
+        Width: =1600
+        Y: =261
         ZIndex: =6
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =450
+            Height: =606
             Items: =SugerenciaVanisados
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =138
-            Width: =1191
-            X: =85
+            Width: =1463
+            X: =73
             ZIndex: =1
 
             Icon8 As icon.Trash:
@@ -1683,7 +1682,23 @@ Pantalla_GestionVanisados As screen:
                 HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Check
-                OnSelect: =Select(Parent)
+                OnSelect: |
+                    =Patch(
+                        SugerenciaVanisados,
+                        LookUp(
+                            SugerenciaVanisados,
+                            Color_Crystal = ThisItem.Color_Crystal
+                        ),
+                        {Estado: "Aceptado"}
+                    );
+                    Patch(
+                        GestionVanisadosDEV,
+                        LookUp(
+                            GestionVanisadosDEV,
+                            ThisItem.Color_Crystal = coColor
+                        ),
+                        {coColor: Subtitle3_3.Text}
+                    );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -1802,7 +1817,7 @@ Pantalla_GestionVanisados As screen:
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =56
+            Height: =54
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             HoverFill: =RGBA(0, 0, 0, 0)
@@ -1812,8 +1827,7 @@ Pantalla_GestionVanisados As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =51
-            X: =1367
+            X: =1536
             ZIndex: =2
 
     Container6 As groupContainer.manualLayoutContainer:

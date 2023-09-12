@@ -68,6 +68,9 @@
           "gestion_vanisadosDev": {
             "tableName": "58faf64f-39aa-48ae-9a00-777d041c0295"
           },
+          "GestionVanisadosDEV": {
+            "tableName": "63409b7a-a18a-4d69-9a39-727616ffe6ac"
+          },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
           },
@@ -92,45 +95,12 @@
       "gestion_vanisadosDev",
       "pantoneRgbFull_1Dev",
       "ReporteDeErrores",
-      "SugerenciaVanisados"
+      "SugerenciaVanisados",
+      "GestionVanisadosDEV"
     ],
     "dependencies": {},
     "dependents": [],
     "id": "1978edba-129a-4788-ac84-95c33de78f45"
-  },
-  "328686de-30ee-4626-8c09-41ce6413aff1": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1": {
-          "value": "shared_powerappsforappmakers"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_powerappsforappmakers": {
-          "value": "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "obtener_usuarios_color_app"
-    ],
-    "dependencies": {
-      "shared_powerappsforappmakers": "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1"
-    },
-    "dependents": [],
-    "id": "328686de-30ee-4626-8c09-41ce6413aff1"
   },
   "4bf475f1-8dc8-4be1-abd2-76fc1b92e84f": {
     "connectionRef": {
@@ -224,20 +194,6 @@
     "dependents": [],
     "id": "7df666c6-7d79-4d58-b33b-d82d977c2d79"
   },
-  "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1": {
-    "connectionRef": {
-      "displayName": "Power Apps para creadores",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/powerappsforappmakers/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "328686de-30ee-4626-8c09-41ce6413aff1"
-    ],
-    "id": "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1"
-  },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -254,53 +210,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "b6965406-cef4-4463-b637-dee95013238d"
-  },
-  "c9ba4016-d7f7-4e05-a65f-cf99d7651151": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e": {
-          "value": "shared_powerappsforappmakers_1"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_powerappsforappmakers_1": {
-          "value": "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "obtener_usuarios_color_app"
-    ],
-    "dependencies": {
-      "shared_powerappsforappmakers_1": "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e"
-    },
-    "dependents": [],
-    "id": "c9ba4016-d7f7-4e05-a65f-cf99d7651151"
-  },
-  "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e": {
-    "connectionRef": {
-      "displayName": "Power Apps para creadores",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/powerappsforappmakers/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "c9ba4016-d7f7-4e05-a65f-cf99d7651151"
-    ],
-    "id": "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e"
   }
 }
