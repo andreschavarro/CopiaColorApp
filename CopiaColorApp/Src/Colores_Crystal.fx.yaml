@@ -704,7 +704,8 @@ Colores_Crystal As screen:
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Error
                 OnSelect: |-
-                    =UpdateContext({ShowToolTip:!ShowToolTip})
+                    =UpdateContext({ShowToolTip:!ShowToolTip});
+                    Set(desColor,ThisItem.colorName)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -894,6 +895,7 @@ Colores_Crystal As screen:
                         Descripcion:EtiquetaDescripcion.Text,
                         comentarios:ReporteRGBcolorCrystal.Text,
                         color_Crystal:TextoEtiquetaCodigocolor_1.Text,
+                        Nombre_Color:Label12.Text,
                         rgb: Label24.Text
                     }
                 );
@@ -1030,4 +1032,19 @@ Colores_Crystal As screen:
             X: =632
             Y: =354
             ZIndex: =14
+
+        Label12 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: =desColor
+            X: =632
+            Y: =366
+            ZIndex: =15
 
