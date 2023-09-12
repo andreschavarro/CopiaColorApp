@@ -171,46 +171,6 @@ Pantalla_Vanisados As screen:
             Y: =11
             ZIndex: =7
 
-        Button11 As button:
-            AutoDisableOnSelect: =false
-            BorderColor: =RGBA(255, 255, 255, 1)
-            BorderStyle: =BorderStyle.None
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =
-            OnSelect: |
-                =/*Collect(
-                    DatosUsoColorApp;
-                    {User:Text(User().FullName);
-                    TipoRegistro:"Open_GestionVanizados";
-                    FechaHora:Now()}
-                )*/
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-            RadiusBottomLeft: =0
-            RadiusBottomRight: =0
-            RadiusTopLeft: =0
-            RadiusTopRight: =0
-            Text: ="GESTIÓN VANISADOS"
-            Visible: |-
-                =If(
-                    User().FullName = "Miguel Angel Lopez Cardenas" Or User().FullName = "Mario Andres Arango Vasco" Or User().FullName = "Juan Esteban Escobar Gomez" Or User().FullName = "Jaime Alonso Ceballos Morales",
-                    true,
-                    false
-                )
-            Width: =190
-            X: =720
-            Y: =9
-            ZIndex: =8
-
         Image1_4 As image:
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None

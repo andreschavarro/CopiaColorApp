@@ -1432,7 +1432,7 @@ Pantalla_Pantone As screen:
                         Size: =11.25
                         Text: =Text(ThisItem.Value.coColor)
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =48
+                        Width: =50
                         X: =13
                         Y: =159
                         ZIndex: =3
