@@ -630,7 +630,6 @@ Pantalla_Pantone As screen:
             HoverBorderColor: =
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(230, 230, 230, 0.6)
-            IsSearchable: =false
             Items: |-
                 =Filter(
                     coloresUnicosDev,
@@ -639,7 +638,7 @@ Pantalla_Pantone As screen:
                         Text(ComboBox2_1.SearchText)
                     )
                 )
-            OnChange: |-
+            OnChange: |
                 =Set(
                     color_var,
                     Self.Selected.coColor
@@ -652,7 +651,7 @@ Pantalla_Pantone As screen:
                     selectedRGB,
                     First(
                         Filter(
-                            coloresUnicosDev,
+                            coloresUnicos,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -670,7 +669,7 @@ Pantalla_Pantone As screen:
                     selectedRGB,
                     First(
                         Filter(
-                            coloresUnicosDev,
+                            coloresUnicos,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -679,7 +678,14 @@ Pantalla_Pantone As screen:
             PressedColor: =RGBA(0, 0, 0, 1)
             PressedFill: =RGBA(179, 179, 179, 1)
             SearchFields: =["field_0"]
-            SearchItems: =[]
+            SearchItems: |-
+                =Search(Filter(
+                    coloresUnicosDev,
+                    StartsWith(
+                        coColor,
+                        Text(ComboBox2_1.SearchText)
+                    )
+                ),ComboBox2_1.SearchText,"field_0")
             SelectionColor: =RGBA(0, 0, 0, 1)
             SelectionFill: =RGBA(128, 128, 128, 1)
             SelectMultiple: =false

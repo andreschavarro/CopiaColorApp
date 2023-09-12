@@ -363,7 +363,7 @@ Pantalla_Vanisados As screen:
             HoverFill: =
             Items: |-
                 =Filter(
-                    coloresUnicosDev,
+                    coloresUnicos,
                     StartsWith(
                         coColor,
                         Text(ComboBox2.SearchText)
@@ -379,7 +379,7 @@ Pantalla_Vanisados As screen:
                     rgb_var,
                     First(
                         Filter(
-                            coloresUnicosDev,
+                            coloresUnicos,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -388,7 +388,7 @@ Pantalla_Vanisados As screen:
                     rgb_vani1,
                     First(
                         Filter(
-                            coloresUnicosDev,
+                            coloresUnicos,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -396,7 +396,7 @@ Pantalla_Vanisados As screen:
                 Set(
                     collectionFiltered,
                     Filter(
-                        GestionVanisadosDEV,
+                        gestion_vanisados,
                         color_var = coColor
                     )
                 );
@@ -409,7 +409,7 @@ Pantalla_Vanisados As screen:
                     Set(
                         CollectionShow,
                         Filter(
-                            GestionVanisadosDEV,
+                            gestion_vanisados,
                             color_var = coColor
                         )
                     ),
@@ -424,7 +424,7 @@ Pantalla_Vanisados As screen:
             SearchFields: =["field_0"]
             SearchItems: |-
                 =Search(Filter(
-                    coloresUnicosDev,
+                    coloresUnicos,
                     StartsWith(
                         coColor,
                         Text(ComboBox2.SearchText)

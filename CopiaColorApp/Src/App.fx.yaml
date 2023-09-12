@@ -1,15 +1,7 @@
 App As appinfo:
     BackEnabled: =false
     OnStart: |-
-        =ClearCollect(
-            usersGall,
-            AddColumns(
-                Table(ParseJSON(obtener_usuarios_color_app.Run().response)),
-                "Usermail",
-                ThisRecord.Value.email 
-            )
-        );
-        Collect(
+        =Collect(
             DatosUsoColorApp,
             {
                 User: Text(User().FullName),
@@ -27,6 +19,14 @@ App As appinfo:
                 elastico: "",
                 lycra: ""
             }
+        );
+        ClearCollect(
+            usersGall,
+            AddColumns(
+                Table(ParseJSON(obtener_usuarios_color_app.Run().response)),
+                "Usermail",
+                ThisRecord.Value.email 
+            )
         );
         ClearCollect(
             adminUsers,
