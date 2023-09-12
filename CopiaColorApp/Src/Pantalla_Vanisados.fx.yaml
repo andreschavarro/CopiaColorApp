@@ -190,7 +190,7 @@ Pantalla_Vanisados As screen:
             RadiusTopRight: =20
             Width: =40
             X: =1546
-            Y: =9
+            Y: =11
             ZIndex: =9
 
         Button1_14 As button:
@@ -246,11 +246,11 @@ Pantalla_Vanisados As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Text: ="GESTIÓN VANISADOS"
+            Text: ="GESTIÓN"
             Visible: |+
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
-            Width: =190
+            Width: =90
             X: =852
             Y: =11
             ZIndex: =12
@@ -2215,7 +2215,7 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.V442),true,false)
-                X: =73
+                X: =74
                 Y: =115
                 ZIndex: =2
 
@@ -2234,7 +2234,7 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =30
+                X: =47
                 Y: =50
                 ZIndex: =3
 
@@ -2253,7 +2253,7 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =118
+                X: =135
                 Y: =12
                 ZIndex: =4
 
@@ -2398,7 +2398,7 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.elastico),true,false)
-                X: =75
+                X: =74
                 Y: =115
                 ZIndex: =2
 
@@ -2804,7 +2804,7 @@ Pantalla_Vanisados As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =300
             X: =774
-            Y: =343
+            Y: =344
             ZIndex: =12
 
         Mssimilar1_8 As label:
@@ -2815,7 +2815,7 @@ Pantalla_Vanisados As screen:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FocusedBorderThickness: =4
-            Height: =34
+            Height: =35
             LineHeight: =1.210227
             PaddingBottom: =0
             PaddingLeft: =0

@@ -190,8 +190,8 @@ Colores_Crystal As screen:
             RadiusTopLeft: =20
             RadiusTopRight: =20
             Width: =40
-            X: =1548
-            Y: =9
+            X: =1549
+            Y: =11
             ZIndex: =8
 
         Button11_3 As button:
@@ -215,11 +215,11 @@ Colores_Crystal As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Text: ="GESTIÓN VANISADOS"
+            Text: ="GESTIÓN"
             Visible: |+
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
-            Width: =190
+            Width: =90
             X: =852
             Y: =11
             ZIndex: =10
@@ -479,7 +479,7 @@ Colores_Crystal As screen:
             FontWeight: =FontWeight.Semibold
             Height: =38
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: |
                 =Reset(colorInput);

@@ -214,7 +214,7 @@ Pantalla_Pantone As screen:
             RadiusTopRight: =20
             Width: =40
             X: =1549
-            Y: =9
+            Y: =11
             ZIndex: =9
 
         Button11_2 As button:
@@ -238,11 +238,11 @@ Pantalla_Pantone As screen:
             RadiusBottomRight: =0
             RadiusTopLeft: =0
             RadiusTopRight: =0
-            Text: ="GESTIÓN VANISADOS"
+            Text: ="GESTIÓN"
             Visible: |+
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
-            Width: =190
+            Width: =90
             X: =852
             Y: =11
             ZIndex: =10
@@ -934,7 +934,7 @@ Pantalla_Pantone As screen:
                     Size: =11.25
                     Text: =Text(ThisItem.Value.coMaterial)
                     VerticalAlign: =VerticalAlign.Top
-                    Width: =104
+                    Width: =130
                     X: =430
                     Y: =160
                     ZIndex: =1
@@ -958,7 +958,7 @@ Pantalla_Pantone As screen:
                     VerticalAlign: =VerticalAlign.Top
                     Width: =117
                     X: =193
-                    Y: =119
+                    Y: =125
                     ZIndex: =2
 
                 Rectangle151 As rectangle:
@@ -1375,7 +1375,7 @@ Pantalla_Pantone As screen:
                         VerticalAlign: =VerticalAlign.Top
                         Width: =98
                         X: =13
-                        Y: =139
+                        Y: =126
                         ZIndex: =1
 
                     Rectangle18 As rectangle:
@@ -1441,9 +1441,9 @@ Pantalla_Pantone As screen:
                         Size: =11.25
                         Text: =Text(ThisItem.Value.coColor)
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =50
+                        Width: =65
                         X: =13
-                        Y: =159
+                        Y: =149
                         ZIndex: =3
 
                 Label20 As label:

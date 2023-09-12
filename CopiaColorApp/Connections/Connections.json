@@ -11,8 +11,20 @@
     "datasets": {
       "https://grupocrystal.sharepoint.com/sites/Desarrollocalcetera": {
         "dataSources": {
+          "colorCalceteria2": {
+            "tableName": "beac12ca-9ca7-4bfc-9ee4-f50a625a235f"
+          },
+          "coloresUnicos": {
+            "tableName": "20070285-e053-453c-8293-c365d1d2196e"
+          },
           "DatosUsoColorApp": {
             "tableName": "5ebc205c-daab-47fa-9f0a-3e4bad587167"
+          },
+          "gestion_vanisados": {
+            "tableName": "0b176edb-2d48-4849-a621-4cc91f66725b"
+          },
+          "pantoneRgbFull_1": {
+            "tableName": "e311ef49-059a-4201-a1ec-2241341ee5a4"
           },
           "Roles": {
             "tableName": "3cb0d187-7477-4db4-a39a-44985fc06456"
@@ -27,8 +39,8 @@
           "coloresUnicosDev": {
             "tableName": "2f830880-40a1-4f52-a6e6-31d86c3e6ffa"
           },
-          "GestionVanisadosDEV": {
-            "tableName": "63409b7a-a18a-4d69-9a39-727616ffe6ac"
+          "gestion_vanisadosDev": {
+            "tableName": "58faf64f-39aa-48ae-9a00-777d041c0295"
           },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
@@ -44,13 +56,17 @@
     },
     "dataSources": [
       "DatosUsoColorApp",
+      "pantoneRgbFull_1",
+      "gestion_vanisados",
+      "coloresUnicos",
+      "colorCalceteria2",
       "Roles",
       "colorCalceteriaDev",
       "coloresUnicosDev",
+      "gestion_vanisadosDev",
       "pantoneRgbFull_1Dev",
       "ReporteDeErrores",
-      "SugerenciaVanisados",
-      "GestionVanisadosDEV"
+      "SugerenciaVanisados"
     ],
     "dependencies": {},
     "dependents": [],
