@@ -106,7 +106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_2",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -435,7 +435,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button11_2",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -733,7 +733,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button13",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1339,7 +1339,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button4",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1634,7 +1634,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button6_1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2186,7 +2186,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ButtonGuardar1",
-      "ParentIndex": 13,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2784,7 +2784,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "CdigoMaterial",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3804,7 +3804,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "COLORAPP1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4205,7 +4205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox1",
-      "ParentIndex": 7,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4576,7 +4576,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox2_1",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6152,7 +6152,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Datosdelcolor9",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6813,7 +6813,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Descripcin",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7462,7 +7462,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown2",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9165,7 +9165,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon3",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9610,7 +9610,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image1_2",
-      "ParentIndex": 2,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9833,7 +9833,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image2_1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11174,7 +11174,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label20",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12923,7 +12923,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelCodigoSap",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13257,7 +13257,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelDescripcion",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13591,7 +13591,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "LabelNombre",
-      "ParentIndex": 12,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14607,7 +14607,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Nombredecolor",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16762,7 +16762,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInputB",
-      "ParentIndex": 11,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17077,7 +17077,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInputG",
-      "ParentIndex": 10,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17406,7 +17406,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInputR",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -1624,40 +1624,6 @@ Pantalla_GestionVanisados As screen:
             X: =1367
             ZIndex: =2
 
-    Button1_15 As button:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(202, 202, 202, 1)
-        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =37
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverColor: =RGBA(255, 255, 255, 1)
-        HoverFill: =
-        OnSelect: =Navigate(Pantalla_GestionVanisados)
-        PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Text: ="GESTIÓN VANISADOS"
-        Visible: |-
-            =If(
-                LookUp(Roles, Usuario = User().Email).Rol = "Propietario",
-                true,
-                false
-            )
-        Width: =118
-        X: =710
-        Y: =11
-        ZIndex: =168
-
     Container6 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(237, 237, 237, 1)
