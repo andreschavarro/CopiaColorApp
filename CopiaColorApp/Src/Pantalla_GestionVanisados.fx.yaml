@@ -501,14 +501,14 @@ Pantalla_GestionVanisados As screen:
             ZIndex: =10
 
     Container_GestionVanizados As groupContainer.manualLayoutContainer:
-        Height: =528
+        Height: =627
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =false
         Width: =1600
-        Y: =157
+        Y: =273
         ZIndex: =3
 
         Container8 As groupContainer.manualLayoutContainer:
@@ -856,6 +856,7 @@ Pantalla_GestionVanisados As screen:
                 DisplayFields: =["Value"]
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(186, 202, 226, 1)
+                IsSearchable: =false
                 Items: =Distinct(GestionVanisadosDEV , materiaPrima)
                 OnChange: |-
                     =Set(
@@ -881,7 +882,7 @@ Pantalla_GestionVanisados As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 18, 107, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Search(Distinct(GestionVanisadosDEV , materiaPrima),ComboBox1_1.SearchText,"Value")
+                SearchItems: =[]
                 SelectionFill: =RGBA(56, 96, 178, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -1007,8 +1008,7 @@ Pantalla_GestionVanisados As screen:
             TemplatePadding: =0
             TemplateSize: =109
             Width: =1324
-            X: =149
-            Y: =16
+            X: =130
             ZIndex: =1
 
             Rectangle1 As rectangle:
@@ -1196,14 +1196,14 @@ Pantalla_GestionVanisados As screen:
     Container4 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(230, 230, 230, 1)
-        Height: =739
+        Height: =643
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ShowToolTipRgb
         Width: =1600
-        Y: =157
+        Y: =257
         ZIndex: =5
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -1517,29 +1517,28 @@ Pantalla_GestionVanisados As screen:
     Cont_Sugerencia_vanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =433
+        Height: =639
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: |
             =ShowToolTipVanizados
-        Width: =1418
-        X: =98
-        Y: =217
+        Width: =1600
+        Y: =261
         ZIndex: =6
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
-            Height: =450
+            Height: =433
             Items: =SugerenciaVanisados
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =138
             Width: =1191
-            X: =85
+            X: =108
             ZIndex: =1
 
             Icon8 As icon.Trash:

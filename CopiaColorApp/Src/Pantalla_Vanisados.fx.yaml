@@ -3328,6 +3328,7 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(212, 212, 212, 1)
             InputTextPlaceholder: ="Buscar materia prima"
+            IsSearchable: =false
             Items: =Distinct(gestion_vanisados , materiaPrima)
             OnSelect: |+
                 =If(ComboBox4.Selected.Value,"",Label8_8.Text);
@@ -3348,7 +3349,7 @@ Pantalla_Vanisados As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
             SearchFields: =["Value"]
-            SearchItems: =Search(Distinct(gestion_vanisados , materiaPrima),ComboBox4.SearchText,"Value")
+            SearchItems: =[]
             SelectionFill: =RGBA(0, 120, 212, 1)
             SelectMultiple: =false
             Size: =10
