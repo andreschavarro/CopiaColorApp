@@ -1108,23 +1108,6 @@ Pantalla_GestionVanisados As screen:
                 Y: =14
                 ZIndex: =3
 
-            CapruradelRGBNOBORRAR As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                OnSelect: =Select(Parent)
-                Size: =13
-                Text: =ThisItem.rgb
-                Visible: =false
-                X: =567
-                Y: =261
-                ZIndex: =4
-
             Icon6 As icon.Trash:
                 BorderColor: =RGBA(166, 166, 166, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1284,21 +1267,6 @@ Pantalla_GestionVanisados As screen:
                 X: =271
                 Y: =160
                 ZIndex: =13
-
-            Label29 As label:
-                BorderColor: =RGBA(153, 153, 153, 1)
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Height: =366
-                OnSelect: =Select(Parent)
-                Size: =13
-                Text: =ThisItem.Título
-                Width: =733
-                ZIndex: =14
 
             Label27_5 As label:
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -2008,8 +1976,8 @@ Pantalla_GestionVanisados As screen:
             Height: =33
             Size: =20
             Text: =CountRows(ReporteDeErrores)
-            Width: =36
-            X: =906
+            Width: =50
+            X: =892
             ZIndex: =4
 
         Button1_13 As button:

@@ -515,7 +515,7 @@ Pantalla_Pantone As screen:
             HoverColor: =RGBA(51, 51, 51, 1)
             HoverFill: =RGBA(230, 230, 230, 0.67)
             Items: =["Pantone","Color crystal","RGB"]
-            OnChange: |
+            OnChange: |+
                 =Set(
                     tipoColor,
                     Dropdown2.SelectedText.Value
@@ -541,6 +541,8 @@ Pantalla_Pantone As screen:
                 );
                 Clear(gall);
                 Set(selectedColorCode , "");
+                Set(selectedPantoneVar,"")
+                
             OnSelect: |-
                 =Set(
                     tipoColor,
@@ -1632,7 +1634,10 @@ Pantalla_Pantone As screen:
                         }
                     );
                     Reset(TextInputReporteRGB1);
-                    Notify("Felicitaciones",NotificationType.Success,8000)
+                    Notify("Reporte realizado",NotificationType.Success,3000);
+                    
+                    Set(selectedPantoneVar,"");
+                    UpdateContext({ ShowToolTiperror: !ShowToolTiperror })
                 PressedBorderColor: =RGBA(204, 204, 204, 1)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(179, 179, 179, 1)
@@ -1792,6 +1797,22 @@ Pantalla_Pantone As screen:
                 X: =630
                 Y: =282
                 ZIndex: =24
+
+            Label11 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Size: =13
+                Text: =LabelDescripcion.Text
+                Visible: =false
+                X: =569
+                Y: =282
+                ZIndex: =25
 
     Container_Botton As groupContainer.manualLayoutContainer:
         Height: =72
