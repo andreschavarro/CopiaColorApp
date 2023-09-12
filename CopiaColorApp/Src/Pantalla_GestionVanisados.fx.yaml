@@ -614,7 +614,7 @@ Pantalla_GestionVanisados As screen:
                 HoverFill: =
                 Items: |-
                     =Filter(
-                        coloresUnicosDev,
+                        coloresUnicos,
                         StartsWith(
                             coColor,
                             Text(ComboBox2_2.SearchText)
@@ -657,7 +657,7 @@ Pantalla_GestionVanisados As screen:
                 SearchFields: =["field_0"]
                 SearchItems: |-
                     =Search(Filter(
-                        coloresUnicosDev,
+                        coloresUnicos,
                         StartsWith(
                             coColor,
                             Text(ComboBox2_2.SearchText)
