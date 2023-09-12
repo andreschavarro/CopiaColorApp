@@ -511,14 +511,14 @@ Pantalla_GestionVanisados As screen:
 
     Container_GestionVanizados As groupContainer.manualLayoutContainer:
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =643
+        Height: =627
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Visible: =ContainerGestionVanisados
         Width: =1600
-        Y: =257
+        Y: =273
         ZIndex: =3
 
         Container8 As groupContainer.manualLayoutContainer:
@@ -1062,179 +1062,6 @@ Pantalla_GestionVanisados As screen:
         Y: =257
         ZIndex: =4
 
-        "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            BorderColor: =RGBA(166, 166, 166, 1)
-            DelayItemLoading: =true
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =632
-            Items: =usersGall
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =0
-            TemplateSize: =109
-            Width: =1600
-            ZIndex: =1
-
-            Container10 As groupContainer.manualLayoutContainer:
-                DropShadow: =DropShadow.Regular
-                Fill: =RGBA(237, 237, 237, 0.5)
-                Height: =100
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                Width: =550
-                X: =280
-                Y: =4
-                ZIndex: =12
-
-                Image3 As image:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    FocusedBorderThickness: =4
-                    Height: =80
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Image: =
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =8
-                    RadiusBottomRight: =8
-                    RadiusTopLeft: =8
-                    RadiusTopRight: =8
-                    Width: =80
-                    X: =49
-                    Y: =7
-                    ZIndex: =1
-
-                Subtitle1 As label:
-                    Align: =Align.Center
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =49
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Size: =20
-                    Text: =ThisItem.Value.email
-                    Width: =350
-                    X: =180
-                    Y: =23
-                    ZIndex: =2
-
-            Container15 As groupContainer.manualLayoutContainer:
-                DropShadow: =DropShadow.Regular
-                Fill: =RGBA(237, 237, 237, 0.5)
-                Height: =100
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                Width: =512
-                X: =841
-                Y: =4
-                ZIndex: =13
-
-                Icon19 As icon.GlobeRefresh:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(220, 220, 220, 1)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    FocusedBorderThickness: =4
-                    Height: =35
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    Icon: =Icon.GlobeRefresh
-                    OnSelect: |-
-                        =Set(
-                            VarRecord,
-                            LookUp(
-                                Roles,
-                                Usuario = Text(ThisItem.Value.email)
-                            )
-                        );
-                        If(
-                            IsBlank(VarRecord),
-                            Patch(
-                                Roles,
-                                Defaults(Roles),
-                                {
-                                    Usuario: Text(ThisItem.Value.email),
-                                    Rol: Dropdown2_1.Selected.Value
-                                }
-                            ),
-                            Patch(
-                                Roles,
-                                VarRecord,
-                                {Rol: Dropdown2_1.Selected.Value}
-                            )
-                        )
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =35
-                    X: =423
-                    Y: =31
-                    ZIndex: =1
-
-                Dropdown2_1 As dropdown:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    ChevronBackground: =RGBA(255, 255, 255, 1)
-                    ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
-                    ChevronDisabledFill: =RGBA(166, 166, 166, 1)
-                    ChevronFill: =RGBA(33, 33, 33, 1)
-                    ChevronHoverBackground: =RGBA(212, 212, 212, 1)
-                    ChevronHoverFill: =RGBA(33, 33, 33, 1)
-                    Color: =RGBA(51, 51, 51, 1)
-                    Default: |-
-                        =If(
-                            IsBlank(
-                                First(
-                                    Filter(
-                                        Roles,
-                                        Usuario = Text(ThisItem.Value.email)
-                                    )
-                                ).Rol
-                            ),
-                            "Usuario",
-                            First(
-                                Filter(
-                                    Roles,
-                                    Usuario = Text(ThisItem.Value.email)
-                                )
-                            ).Rol
-                        )
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Font: =Font.'Segoe UI'
-                    HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    HoverColor: =RGBA(51, 51, 51, 1)
-                    HoverFill: =RGBA(212, 212, 212, 1)
-                    Items: =["Usuario","Administrador"]
-                    OnChange: =
-                    OnSelect: =
-                    PaddingBottom: =5
-                    PaddingLeft: =12
-                    PaddingRight: =5
-                    PaddingTop: =5
-                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(0, 120, 212, 1)
-                    SelectionFill: =RGBA(0, 120, 212, 1)
-                    Size: =13
-                    Width: =323
-                    X: =56
-                    Y: =29
-                    ZIndex: =2
-
     ContainerRGB As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(230, 230, 230, 1)
@@ -1248,318 +1075,10 @@ Pantalla_GestionVanisados As screen:
         Y: =257
         ZIndex: =5
 
-        "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-            BorderColor: =RGBA(166, 166, 166, 1)
-            DelayItemLoading: =true
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =630
-            Items: =ReporteDeErrores
-            Layout: =Layout.Vertical
-            LoadingSpinner: =LoadingSpinner.Data
-            TemplatePadding: =4
-            TemplateSize: =348
-            Width: =1600
-            WrapCount: =2
-            ZIndex: =1
-
-            Container3 As groupContainer.manualLayoutContainer:
-                DropShadow: =DropShadow.Semibold
-                Fill: =RGBA(237, 237, 237, 0.5)
-                Height: =340
-                RadiusBottomLeft: =4
-                RadiusBottomRight: =4
-                RadiusTopLeft: =4
-                RadiusTopRight: =4
-                Width: =772
-                X: =8
-                Y: =5
-                ZIndex: =17
-
-                Label26 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Height: =75
-                    Size: =16
-                    Text: =ThisItem.comentarios
-                    VerticalAlign: =VerticalAlign.Top
-                    Width: =484
-                    X: =270
-                    Y: =249
-                    ZIndex: =1
-
-                Label27 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Color Crystal"
-                    Width: =180
-                    X: =270
-                    Y: =14
-                    ZIndex: =3
-
-                Icon6 As icon.Trash:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(220, 220, 220, 1)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    FocusedBorderThickness: =4
-                    Height: =35
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverColor: =    
-                    HoverFill: =
-                    Icon: =Icon.Trash
-                    OnSelect: =Remove(ReporteDeErrores,ThisItem)
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    Width: =35
-                    X: =731
-                    Y: =14
-                    ZIndex: =4
-
-                Label26_1 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Size: =16
-                    Text: =ThisItem.color_Crystal
-                    Width: =140
-                    X: =290
-                    Y: =54
-                    ZIndex: =5
-
-                Label27_1 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Comentario"
-                    Width: =180
-                    X: =270
-                    Y: =209
-                    ZIndex: =6
-
-                Label27_2 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Pantone"
-                    Width: =132
-                    X: =56
-                    Y: =244
-                    ZIndex: =7
-
-                Label27_3 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Nombre Color"
-                    Width: =214
-                    X: =495
-                    Y: =14
-                    ZIndex: =8
-
-                Label26_2 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Size: =16
-                    Text: =ThisItem.pantone
-                    X: =47
-                    Y: =284
-                    ZIndex: =9
-
-                Label26_3 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Height: =32
-                    Size: =16
-                    Text: =ThisItem.Nombre_Color
-                    Width: =160
-                    X: =522
-                    Y: =54
-                    ZIndex: =10
-
-                Label27_4 As label:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Codigo SAP"
-                    Width: =180
-                    X: =270
-                    Y: =108
-                    ZIndex: =11
-
-                Label26_4 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Size: =16
-                    Text: =ThisItem.Codigo_SAP
-                    Width: =138
-                    X: =287
-                    Y: =154
-                    ZIndex: =12
-
-                Label27_5 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Size: =20
-                    Text: ="Descripcion"
-                    Width: =214
-                    X: =495
-                    Y: =108
-                    ZIndex: =13
-
-                Label26_5 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    Color: =RGBA(51, 51, 51, 1)
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FocusedBorderThickness: =4
-                    Font: =Font.'Segoe UI'
-                    Height: =64
-                    Size: =16
-                    Text: =ThisItem.Descripcion
-                    Width: =241
-                    X: =482
-                    Y: =154
-                    ZIndex: =14
-
-                Container4 As groupContainer.manualLayoutContainer:
-                    DropShadow: =DropShadow.Regular
-                    Height: =220
-                    RadiusBottomLeft: =4
-                    RadiusBottomRight: =4
-                    RadiusTopLeft: =4
-                    RadiusTopRight: =4
-                    Width: =216
-                    X: =14
-                    Y: =14
-                    ZIndex: =15
-
-                    Rectangle10 As rectangle:
-                        BorderColor: =RGBA(0, 0, 0, 0)
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =2
-                        DisabledFill: =RGBA(166, 166, 166, 1)
-                        Fill: |-
-                            =RGBA(
-                                        Index(
-                                            Split(
-                                                Text(ThisItem.rgb),
-                                                ","
-                                            ),
-                                            1
-                                        ).Value,
-                                        Index(
-                                            Split(
-                                                Text(ThisItem.rgb),
-                                                ","
-                                            ),
-                                            2
-                                        ).Value,
-                                        Index(
-                                            Split(
-                                                Text(ThisItem.rgb),
-                                                ","
-                                            ),
-                                            3
-                                        ).Value,
-                                        1
-                                    )
-                        FocusedBorderThickness: =4
-                        Height: =220
-                        HoverFill: =
-                        PressedFill: =RGBA(0, 120, 212, 1)
-                        Width: =216
-                        ZIndex: =1
-
     Cont_Sugerencia_vanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(237, 237, 237, 1)
-        Height: =643
+        Height: =639
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
@@ -1567,20 +1086,21 @@ Pantalla_GestionVanisados As screen:
         Visible: |
             =ShowToolTipVanizados
         Width: =1600
-        Y: =257
+        Y: =261
         ZIndex: =6
 
         "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =627
+            Height: =433
             Items: =SugerenciaVanisados
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =146
             Width: =1600
+            X: =108
             ZIndex: =1
 
             Container14 As groupContainer.manualLayoutContainer:
