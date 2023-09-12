@@ -740,6 +740,21 @@ Colores_Crystal As screen:
                     Width: =300
                     ZIndex: =1
 
+            Label23 As label:
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                Size: =13
+                Text: =ThisItem.rgb
+                Visible: =false
+                Y: =173
+                ZIndex: =12
+
     Container_Popup As groupContainer.manualLayoutContainer:
         BorderThickness: =2
         DropShadow: =DropShadow.Light
@@ -878,9 +893,8 @@ Colores_Crystal As screen:
                         Codigo_SAP: EtiquetaCodigoSAP.Text,
                         Descripcion:EtiquetaDescripcion.Text,
                         comentarios:ReporteRGBcolorCrystal.Text,
-                        color_Crystal:TextoEtiquetaCodigocolor_1.Text
-                        
-                        
+                        color_Crystal:TextoEtiquetaCodigocolor_1.Text,
+                        rgb: Label24.Text
                     }
                 );
                 Reset(ReporteRGBcolorCrystal);
@@ -1000,4 +1014,20 @@ Colores_Crystal As screen:
             X: =275
             Y: =4
             ZIndex: =13
+
+        Label24 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Size: =13
+            Text: =Label23.Text
+            Visible: =false
+            X: =632
+            Y: =354
+            ZIndex: =14
 

@@ -106,7 +106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_6",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -399,7 +399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button1_7",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -728,7 +728,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button11_5",
-      "ParentIndex": 7,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1033,7 +1033,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button13_1",
-      "ParentIndex": 6,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1333,7 +1333,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button6_3",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2278,7 +2278,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "COLORAPP1_4",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4328,7 +4328,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image2_5",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6121,7 +6121,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle11_1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

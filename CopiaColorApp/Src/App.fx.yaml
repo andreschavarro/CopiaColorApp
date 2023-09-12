@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |
+    OnStart: |-
         =ClearCollect(
             usersGall,
             AddColumns(
@@ -35,10 +35,6 @@ App As appinfo:
                 Rol = "Administrador"
             )
         );
-        Set(
-            tipoColor,
-            Dropdown2.SelectedText.Value
-        )
     Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
