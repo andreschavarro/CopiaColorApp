@@ -377,7 +377,7 @@ Pantalla_RGB_ENEAS As screen:
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
             Width: =190
-            X: =855
+            X: =852
             Y: =11
             ZIndex: =10
 
