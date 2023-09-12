@@ -1,30 +1,4 @@
 {
-  "0919e02e-b92e-4ea9-b5e7-abdaddee695b": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
-        }
-      },
-      "parameterHintsV2": {
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "vanisadosCalceteriaUnico"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "0919e02e-b92e-4ea9-b5e7-abdaddee695b"
-  },
   "1978edba-129a-4788-ac84-95c33de78f45": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -68,9 +42,6 @@
           "gestion_vanisadosDev": {
             "tableName": "58faf64f-39aa-48ae-9a00-777d041c0295"
           },
-          "GestionVanisadosDEV": {
-            "tableName": "63409b7a-a18a-4d69-9a39-727616ffe6ac"
-          },
           "pantoneRgbFull_1Dev": {
             "tableName": "474d2801-ecfb-4a9f-9c3a-c6071d3966f4"
           },
@@ -95,8 +66,7 @@
       "gestion_vanisadosDev",
       "pantoneRgbFull_1Dev",
       "ReporteDeErrores",
-      "SugerenciaVanisados",
-      "GestionVanisadosDEV"
+      "SugerenciaVanisados"
     ],
     "dependencies": {},
     "dependents": [],
@@ -210,5 +180,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "b6965406-cef4-4463-b637-dee95013238d"
+  },
+  "f0919ecf-98c7-4414-a99e-eeeb9d1e8529": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "vanisadosCalceteriaUnico"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f0919ecf-98c7-4414-a99e-eeeb9d1e8529"
   }
 }
