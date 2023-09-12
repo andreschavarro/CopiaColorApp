@@ -1019,6 +1019,31 @@ Pantalla_GestionVanisados As screen:
                 X: =164
                 ZIndex: =12
 
+        Icon16_1 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =56
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =UpdateContext(
+                    {
+                        ShowToolTipRoles: false,
+                        ContenedorLandingPage: true
+                    }
+                )
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =51
+            X: =1533
+            ZIndex: =2
+
     Container4 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(230, 230, 230, 1)
@@ -1868,7 +1893,6 @@ Pantalla_GestionVanisados As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Visible: =ContenedorLandingPage
         Width: =1600
         Y: =59
         ZIndex: =7
@@ -2062,15 +2086,7 @@ Pantalla_GestionVanisados As screen:
                 Height: =45
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(202, 202, 202, 1)
-                OnSelect: |-
-                    =UpdateContext(
-                        {
-                            ShowToolTipVanizados: !ShowToolTipVanizados,
-                            ShowToolTipRoles: false,
-                            ShowToolTipRgb: false,
-                            ContenedorLandingPage: false
-                        }
-                    )
+                OnSelect: =
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
