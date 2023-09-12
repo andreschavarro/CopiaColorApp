@@ -2,7 +2,7 @@
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
     "FlowNameId": "3fd42788-2207-44a9-ab2f-9e4cc30f56b4",
-    "Name": "afVanizadosUnico",
+    "Name": "vanisadosCalceteriaUnico",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null
