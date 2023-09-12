@@ -356,11 +356,26 @@ Pantalla_GestionVanisados As screen:
                             Text(ComboBox2_2.SearchText)
                         )
                     )
-                OnChange: =Clear(gallVanisadoUnico)
-                OnSelect: |-
+                OnChange: |-
                     =Set(
-                        color_var,
-                        Self.Selected.coColor
+                        tempGuid,
+                        First(
+                            Filter(
+                                GestionVanisadosDEV,
+                                materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_2.Selected.coColor
+                            )
+                        ).ID
+                    );
+                    Set(
+                        guidBool,
+                        Not(
+                            IsBlank(
+                                LookUp(
+                                    gestion_vanisados,
+                                    ID = tempGuid
+                                )
+                            )
+                        )
                     );
                     Set(
                         rgb_var,
@@ -370,41 +385,8 @@ Pantalla_GestionVanisados As screen:
                                 coColor = Self.Selected.coColor
                             )
                         ).rgb
-                    );
-                    Set(
-                        rgb_vani1,
-                        First(
-                            Filter(
-                                coloresUnicos,
-                                coColor = Self.Selected.coColor
-                            )
-                        ).rgb
-                    );
-                    Set(
-                        collectionFiltered,
-                        Filter(
-                            gestion_vanisados,
-                            color_var = coColor
-                        )
-                    );
-                    Set(
-                        varRegistros,
-                        CountRows(collectionFiltered) > 0
-                    );
-                    If(
-                        varRegistros,
-                        Set(
-                            CollectionShow,
-                            Filter(
-                                gestion_vanisados,
-                                color_var = coColor
-                            )
-                        ),
-                        Set(
-                            CollectionShow,
-                            coleccionAlternativa
-                        )
                     )
+                OnSelect: =
                 PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 120, 212, 1)
@@ -539,9 +521,8 @@ Pantalla_GestionVanisados As screen:
                 Default: |-
                     =First(
                         Filter(
-                            gestion_vanisados,
-                            coColor = Text(ComboBox2.Selected.coColor) &&
-                            materiaPrima = Text(ComboBox1_1.Selected.Value)
+                            GestionVanisadosDEV,
+                            coColor = Text(ComboBox2_2.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
                         )
                     ).V782
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -565,8 +546,8 @@ Pantalla_GestionVanisados As screen:
                 Default: |-
                     =First(
                         Filter(
-                            gestion_vanisados,
-                            coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                            GestionVanisadosDEV,
+                            coColor = Text(ComboBox2_2.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
                         )
                     ).V442
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -574,6 +555,7 @@ Pantalla_GestionVanisados As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(0, 18, 107, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(186, 202, 226, 1)
@@ -590,8 +572,8 @@ Pantalla_GestionVanisados As screen:
                 Default: |-
                     =First(
                         Filter(
-                            gestion_vanisados,
-                            coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                            GestionVanisadosDEV,
+                            coColor = Text(ComboBox2_2.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
                         )
                     ).elastico
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -599,6 +581,7 @@ Pantalla_GestionVanisados As screen:
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Lighter
                 HoverBorderColor: =RGBA(0, 18, 107, 1)
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(186, 202, 226, 1)
@@ -621,13 +604,13 @@ Pantalla_GestionVanisados As screen:
                 DisplayFields: =["Value"]
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(186, 202, 226, 1)
-                Items: =Distinct(gestion_vanisados , materiaPrima)
+                Items: =Distinct(GestionVanisadosDEV , materiaPrima)
                 OnChange: |-
                     =Set(
                         tempGuid,
                         First(
                             Filter(
-                                gestion_vanisados,
+                                GestionVanisadosDEV,
                                 materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
                             )
                         ).ID
@@ -637,7 +620,7 @@ Pantalla_GestionVanisados As screen:
                         Not(
                             IsBlank(
                                 LookUp(
-                                    gestion_vanisados,
+                                    GestionVanisadosDEV,
                                     ID = tempGuid
                                 )
                             )
@@ -646,7 +629,7 @@ Pantalla_GestionVanisados As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(0, 18, 107, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Search(Distinct(gestion_vanisados , materiaPrima),ComboBox1_1.SearchText,"Value")
+                SearchItems: =Search(Distinct(GestionVanisadosDEV , materiaPrima),ComboBox1_1.SearchText,"Value")
                 SelectionFill: =RGBA(56, 96, 178, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -662,8 +645,8 @@ Pantalla_GestionVanisados As screen:
                 Default: |-
                     =First(
                         Filter(
-                            gestion_vanisados,
-                            coColor = Text(ComboBox2_1.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
+                            GestionVanisadosDEV,
+                            coColor = Text(ComboBox2_2.Selected.coColor) && materiaPrima = Text(ComboBox1_1.Selected.Value)
                         )
                     ).lycra
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -747,24 +730,24 @@ Pantalla_GestionVanisados As screen:
                 =If(
                     guidBool,
                     Patch(
-                        gestion_vanisados,
+                        GestionVanisadosDEV,
                         LookUp(
-                            gestion_vanisados,
+                            GestionVanisadosDEV,
                             ID = tempGuid
                         ),
                         {
-                            V782: TextInput1_1.Text,
+                            V782: TextInput1.Text,
                             V442: TextInput1_2.Text,
                             elastico: TextInput1_3.Text,
                             lycra: TextInput1_4.Text
                         }
                     ),
                     Collect(
-                        gestion_vanisados,
+                        GestionVanisadosDEV,
                         {
                             materiaPrima: ComboBox1_1.Selected.Value,
-                            coColor: ComboBox2_1.Selected.coColor,
-                            V782: TextInput1_1.Text,
+                            coColor: ComboBox2_2.Selected.coColor,
+                            V782: TextInput1.Text,
                             V442: TextInput1_2.Text,
                             elastico: TextInput1_3.Text,
                             lycra: TextInput1_4.Text
@@ -775,8 +758,8 @@ Pantalla_GestionVanisados As screen:
                     tempGuid,
                     First(
                         Filter(
-                            gestion_vanisados,
-                            materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_1.Selected.coColor
+                            GestionVanisadosDEV,
+                            materiaPrima = ComboBox1_1.Selected.Value && coColor = ComboBox2_2.Selected.coColor
                         )
                     ).ID
                 );
@@ -785,7 +768,7 @@ Pantalla_GestionVanisados As screen:
                     Not(
                         IsBlank(
                             LookUp(
-                                gestion_vanisadosDev,
+                                GestionVanisadosDEV,
                                 ID = tempGuid
                             )
                         )

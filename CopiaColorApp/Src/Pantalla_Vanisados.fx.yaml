@@ -379,7 +379,7 @@ Pantalla_Vanisados As screen:
                     rgb_var,
                     First(
                         Filter(
-                            coloresUnicos,
+                            coloresUnicosDev,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -388,7 +388,7 @@ Pantalla_Vanisados As screen:
                     rgb_vani1,
                     First(
                         Filter(
-                            coloresUnicos,
+                            coloresUnicosDev,
                             coColor = Self.Selected.coColor
                         )
                     ).rgb
@@ -396,7 +396,7 @@ Pantalla_Vanisados As screen:
                 Set(
                     collectionFiltered,
                     Filter(
-                        gestion_vanisados,
+                        GestionVanisadosDEV,
                         color_var = coColor
                     )
                 );
@@ -409,7 +409,7 @@ Pantalla_Vanisados As screen:
                     Set(
                         CollectionShow,
                         Filter(
-                            gestion_vanisados,
+                            GestionVanisadosDEV,
                             color_var = coColor
                         )
                     ),
