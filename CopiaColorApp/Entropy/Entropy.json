@@ -417,10 +417,9 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/12/2023 18:48:13",
+  "HeaderLastSavedDateTimeUTC": "09/12/2023 19:03:58",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "0919e02e-b92e-4ea9-b5e7-abdaddee695b": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/3FD42788220744A9AB2F9E4CC30F56B4-10B3FD79033DADE9\"",
     "1978edba-129a-4788-ac84-95c33de78f45": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/fa7fc0616d9e4101b275d158e1f1b066\"",
     "328686de-30ee-4626-8c09-41ce6413aff1": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/53c34ac0926044bdaf9b3ec51bf3f03e\"",
     "4bf475f1-8dc8-4be1-abd2-76fc1b92e84f": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/8FD14BC9E408469AA13583877499542C-10B3FD79033DADE9\"",
@@ -430,7 +429,8 @@
     "a7ec6d9a-d534-4de6-849b-1393ad1fbcb1": "\"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/shared-powerappsfora-37381e96-7344-494a-909f-a6b93e164072\"",
     "b6965406-cef4-4463-b637-dee95013238d": "\"/providers/microsoft.powerapps/apis/shared_office365/connections/shared-office365-5fcecc06-ba4f-4154-b1d9-d6dd9b61937f\"",
     "c9ba4016-d7f7-4e05-a65f-cf99d7651151": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/db1241f5-b6f3-4329-a108-4cb5c151691b\"",
-    "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e": "\"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/shared-powerappsfora-37381e96-7344-494a-909f-a6b93e164072\""
+    "e5946533-6f62-4dd4-84c0-ff6b1a0cb43e": "\"/providers/microsoft.powerapps/apis/shared_powerappsforappmakers/connections/shared-powerappsfora-37381e96-7344-494a-909f-a6b93e164072\"",
+    "f0919ecf-98c7-4414-a99e-eeeb9d1e8529": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/3FD42788220744A9AB2F9E4CC30F56B4-10B3FD79033DADE9\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
