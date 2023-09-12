@@ -197,8 +197,8 @@ Pantalla_GestionVanisados As screen:
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
             Width: =190
-            X: =837
-            Y: =10
+            X: =852
+            Y: =11
             ZIndex: =8
 
         Image1_5 As image:
@@ -245,8 +245,8 @@ Pantalla_GestionVanisados As screen:
             RadiusTopRight: =0
             Text: ="RGB-ENEAS"
             Width: =120
-            X: =714
-            Y: =10
+            X: =720
+            Y: =11
             ZIndex: =10
 
     Container_GestionVanizados As groupContainer.manualLayoutContainer:

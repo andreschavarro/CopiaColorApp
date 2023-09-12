@@ -251,8 +251,8 @@ Pantalla_Vanisados As screen:
                 =!IsBlank(LookUp(adminUsers , Usuario =  Text(User().Email)))
                 
             Width: =190
-            X: =842
-            Y: =9
+            X: =852
+            Y: =11
             ZIndex: =12
 
         Button13_3 As button:
@@ -277,7 +277,7 @@ Pantalla_Vanisados As screen:
             RadiusTopRight: =0
             Text: ="RGB-ENEAS"
             Width: =120
-            X: =718
+            X: =720
             Y: =11
             ZIndex: =13
 
