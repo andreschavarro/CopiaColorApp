@@ -1143,9 +1143,20 @@ Pantalla_GestionVanisados As screen:
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Lighter
                     Size: =13
-                    Text: |+
-                        =LookUp(Roles, Label23.Text = Usuario).Rol 
-                        
+                    Text: |-
+                        =If(
+                            IsBlank(
+                                LookUp(
+                                    Roles,
+                                    Label23.Text = Usuario
+                                ).Rol
+                            ),
+                            "Usuario",
+                            LookUp(
+                                Roles,
+                                Label23.Text = Usuario
+                            ).Rol
+                        )
                     X: =184
                     Y: =100
                     ZIndex: =4
@@ -1170,14 +1181,15 @@ Pantalla_GestionVanisados As screen:
                     HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.GlobeRefresh
-                    OnSelect: |
+                    OnSelect: |-
                         =Patch(
                             Roles,
-                            LookUp(Roles, Label23.Text = Usuario)
-                            {
-                                Rol: ComboBox3.Selected.Value
-                            }
-                        )
+                            LookUp(
+                                Roles,
+                                Usuario = Label23.Text
+                            ),
+                            {Rol: ComboBox3.Selected.Value}
+                        );
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
@@ -1204,6 +1216,7 @@ Pantalla_GestionVanisados As screen:
                     HoverFill: =RGBA(212, 212, 212, 1)
                     IsSearchable: =false
                     Items: =["Usuario","Administrador"]
+                    OnChange: =
                     PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(0, 120, 212, 1)
@@ -1212,7 +1225,7 @@ Pantalla_GestionVanisados As screen:
                     SelectionFill: =RGBA(0, 120, 212, 1)
                     SelectMultiple: =false
                     Size: =13
-                    X: =28
+                    X: =9
                     Y: =80
                     ZIndex: =3
 
