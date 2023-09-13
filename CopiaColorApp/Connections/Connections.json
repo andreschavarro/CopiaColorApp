@@ -168,6 +168,40 @@
     "dependents": [],
     "id": "7df666c6-7d79-4d58-b33b-d82d977c2d79"
   },
+  "84a54abe-558e-4fc0-9fa2-8d1544579b30": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "c0be4bc7-c1ab-4f0a-b27c-1c3ba9d4004a": {
+          "value": "shared_powerappsforappmakers_1"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_powerappsforappmakers_1": {
+          "value": "c0be4bc7-c1ab-4f0a-b27c-1c3ba9d4004a"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "obtener_usuarios_color_app"
+    ],
+    "dependencies": {
+      "shared_powerappsforappmakers_1": "c0be4bc7-c1ab-4f0a-b27c-1c3ba9d4004a"
+    },
+    "dependents": [],
+    "id": "84a54abe-558e-4fc0-9fa2-8d1544579b30"
+  },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
       "apiTier": "Standard",
@@ -184,6 +218,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "b6965406-cef4-4463-b637-dee95013238d"
+  },
+  "c0be4bc7-c1ab-4f0a-b27c-1c3ba9d4004a": {
+    "connectionRef": {
+      "displayName": "Power Apps para creadores",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/powerappsforappmakers/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "84a54abe-558e-4fc0-9fa2-8d1544579b30"
+    ],
+    "id": "c0be4bc7-c1ab-4f0a-b27c-1c3ba9d4004a"
   },
   "f0919ecf-98c7-4414-a99e-eeeb9d1e8529": {
     "connectionRef": {

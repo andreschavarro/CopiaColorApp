@@ -427,7 +427,6 @@ Pantalla_GestionVanisados As screen:
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Width: =41
-            X: =15
             Y: =11
             ZIndex: =7
 
@@ -1100,27 +1099,6 @@ Pantalla_GestionVanisados As screen:
                 Y: =12
                 ZIndex: =4
 
-                Image4 As image:
-                    BorderColor: =RGBA(0, 0, 0, 0)
-                    BorderStyle: =BorderStyle.None
-                    BorderThickness: =2
-                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                    DisabledFill: =RGBA(0, 0, 0, 0)
-                    FocusedBorderThickness: =4
-                    Height: =72
-                    HoverBorderColor: =RGBA(0, 0, 0, 0)
-                    HoverFill: =RGBA(0, 0, 0, 0)
-                    PressedBorderColor: =RGBA(0, 0, 0, 0)
-                    PressedFill: =RGBA(0, 0, 0, 0)
-                    RadiusBottomLeft: =8
-                    RadiusBottomRight: =8
-                    RadiusTopLeft: =8
-                    RadiusTopRight: =8
-                    Width: =72
-                    X: =40
-                    Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-                    ZIndex: =1
-
                 Label23 As label:
                     BorderColor: =RGBA(0, 0, 0, 0)
                     BorderStyle: =BorderStyle.None
@@ -1130,11 +1108,46 @@ Pantalla_GestionVanisados As screen:
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FocusedBorderThickness: =4
                     Font: =Font.'Segoe UI'
+                    Height: =37
                     Size: =13
                     Text: =ThisItem.Value.email
-                    X: =169
-                    Y: =40
+                    Width: =222
+                    X: =172
+                    Y: =28
                     ZIndex: =2
+
+                Image4 As image:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledFill: =RGBA(0, 0, 0, 0)
+                    FocusedBorderThickness: =4
+                    HoverBorderColor: =RGBA(0, 0, 0, 0)
+                    HoverFill: =RGBA(0, 0, 0, 0)
+                    Image: =UsuariosdeOffice365.UserPhoto(Label23.Text)
+                    PressedBorderColor: =RGBA(0, 0, 0, 0)
+                    PressedFill: =RGBA(0, 0, 0, 0)
+                    Y: =28
+                    ZIndex: =3
+
+                Label24 As label:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    BorderThickness: =2
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Lighter
+                    Size: =13
+                    Text: |+
+                        =LookUp(Roles, Label23.Text = Usuario).Rol 
+                        
+                    X: =184
+                    Y: =100
+                    ZIndex: =4
 
             Container3_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
@@ -1144,35 +1157,6 @@ Pantalla_GestionVanisados As screen:
                 RadiusTopRight: =4
                 X: =714
                 ZIndex: =5
-
-                ListBox3 As listbox:
-                    BorderColor: =RGBA(166, 166, 166, 1)
-                    Color: =RGBA(51, 51, 51, 1)
-                    Default: =""
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisabledSelectionColor: =RGBA(166, 166, 166, 1)
-                    DisabledSelectionFill: =RGBA(220, 220, 220, 1)
-                    Font: =Font.'Segoe UI'
-                    Height: =104
-                    HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    HoverColor: =RGBA(51, 51, 51, 1)
-                    HoverFill: =RGBA(212, 212, 212, 1)
-                    Items: =["Usuario","Administrador"]
-                    OnSelect: =Select(Parent)
-                    PaddingBottom: =5
-                    PaddingLeft: =5
-                    PaddingRight: =5
-                    PaddingTop: =5
-                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
-                    PressedColor: =RGBA(255, 255, 255, 1)
-                    PressedFill: =RGBA(0, 120, 212, 1)
-                    SelectionFill: =RGBA(0, 120, 212, 1)
-                    Size: =13
-                    X: =40
-                    Y: =40
-                    ZIndex: =1
 
                 Icon6 As icon.GlobeRefresh:
                     BorderColor: =RGBA(166, 166, 166, 1)
@@ -1185,12 +1169,51 @@ Pantalla_GestionVanisados As screen:
                     HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.GlobeRefresh
+                    OnSelect: |
+                        =Patch(
+                            Roles,
+                            LookUp(Roles, Label23.Text = Usuario)
+                            {
+                                Rol: ComboBox3.Selected.Value
+                            }
+                        )
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    X: =402
-                    Y: =80
+                    X: =399
+                    Y: =68
                     ZIndex: =2
+
+                ComboBox3 As combobox:
+                    BorderColor: =RGBA(166, 166, 166, 1)
+                    ChevronBackground: =RGBA(255, 255, 255, 1)
+                    ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                    ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                    ChevronFill: =RGBA(33, 33, 33, 1)
+                    ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+                    ChevronHoverFill: =RGBA(33, 33, 33, 1)
+                    Color: =RGBA(51, 51, 51, 1)
+                    DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    Font: =Font.'Segoe UI'
+                    HoverBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    HoverColor: =RGBA(51, 51, 51, 1)
+                    HoverFill: =RGBA(212, 212, 212, 1)
+                    IsSearchable: =false
+                    Items: =["Usuario","Administrador"]
+                    PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(0, 120, 212, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(0, 120, 212, 1)
+                    SelectMultiple: =false
+                    Size: =13
+                    X: =28
+                    Y: =80
+                    ZIndex: =3
 
     ContainerRGB As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -1361,6 +1384,23 @@ Pantalla_GestionVanisados As screen:
                     HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     HoverFill: =RGBA(0, 0, 0, 0)
                     Icon: =Icon.Check
+                    OnSelect: |-
+                        =Patch(
+                            SugerenciaVanisados,
+                            LookUp(
+                                SugerenciaVanisados,
+                                Color_Crystal = ThisItem.Color_Crystal
+                            ),
+                            {Estado: "Aceptado"}
+                        );
+                        Patch(
+                            GestionVanisadosDEV,
+                            LookUp(
+                                GestionVanisadosDEV,
+                                coColor = ThisItem.Color_Crystal
+                            ),
+                            {coColor: Subtitle3_3.Text}
+                        );
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                     PressedFill: =RGBA(0, 0, 0, 0)
