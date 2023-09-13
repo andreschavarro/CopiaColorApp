@@ -328,10 +328,10 @@ Pantalla_Vanisados As screen:
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
-            OnSelect: |-
+            OnSelect: |
                 =Reset(ComboBox2);
                 Set(color_var, "");
-                Set(rgb_var,"111, 111, 111")
+                Set(rgb_var,"111, 111, 111");
             PressedBorderColor: =
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =

@@ -706,7 +706,8 @@ Colores_Crystal As screen:
                 Icon: =Icon.Error
                 OnSelect: |-
                     =UpdateContext({ShowToolTip:!ShowToolTip});
-                    Set(desColor,ThisItem.colorName)
+                    Set(desColor,ThisItem.colorName);
+                    Set(varRgb,ThisItem.rgb)
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -741,21 +742,6 @@ Colores_Crystal As screen:
                     PressedFill: =RGBA(230, 230, 230, 0.21)
                     Width: =300
                     ZIndex: =1
-
-            Label23 As label:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                BorderThickness: =2
-                Color: =RGBA(51, 51, 51, 1)
-                DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                FocusedBorderThickness: =4
-                Font: =Font.'Segoe UI'
-                Size: =13
-                Text: =ThisItem.rgb
-                Visible: =false
-                Y: =173
-                ZIndex: =12
 
     Container_Popup As groupContainer.manualLayoutContainer:
         BorderThickness: =2
@@ -896,8 +882,8 @@ Colores_Crystal As screen:
                         Descripcion:EtiquetaDescripcion.Text,
                         comentarios:ReporteRGBcolorCrystal.Text,
                         color_Crystal:TextoEtiquetaCodigocolor_1.Text,
-                        Nombre_Color:Label12.Text,
-                        rgb: Label24.Text
+                        Nombre_Color:desColor,
+                        rgb: varRgb
                     }
                 );
                 Reset(ReporteRGBcolorCrystal);
@@ -1017,35 +1003,4 @@ Colores_Crystal As screen:
             X: =275
             Y: =4
             ZIndex: =13
-
-        Label24 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Size: =13
-            Text: =Label23.Text
-            Visible: =false
-            X: =632
-            Y: =354
-            ZIndex: =14
-
-        Label12 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Size: =13
-            Text: =desColor
-            X: =632
-            Y: =366
-            ZIndex: =15
 

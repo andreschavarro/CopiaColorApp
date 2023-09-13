@@ -102,40 +102,6 @@
     "dependents": [],
     "id": "4bf475f1-8dc8-4be1-abd2-76fc1b92e84f"
   },
-  "5354cdb7-8ea3-47b8-b21b-f90a1338eed5": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1653/1.0.1653.3403/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "87b60b1c-5a37-44b0-92a7-fbf98df67129": {
-          "value": "shared_powerappsforappmakers_1"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_powerappsforappmakers_1": {
-          "value": "87b60b1c-5a37-44b0-92a7-fbf98df67129"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "db1241f5-b6f3-4329-a108-4cb5c151691b"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "obtener_usuarios_color_app"
-    ],
-    "dependencies": {
-      "shared_powerappsforappmakers_1": "87b60b1c-5a37-44b0-92a7-fbf98df67129"
-    },
-    "dependents": [],
-    "id": "5354cdb7-8ea3-47b8-b21b-f90a1338eed5"
-  },
   "5397bef3-3a93-4303-b144-6bd2d3016aae": {
     "connectionRef": {
       "displayName": "Usuarios de Office 365",
@@ -201,20 +167,6 @@
     "dependencies": {},
     "dependents": [],
     "id": "7df666c6-7d79-4d58-b33b-d82d977c2d79"
-  },
-  "87b60b1c-5a37-44b0-92a7-fbf98df67129": {
-    "connectionRef": {
-      "displayName": "Power Apps para creadores",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/powerappsforappmakers/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_powerappsforappmakers"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "5354cdb7-8ea3-47b8-b21b-f90a1338eed5"
-    ],
-    "id": "87b60b1c-5a37-44b0-92a7-fbf98df67129"
   },
   "b6965406-cef4-4463-b637-dee95013238d": {
     "connectionRef": {
