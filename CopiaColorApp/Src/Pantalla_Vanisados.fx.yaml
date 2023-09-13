@@ -2887,7 +2887,7 @@ Pantalla_Vanisados As screen:
                 HoverColor: =RGBA(184, 149, 9, 1)
                 HoverFill: =RGBA(0, 0, 0, 0)
                 Icon: =Icon.Lightbulb
-                OnSelect: |-
+                OnSelect: |
                     =Set(
                         VarCodCrystal,
                         ComboBox2.Selected.coColor
@@ -2912,6 +2912,7 @@ Pantalla_Vanisados As screen:
                         ComboBoxvisible,
                         true
                     );
+                    
                     Set(VarOcultar, true);
                     If(
                         IsBlank(VarMateriaP),
@@ -2934,7 +2935,7 @@ Pantalla_Vanisados As screen:
                             VarOcultar,
                             false
                         )
-                    )
+                    );
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
@@ -3060,7 +3061,6 @@ Pantalla_Vanisados As screen:
         RadiusTopRight: =4
         Visible: =If(contenedorVisible,true,false)
         Width: =1600
-        Y: =59
         ZIndex: =6
 
         ContainerRecomendacion As groupContainer.manualLayoutContainer:
@@ -3228,7 +3228,7 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Width: =175
                 X: =196
-                Y: =310
+                Y: =309
                 ZIndex: =9
 
             Label3_12 As label:
@@ -3313,4 +3313,34 @@ Pantalla_Vanisados As screen:
                 X: =572
                 Y: =365
                 ZIndex: =13
+
+            TextInput2_1 As text:
+                BorderColor: =RGBA(166, 166, 166, 1)
+                BorderThickness: =2
+                Color: =RGBA(51, 51, 51, 1)
+                Default: =First(gallVanisadoUnico).Value.coColor
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                FocusedBorderThickness: =4
+                Font: =Font.'Segoe UI'
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                OnChange: =If(IsBlank(TextInput2),TextInput2_1.DisplayMode.Disabled)
+                OnSelect: =
+                PressedBorderColor: =RGBA(255, 255, 255, 1)
+                PressedColor: =RGBA(51, 51, 51, 1)
+                PressedFill: =RGBA(255, 255, 255, 1)
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Visible: |
+                    =true
+                Width: =175
+                X: =196
+                Y: =365
+                ZIndex: =14
 
