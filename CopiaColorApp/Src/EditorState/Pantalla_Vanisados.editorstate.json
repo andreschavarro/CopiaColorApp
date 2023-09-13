@@ -641,7 +641,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "HoverBorderColor",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "HoverBorderColor",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -683,7 +690,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "ColorFade(RGBA(0, 120, 212, 1), -10%)",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "HoverFill",
           "IsLockable": false,
           "NameMapSourceSchema": "?"

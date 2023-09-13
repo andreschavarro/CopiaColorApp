@@ -65,14 +65,14 @@ Pantalla_Vanisados As screen:
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverBorderColor: =RGBA(0, 0, 0, 1)
             HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =
+            HoverFill: =RGBA(0, 0, 0, 1)
             OnSelect: |
                 =Navigate(Colores_Crystal)
-            PressedBorderColor: =RGBA(202, 202, 202, 1)
-            PressedColor: =RGBA(0, 0, 0, 1)
-            PressedFill: =RGBA(202, 202, 202, 1)
+            PressedBorderColor: =RGBA(0, 0, 0, 1)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 0, 0, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
