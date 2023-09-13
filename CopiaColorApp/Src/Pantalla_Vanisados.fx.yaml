@@ -2445,7 +2445,7 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =30
+                X: =47
                 Y: =50
                 ZIndex: =3
 
@@ -2464,7 +2464,7 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =58
-                X: =118
+                X: =135
                 Y: =12
                 ZIndex: =4
 
@@ -2607,7 +2607,7 @@ Pantalla_Vanisados As screen:
                     ="Ver alternativa"
                 Visible: |
                     =If(IsBlank(ThisItem.lycra),true,false)
-                X: =65
+                X: =74
                 Y: =115
                 ZIndex: =2
 
@@ -2626,7 +2626,7 @@ Pantalla_Vanisados As screen:
                 Size: =13
                 Text: ="No se hallaron resultados de búsqueda"
                 Width: =228
-                X: =30
+                X: =47
                 Y: =50
                 ZIndex: =3
 
@@ -2645,7 +2645,7 @@ Pantalla_Vanisados As screen:
                 PressedBorderColor: =RGBA(0, 0, 0, 0)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =54
-                X: =118
+                X: =135
                 Y: =12
                 ZIndex: =4
 
@@ -2673,7 +2673,7 @@ Pantalla_Vanisados As screen:
                 PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
                 PressedFill: =RGBA(0, 0, 0, 0)
                 Width: =30
-                X: =262
+                X: =278
                 Y: =125
                 ZIndex: =5
 
