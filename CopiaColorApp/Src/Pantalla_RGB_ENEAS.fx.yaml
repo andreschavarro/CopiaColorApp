@@ -244,9 +244,9 @@ Pantalla_RGB_ENEAS As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: =Navigate(Pantalla_Vanisados)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedBorderColor: =
             PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
