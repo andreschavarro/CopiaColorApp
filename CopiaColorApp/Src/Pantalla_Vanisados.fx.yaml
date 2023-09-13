@@ -441,10 +441,10 @@ Pantalla_Vanisados As screen:
             DropShadow: =DropShadow.Regular
             Fill: =RGBA(230, 230, 230, 1)
             Height: =135
-            RadiusBottomLeft: =4
-            RadiusBottomRight: =4
-            RadiusTopLeft: =4
-            RadiusTopRight: =4
+            RadiusBottomLeft: =6
+            RadiusBottomRight: =6
+            RadiusTopLeft: =6
+            RadiusTopRight: =6
             Width: =145
             X: =502
             Y: =13
