@@ -5200,7 +5200,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ComboBox4",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8782,7 +8782,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3",
-      "ParentIndex": 14,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
