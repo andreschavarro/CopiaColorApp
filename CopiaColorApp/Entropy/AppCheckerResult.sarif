@@ -4782,6 +4782,30 @@
               "message": {
                 "text": "Error al ejecutar la regla app-InefficientDelayLoading."
               }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 14
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
+            },
+            {
+              "associatedRule": {
+                "id": "app-InefficientDelayLoading",
+                "index": 14
+              },
+              "descriptor": {
+                "id": "app-InefficientDelayLoading"
+              },
+              "message": {
+                "text": "Error al ejecutar la regla app-InefficientDelayLoading."
+              }
             }
           ]
         }
@@ -4910,203 +4934,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(SugerenciaVanisados)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 27,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountRows(ReporteDeErrores)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "Parent"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrFunctionExpectsSelectableControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.Y"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.Y",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": ".TemplateHeight"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Y",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "TemplateHeight"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 135,
-                  "snippet": {
-                    "text": "\"field_0\""
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Search"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Pantalla_Pantone.Container_Filtros.ComboBox1.SearchItems"
                 }
               ],
@@ -5140,7 +4967,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5180,7 +5007,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5220,1104 +5047,111 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 6
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1.Text",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 30,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(SugerenciaVanisados)"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Rectangle11_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Rectangle11_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.COLORAPP1_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.COLORAPP1_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.COLORAPP1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Container1.Gallery3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Icon5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Icon4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "ColoresSeleccionados",
-                "type": "ColoresSeleccionados.Icon4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Icon7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Icon7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_Popup.IconCerrarPopup_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_Popup.IconCerrarPopup_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Colores_Crystal",
-                "type": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
+                "member": "Text",
                 "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2"
+                "type": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10_1"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "CountRows"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.TabIndex"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.TabIndex",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10.Text",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 27,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountRows(ReporteDeErrores)"
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "Text",
                 "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2"
+                "type": "Pantalla_GestionVanisados.Contenedor.ContainerLandingPage.Label10"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "CountRows"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5.TabIndex"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.OnSelect"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5.TabIndex",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.OnSelect",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "Parent"
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
+                "member": "OnSelect",
                 "module": "Pantalla_GestionVanisados",
                 "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3"
               }
@@ -6327,1060 +5161,90 @@
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleId": "app-ErrFunctionExpectsSelectableControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.Y",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 15,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": ".TemplateHeight"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "Y",
                 "module": "Pantalla_GestionVanisados",
                 "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "TemplateHeight"
+            ],
             "id": "issue"
           },
           "properties": {
-            "level": "Medium"
+            "level": "High"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 6
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.SearchItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.SearchItems",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 9,
+                  "charOffset": 135,
+                  "snippet": {
+                    "text": "\"field_0\""
+                  }
                 }
               },
               "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRGB.Gallery3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ContainerRGB.Gallery3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
+                "member": "SearchItems",
                 "module": "Pantalla_GestionVanisados",
                 "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "Search"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Pantalla_GestionVanisados",
-                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9037,19 +6901,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3"
               }
             }
           ],
@@ -9067,19 +6931,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle15_5"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Container6.Rectangle73_3"
               }
             }
           ],
@@ -9097,19 +6961,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3"
               }
             }
           ],
@@ -9127,19 +6991,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon1"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle16_3"
               }
             }
           ],
@@ -9157,79 +7021,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_8.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_8.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_7.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_7.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Mssimilar1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4"
               }
             }
           ],
@@ -9247,19 +7051,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle16_3"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon10_4"
               }
             }
           ],
@@ -9277,19 +7081,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1"
               }
             }
           ],
@@ -9307,19 +7111,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Rectangle73_3"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Icon1"
               }
             }
           ],
@@ -9337,19 +7141,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_13.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_17.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_13.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_17.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_13"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_17"
               }
             }
           ],
@@ -9367,19 +7171,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_17.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_17.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.CdigoCrystal_17"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_8"
               }
             }
           ],
@@ -9397,19 +7201,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5"
               }
             }
           ],
@@ -9427,19 +7231,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.Icon10_4"
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Rectangle15_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_13.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_13.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.CdigoCrystal_13"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.ContenedorPopPapSugerencia.TarjetaAlternativa.Mssimilar1_7"
               }
             }
           ],
@@ -11647,19 +9511,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Icon11.AccessibleLabel"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.RecomendadoTextinput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Icon11.AccessibleLabel",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.RecomendadoTextinput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Container7.Icon11"
+                "type": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.RecomendadoTextinput"
               }
             }
           ],
@@ -11677,19 +9541,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Icon11.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.ComboBox4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Icon11.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.ComboBox4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.ComboBox4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Label8_8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Label8_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Container7.Icon11"
+                "type": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Label8_8"
               }
             }
           ],
@@ -11707,19 +9601,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Label8_8.TabIndex"
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.Label8_8.TabIndex",
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Container7.Label8_8"
+                "type": "Pantalla_Vanisados.ContainerBase.ContainerRecomendacion.Icon11"
               }
             }
           ],
@@ -11737,19 +9661,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.ComboBox4.AccessibleLabel"
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.ComboBox4.AccessibleLabel",
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Container7.ComboBox4"
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3"
               }
             }
           ],
@@ -11767,19 +9691,199 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.RecomendadoTextinput.AccessibleLabel"
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados.Container7.RecomendadoTextinput.AccessibleLabel",
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_BarraNavegacion_1.Rectangle11_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_BarraNavegacion_1.COLORAPP1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.ColorCrystal_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.Materiaprimaprincipal_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados.Container7.RecomendadoTextinput"
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.colorInput"
               }
             }
           ],
@@ -11797,19 +9901,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.var_mat"
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.var_mat",
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "var_mat",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.codigoInput"
               }
             }
           ],
@@ -11819,27 +9923,27 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.guidBool"
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.guidBool",
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "guidBool",
-                "module": "App",
-                "type": "App"
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownMaterial"
               }
             }
           ],
@@ -11849,8 +9953,1868 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 10
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_FiltrosColorcrystal.DropdownColores"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Icon7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Icon7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Gallery1.Container2.Rectangle15_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Gallery1.Container2.Rectangle15_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_Popup.IconCerrarPopup_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.IconCerrarPopup_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_Popup.IconCerrarPopup_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Colores_Crystal",
+                "type": "Colores_Crystal.Container_Popup.ReporteRGBcolorCrystal"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.Rectangle11_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Rectangle11_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.Rectangle11_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.COLORAPP1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.COLORAPP1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.COLORAPP1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.Gallery3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Container1.Gallery3_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Container1.Gallery3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ColoresSeleccionados.Icon4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "ColoresSeleccionados",
+                "type": "ColoresSeleccionados.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.Rectangle1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_barraNavegacionvanisados.COLORAPP1_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3_1.ListBox3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRoles.Gallery4.Container3.Label23"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRGB.Gallery3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ContainerRGB.Gallery3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ContainerRGB.Gallery3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label18_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label17"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Label16"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.ConteGallery5.Gallery5.ContainerSuge_vanisado.Subtitle3_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ContainerCuadro.Rectangle211_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.ContainercomboBox.ComboBox2_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.ComboBox1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Pantalla_GestionVanisados",
+                "type": "Pantalla_GestionVanisados.Container_GestionVanizados.Containerinputtabla.TextInput1_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -11947,6 +11911,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.gitcarga"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.gitcarga",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "gitcarga",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.estadoTarjeta"
                 }
               ],
@@ -11988,6 +11982,66 @@
               },
               "properties": {
                 "member": "VarcomboBox",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.var_mat"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.var_mat",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "var_mat",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.guidBool"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.guidBool",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "guidBool",
                 "module": "App",
                 "type": "App"
               }
@@ -12277,6 +12331,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.VAyR"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.VAyR",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "VAyR",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Vector (1)"
                 }
               ],
@@ -12486,6 +12570,35 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Pantalla_Vanisados"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Pantalla_Vanisados",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "Pantalla_Vanisados",
+                "type": "Pantalla_Vanisados"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Pantalla_GestionVanisados.ContenedorLandingPage"
                 }
               ],
@@ -12510,35 +12623,6 @@
           },
           "ruleId": "app-UnusedVariables",
           "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Pantalla_Vanisados"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Pantalla_Vanisados",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "Pantalla_Vanisados",
-                "type": "Pantalla_Vanisados"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 13
         }
       ],
       "tool": {
@@ -12589,6 +12673,25 @@
               }
             },
             {
+              "id": "app-SuggestRemoteExecutionHint",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
               "messageStrings": {
                 "issue": {
@@ -12634,25 +12737,6 @@
                   "Remove or correct the reference to the name that isn't valid."
                 ],
                 "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-SuggestRemoteExecutionHint",
-              "messageStrings": {
-                "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
-                ],
-                "level": "Medium",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
@@ -12777,7 +12861,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"Pantalla_Vanisados\" es 417, que es superior al umbral máximo recomendado (300)."
+                "whyFix": "Los controles consumen recursos y, si una pantalla tiene demasiados controles, la aplicación puede dejar de responder o ralentizarse. La complejidad estimada de \"Pantalla_Vanisados\" es 419, que es superior al umbral máximo recomendado (300)."
               }
             },
             {
