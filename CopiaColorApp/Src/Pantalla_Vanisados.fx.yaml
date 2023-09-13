@@ -3322,3 +3322,38 @@ Pantalla_Vanisados As screen:
                 Y: =365
                 ZIndex: =13
 
+            Dropdown1_1 As dropdown:
+                BorderColor: =RGBA(230, 230, 230, 1)
+                BorderThickness: =1
+                ChevronBackground: =RGBA(255, 255, 255, 1)
+                ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+                ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+                ChevronFill: =RGBA(33, 33, 33, 1)
+                ChevronHoverBackground: =RGBA(0, 0, 0, 1)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(51, 51, 51, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Font: =Font.'Segoe UI'
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverColor: =RGBA(51, 51, 51, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                Items: =["Todos los materiales", "Algodon", "Algodon 20/1","Algodon 30/1","Nylon","Nylon 44/12","Nylon 78/24"]
+                OnChange: =Set(selectedMat,Dropdown1_1.Selected.Value)
+                OnSelect: =Set(selectedMat,Dropdown1_1.Selected.Value)
+                PaddingBottom: =5
+                PaddingLeft: =12
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedBorderColor: =RGBA(0, 0, 0, 1)
+                PressedColor: =RGBA(0, 0, 0, 1)
+                PressedFill: =RGBA(212, 212, 212, 1)
+                SelectionColor: =RGBA(0, 0, 0, 1)
+                SelectionFill: =RGBA(230, 230, 230, 1)
+                Size: =13
+                Width: =150
+                X: =196
+                Y: =124
+                ZIndex: =14
+
