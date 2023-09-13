@@ -37,8 +37,8 @@ ColoresSeleccionados As screen:
                     RadiusBottomRight: =8
                     RadiusTopLeft: =8
                     RadiusTopRight: =8
-                    Width: =1000
-                    X: =183
+                    Width: =1033
+                    X: =148
                     Y: =12
                     ZIndex: =19
 
@@ -52,7 +52,7 @@ ColoresSeleccionados As screen:
                         Height: =44
                         HoverFill: =RGBA(0, 0, 0, 1)
                         PressedFill: =RGBA(0, 0, 0, 1)
-                        Width: =1000
+                        Width: =1033
                         ZIndex: =1
 
                     Rectangle9 As rectangle:
@@ -66,7 +66,7 @@ ColoresSeleccionados As screen:
                         HoverFill: =
                         PressedFill: |
                             =
-                        Width: =1000
+                        Width: =1033
                         Y: =40
                         ZIndex: =2
 
@@ -106,9 +106,10 @@ ColoresSeleccionados As screen:
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             FontWeight: =FontWeight.Bold
-                            Size: =15
+                            Size: =20
                             Text: ="Color Crystal"
                             Width: =180
+                            X: =5
                             Y: =155
                             ZIndex: =2
 
@@ -121,9 +122,10 @@ ColoresSeleccionados As screen:
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
-                            Size: =15
+                            Size: =20
                             Text: =ThisItem.colorcrystal
                             Width: =180
+                            X: =5
                             Y: =208
                             ZIndex: =3
 
@@ -137,9 +139,11 @@ ColoresSeleccionados As screen:
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
+                        Size: =20
                         Text: ="Datos del Color"
-                        X: =282
-                        Y: =172
+                        Width: =200
+                        X: =266
+                        Y: =160
                         ZIndex: =4
 
                     Label22_1 As label:
@@ -151,10 +155,10 @@ ColoresSeleccionados As screen:
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Size: =13
+                        Size: =17
                         Text: =ThisItem.codigomaterial
-                        X: =600
-                        Y: =212
+                        X: =561
+                        Y: =252
                         ZIndex: =5
 
                     Label22_2 As label:
@@ -167,9 +171,9 @@ ColoresSeleccionados As screen:
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Size: =13
-                        Text: ="Descripciòn"
-                        X: =282
+                        Size: =17
+                        Text: ="Descripción"
+                        X: =333
                         Y: =212
                         ZIndex: =6
 
@@ -183,10 +187,10 @@ ColoresSeleccionados As screen:
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Size: =13
+                        Size: =17
                         Text: ="Codigo SAP"
-                        X: =600
-                        Y: =172
+                        X: =561
+                        Y: =212
                         ZIndex: =7
 
                     Label22_4 As label:
@@ -198,11 +202,12 @@ ColoresSeleccionados As screen:
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Height: =58
-                        Size: =13
+                        Height: =78
+                        Size: =17
                         Text: =ThisItem.Descripcion
-                        Width: =196
-                        X: =282
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =223
+                        X: =333
                         Y: =252
                         ZIndex: =8
 
@@ -216,10 +221,11 @@ ColoresSeleccionados As screen:
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Size: =13
+                        Size: =17
                         Text: ="Nombre Color"
-                        X: =600
-                        Y: =252
+                        Width: =200
+                        X: =793
+                        Y: =212
                         ZIndex: =9
 
                     Label22_6 As label:
@@ -231,10 +237,11 @@ ColoresSeleccionados As screen:
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
-                        Size: =13
+                        Size: =17
                         Text: =ThisItem.nombrecolor
-                        X: =600
-                        Y: =290
+                        Width: =200
+                        X: =793
+                        Y: =252
                         ZIndex: =10
 
                     Label22_7 As label:
@@ -248,8 +255,9 @@ ColoresSeleccionados As screen:
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
-                        Size: =15
+                        Size: =20
                         Text: =ThisItem.alternativa
+                        Width: =180
                         X: =16
                         ZIndex: =11
 
