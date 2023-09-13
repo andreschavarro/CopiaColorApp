@@ -1128,7 +1128,8 @@ Pantalla_GestionVanisados As screen:
                     Image: =UsuariosdeOffice365.UserPhoto(Label23.Text)
                     PressedBorderColor: =RGBA(0, 0, 0, 0)
                     PressedFill: =RGBA(0, 0, 0, 0)
-                    Y: =28
+                    X: =18
+                    Y: =40
                     ZIndex: =3
 
                 Label24 As label:
@@ -1230,7 +1231,9 @@ Pantalla_GestionVanisados As screen:
 
         "Gallery3 As gallery.'BrowseLayout_Vertical_OneImageTwoColumnVariant_ver5.0'":
             BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
             DelayItemLoading: =true
+            Fill: =RGBA(237, 237, 237, 1)
             Height: =595
             Items: =ReporteDeErrores
             Layout: =Layout.Vertical
