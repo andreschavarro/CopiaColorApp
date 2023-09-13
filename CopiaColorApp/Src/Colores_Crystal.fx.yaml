@@ -30,7 +30,7 @@ Colores_Crystal As screen:
             FocusedBorderThickness: =4
             Height: =59
             HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 0, 0, 1)
             Width: =1600
             ZIndex: =1
 
@@ -67,14 +67,14 @@ Colores_Crystal As screen:
             FocusedBorderColor: =ColorFade(Self.Fill, -75%)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverBorderColor: =RGBA(202, 202, 202, 1)
             HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =
+            HoverFill: =RGBA(202, 202, 202, 1)
             OnSelect: |
                 =Navigate(Colores_Crystal)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedBorderColor: =RGBA(202, 202, 202, 1)
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -209,8 +209,8 @@ Colores_Crystal As screen:
             OnSelect: |
                 =Navigate(Pantalla_GestionVanisados)
             PressedBorderColor: =
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -252,6 +252,7 @@ Colores_Crystal As screen:
 
     Container_FiltrosColorcrystal As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
+        Fill: =RGBA(237, 237, 237, 1)
         Height: =135
         RadiusBottomLeft: =4
         RadiusBottomRight: =4

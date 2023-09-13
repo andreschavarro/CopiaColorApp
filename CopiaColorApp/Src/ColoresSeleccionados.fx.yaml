@@ -31,7 +31,7 @@ ColoresSeleccionados As screen:
 
                 ContainerTarjetasGran As groupContainer.manualLayoutContainer:
                     DropShadow: =DropShadow.Regular
-                    Fill: =RGBA(230, 230, 230, 0.8)
+                    Fill: =RGBA(230, 230, 230, 0.73)
                     Height: =346
                     RadiusBottomLeft: =8
                     RadiusBottomRight: =8
@@ -72,7 +72,7 @@ ColoresSeleccionados As screen:
 
                     Containertarjetapequeña As groupContainer.manualLayoutContainer:
                         DropShadow: =DropShadow.Regular
-                        Fill: =RGBA(230, 230, 230, 0.95)
+                        Fill: =RGBA(217, 217, 217, 0.85)
                         Height: =265
                         RadiusBottomLeft: =5
                         RadiusBottomRight: =5

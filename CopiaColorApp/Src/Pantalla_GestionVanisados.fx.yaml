@@ -11,7 +11,7 @@ Pantalla_GestionVanisados As screen:
         )
     Width: =1600
 
-    Container9 As groupContainer.manualLayoutContainer:
+    Contenedor As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(204, 204, 204, 1)
         Height: =841
@@ -303,13 +303,13 @@ Pantalla_GestionVanisados As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(202, 202, 202, 1)
             OnSelect: |
                 =Navigate(Pantalla_Pantone)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedBorderColor: =
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -441,13 +441,13 @@ Pantalla_GestionVanisados As screen:
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =RGBA(255, 255, 255, 1)
-            HoverFill: =
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =RGBA(202, 202, 202, 1)
             OnSelect: |
                 =
             PressedBorderColor: =
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -496,9 +496,9 @@ Pantalla_GestionVanisados As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: =Navigate(Pantalla_RGB_ENEAS)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedBorderColor: =
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -521,7 +521,7 @@ Pantalla_GestionVanisados As screen:
         Y: =273
         ZIndex: =3
 
-        Container8 As groupContainer.manualLayoutContainer:
+        ContainercomboBox As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Fill: =RGBA(255, 255, 255, 1)
             Height: =142
@@ -546,53 +546,6 @@ Pantalla_GestionVanisados As screen:
                 Width: =160
                 X: =84
                 ZIndex: =1
-
-            Rectangle211_1 As rectangle:
-                BorderColor: =RGBA(0, 0, 0, 0)
-                BorderStyle: =BorderStyle.None
-                DisabledFill: =RGBA(166, 166, 166, 1)
-                Fill: |-
-                    =If(
-                        IsBlank(rgb_var),
-                        RGBA(
-                            111,
-                            111,
-                            111,
-                            1
-                        ),
-                        RGBA(
-                            Index(
-                                Split(
-                                    rgb_var,
-                                    ","
-                                ),
-                                1
-                            ).Value,
-                            Index(
-                                Split(
-                                    rgb_var,
-                                    ","
-                                ),
-                                2
-                            ).Value,
-                            Index(
-                                Split(
-                                    rgb_var,
-                                    ","
-                                ),
-                                3
-                            ).Value,
-                            1
-                        )
-                    )
-                FocusedBorderThickness: =4
-                Height: =91
-                HoverFill: =
-                PressedFill: =RGBA(0, 120, 212, 1)
-                Width: =100
-                X: =300
-                Y: =45
-                ZIndex: =2
 
             ComboBox2_2 As combobox:
                 BorderColor: =RGBA(166, 166, 166, 1)
@@ -671,7 +624,67 @@ Pantalla_GestionVanisados As screen:
                 Y: =64
                 ZIndex: =3
 
-        Container11 As groupContainer.manualLayoutContainer:
+            ContainerCuadro As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Regular
+                Fill: =RGBA(204, 204, 204, 1)
+                Height: =92
+                RadiusBottomLeft: =6
+                RadiusBottomRight: =6
+                RadiusTopLeft: =6
+                RadiusTopRight: =6
+                Width: =101
+                X: =300
+                Y: =40
+                ZIndex: =4
+
+                Rectangle211_1 As rectangle:
+                    BorderColor: =RGBA(0, 0, 0, 0)
+                    BorderStyle: =BorderStyle.None
+                    DisabledFill: =RGBA(166, 166, 166, 1)
+                    Fill: |-
+                        =If(
+                            IsBlank(rgb_var),
+                            RGBA(
+                                111,
+                                111,
+                                111,
+                                1
+                            ),
+                            RGBA(
+                                Index(
+                                    Split(
+                                        rgb_var,
+                                        ","
+                                    ),
+                                    1
+                                ).Value,
+                                Index(
+                                    Split(
+                                        rgb_var,
+                                        ","
+                                    ),
+                                    2
+                                ).Value,
+                                Index(
+                                    Split(
+                                        rgb_var,
+                                        ","
+                                    ),
+                                    3
+                                ).Value,
+                                1
+                            )
+                        )
+                    FocusedBorderThickness: =4
+                    Height: =91
+                    HoverFill: =
+                    PressedFill: =RGBA(0, 120, 212, 1)
+                    Width: =100
+                    X: =1
+                    Y: =1
+                    ZIndex: =1
+
+        Containerbarratabla As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Height: =40
             RadiusBottomLeft: =4
@@ -765,7 +778,7 @@ Pantalla_GestionVanisados As screen:
                 X: =939
                 ZIndex: =6
 
-        Container13 As groupContainer.manualLayoutContainer:
+        Containerinputtabla As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semilight
             Fill: =RGBA(230, 230, 230, 1)
             Height: =102
@@ -993,8 +1006,8 @@ Pantalla_GestionVanisados As screen:
             RadiusTopLeft: =4
             RadiusTopRight: =4
             Width: =404
-            X: =612
-            Y: =324
+            X: =677
+            Y: =337
             ZIndex: =18
 
             Button5 As button:
@@ -1075,7 +1088,7 @@ Pantalla_GestionVanisados As screen:
         Y: =257
         ZIndex: =5
 
-    Cont_Sugerencia_vanisados As groupContainer.manualLayoutContainer:
+    ConteGallery5 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(237, 237, 237, 1)
         Height: =623
@@ -1103,17 +1116,16 @@ Pantalla_GestionVanisados As screen:
             X: =73
             ZIndex: =1
 
-            Container14 As groupContainer.manualLayoutContainer:
+            ContainerSuge_vanisado As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Semibold
                 Fill: =RGBA(237, 237, 237, 0.5)
-                Height: =138
+                Height: =137
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
                 RadiusTopRight: =4
-                Width: =1418
-                X: =100
-                Y: =2
+                Width: =1398
+                X: =32
                 ZIndex: =21
 
                 Icon17 As icon.Check:

@@ -140,9 +140,9 @@ Pantalla_Vanisados As screen:
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =
             OnSelect: =Navigate(Pantalla_Vanisados)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
-            PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
@@ -283,6 +283,7 @@ Pantalla_Vanisados As screen:
 
     Container_FiltrosVanisados As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
+        Fill: =RGBA(237, 237, 237, 1)
         Height: =161
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
