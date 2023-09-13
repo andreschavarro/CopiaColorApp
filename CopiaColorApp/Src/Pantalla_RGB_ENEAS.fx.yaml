@@ -177,7 +177,7 @@ Pantalla_RGB_ENEAS As screen:
             FocusedBorderThickness: =4
             Height: =59
             HoverFill: =
-            PressedFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 0, 0, 1)
             Width: =1600
             ZIndex: =1
 
@@ -289,9 +289,9 @@ Pantalla_RGB_ENEAS As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =
             OnSelect: =Navigate(Pantalla_RGB_ENEAS)
-            PressedBorderColor: =ColorFade(RGBA(0, 120, 212, 1), -50%)
+            PressedBorderColor: =
             PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
