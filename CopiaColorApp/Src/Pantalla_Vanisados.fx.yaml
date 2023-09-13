@@ -3353,7 +3353,7 @@ Pantalla_Vanisados As screen:
                 SelectionFill: =RGBA(230, 230, 230, 1)
                 Size: =13
                 Width: =150
-                X: =196
+                X: =384
                 Y: =124
                 ZIndex: =14
 
